@@ -112,5 +112,41 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "const flattenArray = (arr) => {\n  return arr.reduce((acc, val) => \n    Array.isArray(val) ? acc.concat(flattenArray(val)) : acc.concat(val)\n  , []);\n};\n\nconst nested = [1, [2, [3, [4, 5]], 6], 7];\nconst flat = flattenArray(nested);\n\nconsole.log('Original:', JSON.stringify(nested));\nconsole.log('Flattened:', JSON.stringify(flat));"
+  },
+  {
+    "id": 20,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "document.getElementById('list-container').addEventListener('click', (e) => {\n  if (e.target && e.target.nodeName === 'LI') {\n    const itemText = e.target.innerText;\n    console.log(`List item clicked: ${itemText}`);\n    e.target.classList.toggle('completed');\n  }\n});\n\nconst addBtn = document.createElement('button');\naddBtn.textContent = 'Add Item';\ndocument.body.appendChild(addBtn);"
+  },
+  {
+    "id": 21,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const statistics = (numbers) => {\n  if (numbers.length === 0) return null;\n  \n  return numbers.reduce((acc, curr, index, array) => {\n    acc.sum += curr;\n    acc.min = curr < acc.min ? curr : acc.min;\n    acc.max = curr > acc.max ? curr : acc.max;\n    \n    if (index === array.length - 1) {\n      acc.average = acc.sum / array.length;\n    }\n    return acc;\n  }, { sum: 0, min: Infinity, max: -Infinity, average: 0 });\n};"
+  },
+  {
+    "id": 22,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "function* fibonacciGenerator() {\n  let current = 0;\n  let next = 1;\n  while (true) {\n    yield current;\n    [current, next] = [next, current + next];\n  }\n}\n\nconst sequence = fibonacciGenerator();\nconst firstTen = Array.from({ length: 10 }, () => sequence.next().value);\nconsole.log('First 10 Fibonacci numbers:', firstTen.join(', '));"
+  },
+  {
+    "id": 23,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "const createReactiveObject = (target) => {\n  return new Proxy(target, {\n    get(obj, prop) {\n      console.log(`Reading property: ${prop}`);\n      return obj[prop];\n    },\n    set(obj, prop, value) {\n      console.log(`Updating property: ${prop} from ${obj[prop]} to ${value}`);\n      obj[prop] = value;\n      return true;\n    }\n  });\n};\n\nconst state = createReactiveObject({ count: 0 });\nstate.count = 1;\nconsole.log(state.count);"
+  },
+  {
+    "id": 24,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "async function fetchWithTimeout(url, timeoutMs) {\n  const controller = new AbortController();\n  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);\n\n  try {\n    const response = await fetch(url, { signal: controller.signal });\n    clearTimeout(timeoutId);\n    \n    if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);\n    return await response.json();\n  } catch (error) {\n    if (error.name === 'AbortError') {\n      throw new Error(`Request timed out after ${timeoutMs}ms`);\n    }\n    throw error;\n  }\n}"
+  },
+  {
+    "id": 25,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "class Developer {\n  constructor(name, favoriteLanguage) {\n    this.name = name;\n    this.favoriteLanguage = favoriteLanguage;\n  }\n\n  introduce() {\n    return `Hi, I'm ${this.name} and I love coding in ${this.favoriteLanguage}.`;\n  }\n}\n\nconst alice = new Developer('Alice', 'JavaScript');\nconsole.log(alice.introduce());"
   }
 ]
