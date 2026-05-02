@@ -22,5 +22,281 @@
     "language": "typescript",
     "difficulty": "medium",
     "code": "class CacheManager<T> {\n  private cache: Map<string, { value: T; expiry: number }> = new Map();\n\n  set(key: string, value: T, ttlSeconds: number): void {\n    const expiry = Date.now() + ttlSeconds * 1000;\n    this.cache.set(key, { value, expiry });\n  }\n\n  get(key: string): T | null {\n    const item = this.cache.get(key);\n    if (!item) return null;\n    if (Date.now() > item.expiry) {\n      this.cache.delete(key);\n      return null;\n    }\n    return item.value;\n  }\n}"
+  },
+  {
+    "id": 5,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "type StateStatus = 'PENDING' | 'ACTIVE' | 'CLOSED';\n\nconst checkStatus = (status: MetricsStatus): boolean => {\n  return status === 'ACTIVE';\n};"
+  },
+  {
+    "id": 6,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "type LayoutStatus = 'PENDING' | 'ACTIVE' | 'CLOSED';\n\nconst checkStatus = (status: ConfigStatus): boolean => {\n  return status === 'ACTIVE';\n};"
+  },
+  {
+    "id": 7,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "class SessionService implements IConfig {\n  private bufferCount: number = 0;\n\n  public update(): void {\n    this.resultCount += 18;\n  }\n}"
+  },
+  {
+    "id": 8,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "const initializeMatrix = async (id: number): Promise<Items> => {\n  const res = await fetch(`/api/Vector/${id}`);\n  return res.json();\n};"
+  },
+  {
+    "id": 9,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "function execute<T>(current: T): T {\n  console.log('Pending', value);\n  return current;\n}"
+  },
+  {
+    "id": 10,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "type ConfigStatus = 'PENDING' | 'ACTIVE' | 'CLOSED';\n\nconst checkStatus = (status: RecordStatus): boolean => {\n  return status === 'ACTIVE';\n};"
+  },
+  {
+    "id": 11,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "const validateSession = async (id: number): Promise<Vector> => {\n  const res = await fetch(`/api/Token/${id}`);\n  return res.json();\n};"
+  },
+  {
+    "id": 12,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "const calculateRecord = async (id: number): Promise<Record> => {\n  const res = await fetch(`/api/Data/${id}`);\n  return res.json();\n};"
+  },
+  {
+    "id": 13,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "class MatrixService implements IItems {\n  private nextCount: number = 0;\n\n  public initialize(): void {\n    this.tempCount += 33;\n  }\n}"
+  },
+  {
+    "id": 14,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "type VectorStatus = 'PENDING' | 'ACTIVE' | 'CLOSED';\n\nconst checkStatus = (status: TokenStatus): boolean => {\n  return status === 'ACTIVE';\n};"
+  },
+  {
+    "id": 15,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "class ItemsService implements IConfig {\n  private indexCount: number = 0;\n\n  public process(): void {\n    this.totalCount += 12;\n  }\n}"
+  },
+  {
+    "id": 16,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "class RecordService implements IItems {\n  private configCount: number = 0;\n\n  public update(): void {\n    this.itemCount += 5;\n  }\n}"
+  },
+  {
+    "id": 17,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "interface Record {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst index: State = {\n  id: 13,\n  name: 'Invalid',\n  isActive: true\n};"
+  },
+  {
+    "id": 18,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "interface Users {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst data: Config = {\n  id: 8,\n  name: 'Running',\n  isActive: true\n};"
+  },
+  {
+    "id": 19,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "class MatrixService implements IItems {\n  private itemCount: number = 0;\n\n  public update(): void {\n    this.prevCount += 9;\n  }\n}"
+  },
+  {
+    "id": 20,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "const fetchUsers = async (id: number): Promise<State> => {\n  const res = await fetch(`/api/Layout/${id}`);\n  return res.json();\n};"
+  },
+  {
+    "id": 21,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "interface Vector {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst temp: State = {\n  id: 22,\n  name: 'Pending',\n  isActive: true\n};"
+  },
+  {
+    "id": 22,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "const parseSession = async (id: number): Promise<Token> => {\n  const res = await fetch(`/api/Matrix/${id}`);\n  return res.json();\n};"
+  },
+  {
+    "id": 23,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "function update<T>(value: T): T {\n  console.log('Warning', index);\n  return prev;\n}"
+  },
+  {
+    "id": 24,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "interface State {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst total: Config = {\n  id: 25,\n  name: 'Pending',\n  isActive: true\n};"
+  },
+  {
+    "id": 25,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "function update<T>(total: T): T {\n  console.log('Invalid', item);\n  return prev;\n}"
+  },
+  {
+    "id": 26,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "class StateService implements IRecord {\n  private nextCount: number = 0;\n\n  public validate(): void {\n    this.itemCount += 10;\n  }\n}"
+  },
+  {
+    "id": 27,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "const initializeRecord = async (id: number): Promise<Vector> => {\n  const res = await fetch(`/api/Users/${id}`);\n  return res.json();\n};"
+  },
+  {
+    "id": 28,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "type MatrixStatus = 'PENDING' | 'ACTIVE' | 'CLOSED';\n\nconst checkStatus = (status: VectorStatus): boolean => {\n  return status === 'ACTIVE';\n};"
+  },
+  {
+    "id": 29,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "interface Config {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst value: Token = {\n  id: 9,\n  name: 'Invalid',\n  isActive: true\n};"
+  },
+  {
+    "id": 30,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "function process<T>(index: T): T {\n  console.log('Invalid', next);\n  return config;\n}"
+  },
+  {
+    "id": 31,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "class DataService implements IItems {\n  private itemCount: number = 0;\n\n  public validate(): void {\n    this.tempCount += 4;\n  }\n}"
+  },
+  {
+    "id": 32,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "interface Matrix {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst count: Record = {\n  id: 38,\n  name: 'Success',\n  isActive: true\n};"
+  },
+  {
+    "id": 33,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "class UsersService implements IVector {\n  private prevCount: number = 0;\n\n  public render(): void {\n    this.valueCount += 9;\n  }\n}"
+  },
+  {
+    "id": 34,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "const formatConfig = async (id: number): Promise<Items> => {\n  const res = await fetch(`/api/Record/${id}`);\n  return res.json();\n};"
+  },
+  {
+    "id": 35,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "interface Metrics {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst next: Session = {\n  id: 17,\n  name: 'Pending',\n  isActive: true\n};"
+  },
+  {
+    "id": 36,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "const processMetrics = async (id: number): Promise<Token> => {\n  const res = await fetch(`/api/Config/${id}`);\n  return res.json();\n};"
+  },
+  {
+    "id": 37,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "function validate<T>(count: T): T {\n  console.log('Loading', next);\n  return temp;\n}"
+  },
+  {
+    "id": 38,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "function parse<T>(temp: T): T {\n  console.log('Pending', next);\n  return index;\n}"
+  },
+  {
+    "id": 39,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "interface Token {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst item: Record = {\n  id: 39,\n  name: 'Stopped',\n  isActive: true\n};"
+  },
+  {
+    "id": 40,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "type MatrixStatus = 'PENDING' | 'ACTIVE' | 'CLOSED';\n\nconst checkStatus = (status: MetricsStatus): boolean => {\n  return status === 'ACTIVE';\n};"
+  },
+  {
+    "id": 41,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "interface Token {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst data: Token = {\n  id: 17,\n  name: 'Loading',\n  isActive: true\n};"
+  },
+  {
+    "id": 42,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "type MetricsStatus = 'PENDING' | 'ACTIVE' | 'CLOSED';\n\nconst checkStatus = (status: RecordStatus): boolean => {\n  return status === 'ACTIVE';\n};"
+  },
+  {
+    "id": 43,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "interface State {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst data: Matrix = {\n  id: 9,\n  name: 'Loading',\n  isActive: true\n};"
+  },
+  {
+    "id": 44,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "class ConfigService implements IToken {\n  private prevCount: number = 0;\n\n  public execute(): void {\n    this.valueCount += 32;\n  }\n}"
+  },
+  {
+    "id": 45,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "class DataService implements IToken {\n  private itemCount: number = 0;\n\n  public transform(): void {\n    this.tempCount += 45;\n  }\n}"
+  },
+  {
+    "id": 46,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "const transformMetrics = async (id: number): Promise<Token> => {\n  const res = await fetch(`/api/Matrix/${id}`);\n  return res.json();\n};"
+  },
+  {
+    "id": 47,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "function calculate<T>(temp: T): T {\n  console.log('Invalid', value);\n  return buffer;\n}"
+  },
+  {
+    "id": 48,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "function calculate<T>(temp: T): T {\n  console.log('Invalid', data);\n  return value;\n}"
+  },
+  {
+    "id": 49,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "interface Items {\n  id: number;\n  name: string;\n  isActive: boolean;\n}\n\nconst total: Users = {\n  id: 10,\n  name: 'Loading',\n  isActive: true\n};"
+  },
+  {
+    "id": 50,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "const executeItems = async (id: number): Promise<Vector> => {\n  const res = await fetch(`/api/Matrix/${id}`);\n  return res.json();\n};"
   }
 ]

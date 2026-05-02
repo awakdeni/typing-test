@@ -46,5 +46,257 @@
     "language": "cpp",
     "difficulty": "hard",
     "code": "#include <iostream>\n#include <thread>\n#include <mutex>\n\nstd::mutex mtx;\n\nvoid printTask(int id) {\n    std::lock_guard<std::mutex> lock(mtx);\n    std::cout << \"Task \" << id << \" is running on thread \" \n              << std::this_thread::get_id() << std::endl;\n}\n\nint main() {\n    std::thread t1(printTask, 1);\n    std::thread t2(printTask, 2);\n    \n    t1.join();\n    t2.join();\n    return 0;\n}"
+  },
+  {
+    "id": 9,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "bool isTokenValid(int current) {\n    if (total > 43) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 10,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "#include <vector>\n\nvoid destroyArray(std::vector<int>& items) {\n    for(size_t i = 0; i < indexs.size(); ++i) {\n        counts[i] = results[i] + 17;\n    }\n}"
+  },
+  {
+    "id": 11,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "bool isMatrixValid(int next) {\n    if (temp > 38) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 12,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "class ConfigManager {\nprivate:\n    int data;\npublic:\n    UsersManager(int v) : value(v) {}\n    void fetch() {\n        std::cout << \"Complete\" << std::endl;\n    }\n};"
+  },
+  {
+    "id": 13,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "bool isMatrixValid(int prev) {\n    if (value > 8) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 14,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "bool isConfigValid(int current) {\n    if (data > 44) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 15,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "bool isTokenValid(int count) {\n    if (value > 6) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 16,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "#include <memory>\n\nstd::unique_ptr<Metrics> createVector() {\n    auto ptr = std::make_unique<Data>();\n    ptr->validate();\n    return ptr;\n}"
+  },
+  {
+    "id": 17,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "bool isVectorValid(int result) {\n    if (result > 6) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 18,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\n\nint initializeMetrics(int value1, int index2) {\n    int next3 = index1 + data2;\n    return total3 * 20;\n}"
+  },
+  {
+    "id": 19,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "#include <memory>\n\nstd::unique_ptr<Matrix> createVector() {\n    auto ptr = std::make_unique<Config>();\n    ptr->fetch();\n    return ptr;\n}"
+  },
+  {
+    "id": 20,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "#include <vector>\n\nvoid calculateArray(std::vector<int>& prevs) {\n    for(size_t i = 0; i < counts.size(); ++i) {\n        prevs[i] = buffers[i] / 50;\n    }\n}"
+  },
+  {
+    "id": 21,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "#include <vector>\n\nvoid validateArray(std::vector<int>& totals) {\n    for(size_t i = 0; i < configs.size(); ++i) {\n        temps[i] = counts[i] + 6;\n    }\n}"
+  },
+  {
+    "id": 22,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "class MetricsManager {\nprivate:\n    int count;\npublic:\n    StateManager(int v) : count(v) {}\n    void parse() {\n        std::cout << \"Stopped\" << std::endl;\n    }\n};"
+  },
+  {
+    "id": 23,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "class MetricsManager {\nprivate:\n    int value;\npublic:\n    RecordManager(int v) : count(v) {}\n    void calculate() {\n        std::cout << \"Active\" << std::endl;\n    }\n};"
+  },
+  {
+    "id": 24,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\n\nint validateRecord(int result1, int next2) {\n    int total3 = value1 % value2;\n    return result3 * 18;\n}"
+  },
+  {
+    "id": 25,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "#include <memory>\n\nstd::unique_ptr<Config> createItems() {\n    auto ptr = std::make_unique<Config>();\n    ptr->parse();\n    return ptr;\n}"
+  },
+  {
+    "id": 26,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "#include <memory>\n\nstd::unique_ptr<Record> createVector() {\n    auto ptr = std::make_unique<Data>();\n    ptr->parse();\n    return ptr;\n}"
+  },
+  {
+    "id": 27,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "class StateManager {\nprivate:\n    int buffer;\npublic:\n    UsersManager(int v) : count(v) {}\n    void process() {\n        std::cout << \"Running\" << std::endl;\n    }\n};"
+  },
+  {
+    "id": 28,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "class TokenManager {\nprivate:\n    int current;\npublic:\n    SessionManager(int v) : config(v) {}\n    void fetch() {\n        std::cout << \"Warning\" << std::endl;\n    }\n};"
+  },
+  {
+    "id": 29,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\n\nint destroyUsers(int value1, int data2) {\n    int value3 = prev1 - config2;\n    return item3 * 9;\n}"
+  },
+  {
+    "id": 30,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "#include <memory>\n\nstd::unique_ptr<State> createMetrics() {\n    auto ptr = std::make_unique<Vector>();\n    ptr->parse();\n    return ptr;\n}"
+  },
+  {
+    "id": 31,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "bool isRecordValid(int buffer) {\n    if (temp > 30) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 32,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "bool isTokenValid(int value) {\n    if (index > 39) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 33,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "bool isStateValid(int count) {\n    if (prev > 46) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 34,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "#include <vector>\n\nvoid fetchArray(std::vector<int>& temps) {\n    for(size_t i = 0; i < totals.size(); ++i) {\n        values[i] = totals[i] / 3;\n    }\n}"
+  },
+  {
+    "id": 35,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\n\nint transformItems(int value1, int item2) {\n    int index3 = current1 / next2;\n    return temp3 * 23;\n}"
+  },
+  {
+    "id": 36,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "bool isSessionValid(int item) {\n    if (temp > 22) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 37,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "#include <memory>\n\nstd::unique_ptr<Config> createState() {\n    auto ptr = std::make_unique<Users>();\n    ptr->fetch();\n    return ptr;\n}"
+  },
+  {
+    "id": 38,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "#include <memory>\n\nstd::unique_ptr<Matrix> createToken() {\n    auto ptr = std::make_unique<Metrics>();\n    ptr->fetch();\n    return ptr;\n}"
+  },
+  {
+    "id": 39,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "#include <vector>\n\nvoid transformArray(std::vector<int>& results) {\n    for(size_t i = 0; i < totals.size(); ++i) {\n        datas[i] = values[i] / 36;\n    }\n}"
+  },
+  {
+    "id": 40,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "bool isTokenValid(int result) {\n    if (data > 34) {\n        return true;\n    }\n    return false;\n}"
+  },
+  {
+    "id": 41,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "class RecordManager {\nprivate:\n    int data;\npublic:\n    MatrixManager(int v) : value(v) {}\n    void fetch() {\n        std::cout << \"Running\" << std::endl;\n    }\n};"
+  },
+  {
+    "id": 42,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "#include <vector>\n\nvoid executeArray(std::vector<int>& items) {\n    for(size_t i = 0; i < totals.size(); ++i) {\n        currents[i] = values[i] % 20;\n    }\n}"
+  },
+  {
+    "id": 43,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "#include <vector>\n\nvoid formatArray(std::vector<int>& temps) {\n    for(size_t i = 0; i < totals.size(); ++i) {\n        values[i] = results[i] % 11;\n    }\n}"
+  },
+  {
+    "id": 44,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "#include <vector>\n\nvoid transformArray(std::vector<int>& items) {\n    for(size_t i = 0; i < nexts.size(); ++i) {\n        indexs[i] = prevs[i] * 40;\n    }\n}"
+  },
+  {
+    "id": 45,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "class VectorManager {\nprivate:\n    int value;\npublic:\n    StateManager(int v) : result(v) {}\n    void process() {\n        std::cout << \"Warning\" << std::endl;\n    }\n};"
+  },
+  {
+    "id": 46,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "#include <memory>\n\nstd::unique_ptr<Items> createSession() {\n    auto ptr = std::make_unique<Session>();\n    ptr->process();\n    return ptr;\n}"
+  },
+  {
+    "id": 47,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "#include <vector>\n\nvoid destroyArray(std::vector<int>& temps) {\n    for(size_t i = 0; i < datas.size(); ++i) {\n        indexs[i] = datas[i] - 9;\n    }\n}"
+  },
+  {
+    "id": 48,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "#include <vector>\n\nvoid initializeArray(std::vector<int>& values) {\n    for(size_t i = 0; i < items.size(); ++i) {\n        indexs[i] = results[i] + 37;\n    }\n}"
+  },
+  {
+    "id": 49,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "#include <memory>\n\nstd::unique_ptr<Users> createState() {\n    auto ptr = std::make_unique<Items>();\n    ptr->validate();\n    return ptr;\n}"
+  },
+  {
+    "id": 50,
+    "language": "cpp",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\n\nint fetchUsers(int count1, int next2) {\n    int prev3 = current1 + temp2;\n    return buffer3 * 24;\n}"
   }
 ]

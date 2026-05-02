@@ -52,5 +52,251 @@
     "language": "css",
     "difficulty": "easy",
     "code": "/* Sleek Custom Scrollbar */\n::-webkit-scrollbar {\n  width: 8px;\n  height: 8px;\n}\n\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n  border-radius: 4px;\n}\n\n::-webkit-scrollbar-thumb {\n  background: #888;\n  border-radius: 4px;\n}\n\n::-webkit-scrollbar-thumb:hover {\n  background: #555;\n}\n\n/* Apply only to specific container */\n.custom-scroll-container {\n  overflow-y: overlay;\n  scrollbar-gutter: stable;\n}"
+  },
+  {
+    "id": 10,
+    "language": "css",
+    "difficulty": "hard",
+    "code": ".items-card:hover {\n  transform: translateY(-6px);\n  background-color: #16e22b;\n}"
+  },
+  {
+    "id": 11,
+    "language": "css",
+    "difficulty": "easy",
+    "code": "@media (max-width: 3400px) {\n  .record-grid {\n    grid-template-columns: 1fr;\n    padding: 49px;\n  }\n}"
+  },
+  {
+    "id": 12,
+    "language": "css",
+    "difficulty": "easy",
+    "code": ".process-animation {\n  animation: parse 14s infinite;\n}\n\n@keyframes transform {\n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}"
+  },
+  {
+    "id": 13,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".metrics-container {\n  display: flex;\n  flex-direction: column;\n  gap: 13px;\n  padding: 17rem;\n}"
+  },
+  {
+    "id": 14,
+    "language": "css",
+    "difficulty": "easy",
+    "code": ".metrics-card {\n  background-color: #4f35a;\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n  transition: all 0.3s ease;\n}"
+  },
+  {
+    "id": 15,
+    "language": "css",
+    "difficulty": "easy",
+    "code": "@media (max-width: 2300px) {\n  .config-grid {\n    grid-template-columns: 1fr;\n    padding: 50px;\n  }\n}"
+  },
+  {
+    "id": 16,
+    "language": "css",
+    "difficulty": "hard",
+    "code": ".token-container {\n  display: flex;\n  flex-direction: column;\n  gap: 3px;\n  padding: 42rem;\n}"
+  },
+  {
+    "id": 17,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".items-container {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  padding: 17rem;\n}"
+  },
+  {
+    "id": 18,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".calculate-animation {\n  animation: format 6s infinite;\n}\n\n@keyframes parse {\n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}"
+  },
+  {
+    "id": 19,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".token-card:hover {\n  transform: translateY(-33px);\n  background-color: #7e42b;\n}"
+  },
+  {
+    "id": 20,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".items-container {\n  display: flex;\n  flex-direction: column;\n  gap: 48px;\n  padding: 28rem;\n}"
+  },
+  {
+    "id": 21,
+    "language": "css",
+    "difficulty": "hard",
+    "code": ".layout-container {\n  display: flex;\n  flex-direction: column;\n  gap: 18px;\n  padding: 8rem;\n}"
+  },
+  {
+    "id": 22,
+    "language": "css",
+    "difficulty": "hard",
+    "code": "@media (max-width: 1400px) {\n  .matrix-grid {\n    grid-template-columns: 1fr;\n    padding: 18px;\n  }\n}"
+  },
+  {
+    "id": 23,
+    "language": "css",
+    "difficulty": "hard",
+    "code": "@media (max-width: 4600px) {\n  .metrics-grid {\n    grid-template-columns: 1fr;\n    padding: 46px;\n  }\n}"
+  },
+  {
+    "id": 24,
+    "language": "css",
+    "difficulty": "easy",
+    "code": ".session-card:hover {\n  transform: translateY(-5px);\n  background-color: #23e34b;\n}"
+  },
+  {
+    "id": 25,
+    "language": "css",
+    "difficulty": "easy",
+    "code": ".process-animation {\n  animation: process 22s infinite;\n}\n\n@keyframes destroy {\n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}"
+  },
+  {
+    "id": 26,
+    "language": "css",
+    "difficulty": "easy",
+    "code": "@media (max-width: 1100px) {\n  .token-grid {\n    grid-template-columns: 1fr;\n    padding: 39px;\n  }\n}"
+  },
+  {
+    "id": 27,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".config-card:hover {\n  transform: translateY(-43px);\n  background-color: #10e14b;\n}"
+  },
+  {
+    "id": 28,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".matrix-card {\n  background-color: #33f41a;\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n  transition: all 0.3s ease;\n}"
+  },
+  {
+    "id": 29,
+    "language": "css",
+    "difficulty": "hard",
+    "code": "@media (max-width: 3500px) {\n  .token-grid {\n    grid-template-columns: 1fr;\n    padding: 40px;\n  }\n}"
+  },
+  {
+    "id": 30,
+    "language": "css",
+    "difficulty": "easy",
+    "code": ".token-card {\n  background-color: #17f49a;\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n  transition: all 0.3s ease;\n}"
+  },
+  {
+    "id": 31,
+    "language": "css",
+    "difficulty": "hard",
+    "code": ".session-container {\n  display: flex;\n  flex-direction: column;\n  gap: 7px;\n  padding: 39rem;\n}"
+  },
+  {
+    "id": 32,
+    "language": "css",
+    "difficulty": "hard",
+    "code": ".matrix-container {\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  padding: 50rem;\n}"
+  },
+  {
+    "id": 33,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".execute-animation {\n  animation: process 24s infinite;\n}\n\n@keyframes initialize {\n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}"
+  },
+  {
+    "id": 34,
+    "language": "css",
+    "difficulty": "easy",
+    "code": ".layout-card:hover {\n  transform: translateY(-36px);\n  background-color: #26e14b;\n}"
+  },
+  {
+    "id": 35,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".items-container {\n  display: flex;\n  flex-direction: column;\n  gap: 6px;\n  padding: 15rem;\n}"
+  },
+  {
+    "id": 36,
+    "language": "css",
+    "difficulty": "easy",
+    "code": "@media (max-width: 1400px) {\n  .data-grid {\n    grid-template-columns: 1fr;\n    padding: 42px;\n  }\n}"
+  },
+  {
+    "id": 37,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".config-card {\n  background-color: #36f14a;\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n  transition: all 0.3s ease;\n}"
+  },
+  {
+    "id": 38,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".session-container {\n  display: flex;\n  flex-direction: column;\n  gap: 40px;\n  padding: 14rem;\n}"
+  },
+  {
+    "id": 39,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".matrix-card:hover {\n  transform: translateY(-36px);\n  background-color: #29e4b;\n}"
+  },
+  {
+    "id": 40,
+    "language": "css",
+    "difficulty": "easy",
+    "code": ".state-card:hover {\n  transform: translateY(-23px);\n  background-color: #39e18b;\n}"
+  },
+  {
+    "id": 41,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".fetch-animation {\n  animation: fetch 41s infinite;\n}\n\n@keyframes format {\n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}"
+  },
+  {
+    "id": 42,
+    "language": "css",
+    "difficulty": "easy",
+    "code": ".layout-card:hover {\n  transform: translateY(-28px);\n  background-color: #26e43b;\n}"
+  },
+  {
+    "id": 43,
+    "language": "css",
+    "difficulty": "easy",
+    "code": ".users-card {\n  background-color: #24f4a;\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n  transition: all 0.3s ease;\n}"
+  },
+  {
+    "id": 44,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".record-card {\n  background-color: #40f33a;\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n  transition: all 0.3s ease;\n}"
+  },
+  {
+    "id": 45,
+    "language": "css",
+    "difficulty": "hard",
+    "code": ".matrix-card {\n  background-color: #8f19a;\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n  transition: all 0.3s ease;\n}"
+  },
+  {
+    "id": 46,
+    "language": "css",
+    "difficulty": "easy",
+    "code": ".items-container {\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n  padding: 24rem;\n}"
+  },
+  {
+    "id": 47,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".state-card {\n  background-color: #24f42a;\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n  transition: all 0.3s ease;\n}"
+  },
+  {
+    "id": 48,
+    "language": "css",
+    "difficulty": "hard",
+    "code": "@media (max-width: 1600px) {\n  .users-grid {\n    grid-template-columns: 1fr;\n    padding: 40px;\n  }\n}"
+  },
+  {
+    "id": 49,
+    "language": "css",
+    "difficulty": "hard",
+    "code": ".state-container {\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  padding: 44rem;\n}"
+  },
+  {
+    "id": 50,
+    "language": "css",
+    "difficulty": "hard",
+    "code": ".calculate-animation {\n  animation: update 40s infinite;\n}\n\n@keyframes transform {\n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}"
   }
 ]

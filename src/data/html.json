@@ -16,5 +16,287 @@
     "language": "html",
     "difficulty": "hard",
     "code": "<form id=\"registrationForm\" action=\"/submit\" method=\"POST\" class=\"needs-validation\" novalidate>\n  <fieldset>\n    <legend>Personal Information</legend>\n    \n    <div class=\"form-group\">\n      <label for=\"email\">Email address</label>\n      <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" required pattern=\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$\">\n      <div class=\"invalid-feedback\">\n        Please provide a valid email.\n      </div>\n    </div>\n    \n    <div class=\"form-group\">\n      <label for=\"password\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"password\" name=\"password\" required minlength=\"8\">\n    </div>\n    \n    <button type=\"submit\" class=\"btn btn-primary\">Register</button>\n  </fieldset>\n</form>"
+  },
+  {
+    "id": 4,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<div class=\"token-wrapper\">\n  <h1 class=\"title\">Loading Dashboard</h1>\n  <p>Welcome to the metrics management system.</p>\n</div>"
+  },
+  {
+    "id": 5,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<table class=\"items-table\">\n  <thead>\n    <tr><th>ID</th><th>Config</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>48</td><td>Test</td><td>Invalid</td></tr>\n  </tbody>\n</table>"
+  },
+  {
+    "id": 6,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<div class=\"state-wrapper\">\n  <h1 class=\"title\">Running Dashboard</h1>\n  <p>Welcome to the token management system.</p>\n</div>"
+  },
+  {
+    "id": 7,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#initialize\">Complete</a></li>\n    <li><a href=\"#buffer\">Vector</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 8,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<form id=\"executeSessionForm\">\n  <label for=\"prevInput\">State Name:</label>\n  <input type=\"text\" id=\"prevInput\" required />\n  <button type=\"submit\">Error</button>\n</form>"
+  },
+  {
+    "id": 9,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<form id=\"renderStateForm\">\n  <label for=\"currentInput\">Users Name:</label>\n  <input type=\"text\" id=\"countInput\" required />\n  <button type=\"submit\">Invalid</button>\n</form>"
+  },
+  {
+    "id": 10,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#transform\">Active</a></li>\n    <li><a href=\"#config\">Users</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 11,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<form id=\"calculateTokenForm\">\n  <label for=\"resultInput\">Users Name:</label>\n  <input type=\"text\" id=\"countInput\" required />\n  <button type=\"submit\">Pending</button>\n</form>"
+  },
+  {
+    "id": 12,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#execute\">Stopped</a></li>\n    <li><a href=\"#config\">Metrics</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 13,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#calculate\">Running</a></li>\n    <li><a href=\"#value\">Token</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 14,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<div class=\"vector-wrapper\">\n  <h1 class=\"title\">Stopped Dashboard</h1>\n  <p>Welcome to the record management system.</p>\n</div>"
+  },
+  {
+    "id": 15,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#format\">Invalid</a></li>\n    <li><a href=\"#item\">Layout</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 16,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<div class=\"vector-wrapper\">\n  <h1 class=\"title\">Running Dashboard</h1>\n  <p>Welcome to the state management system.</p>\n</div>"
+  },
+  {
+    "id": 17,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<form id=\"formatRecordForm\">\n  <label for=\"prevInput\">Vector Name:</label>\n  <input type=\"text\" id=\"prevInput\" required />\n  <button type=\"submit\">Running</button>\n</form>"
+  },
+  {
+    "id": 18,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#render\">Loading</a></li>\n    <li><a href=\"#total\">Config</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 19,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Active Notice</h2>\n  </header>\n  <section>\n    <p>System will calculate in 25 minutes.</p>\n  </section>\n</article>"
+  },
+  {
+    "id": 20,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Token</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>24</td><td>Test</td><td>Stopped</td></tr>\n  </tbody>\n</table>"
+  },
+  {
+    "id": 21,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<div class=\"record-wrapper\">\n  <h1 class=\"title\">Success Dashboard</h1>\n  <p>Welcome to the session management system.</p>\n</div>"
+  },
+  {
+    "id": 22,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<div class=\"record-wrapper\">\n  <h1 class=\"title\">Success Dashboard</h1>\n  <p>Welcome to the token management system.</p>\n</div>"
+  },
+  {
+    "id": 23,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#calculate\">Active</a></li>\n    <li><a href=\"#prev\">Token</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 24,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<form id=\"calculateMetricsForm\">\n  <label for=\"resultInput\">Record Name:</label>\n  <input type=\"text\" id=\"valueInput\" required />\n  <button type=\"submit\">Pending</button>\n</form>"
+  },
+  {
+    "id": 25,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#update\">Running</a></li>\n    <li><a href=\"#current\">Items</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 26,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Success Notice</h2>\n  </header>\n  <section>\n    <p>System will calculate in 4 minutes.</p>\n  </section>\n</article>"
+  },
+  {
+    "id": 27,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Complete Notice</h2>\n  </header>\n  <section>\n    <p>System will destroy in 28 minutes.</p>\n  </section>\n</article>"
+  },
+  {
+    "id": 28,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<table class=\"session-table\">\n  <thead>\n    <tr><th>ID</th><th>Matrix</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>38</td><td>Test</td><td>Stopped</td></tr>\n  </tbody>\n</table>"
+  },
+  {
+    "id": 29,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<div class=\"layout-wrapper\">\n  <h1 class=\"title\">Success Dashboard</h1>\n  <p>Welcome to the data management system.</p>\n</div>"
+  },
+  {
+    "id": 30,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Stopped Notice</h2>\n  </header>\n  <section>\n    <p>System will execute in 4 minutes.</p>\n  </section>\n</article>"
+  },
+  {
+    "id": 31,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Complete Notice</h2>\n  </header>\n  <section>\n    <p>System will process in 6 minutes.</p>\n  </section>\n</article>"
+  },
+  {
+    "id": 32,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<table class=\"data-table\">\n  <thead>\n    <tr><th>ID</th><th>Items</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>43</td><td>Test</td><td>Running</td></tr>\n  </tbody>\n</table>"
+  },
+  {
+    "id": 33,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Matrix</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>38</td><td>Test</td><td>Invalid</td></tr>\n  </tbody>\n</table>"
+  },
+  {
+    "id": 34,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<form id=\"parseLayoutForm\">\n  <label for=\"nextInput\">Data Name:</label>\n  <input type=\"text\" id=\"configInput\" required />\n  <button type=\"submit\">Success</button>\n</form>"
+  },
+  {
+    "id": 35,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Warning Notice</h2>\n  </header>\n  <section>\n    <p>System will render in 14 minutes.</p>\n  </section>\n</article>"
+  },
+  {
+    "id": 36,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#execute\">Loading</a></li>\n    <li><a href=\"#temp\">Vector</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 37,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<form id=\"formatUsersForm\">\n  <label for=\"dataInput\">Layout Name:</label>\n  <input type=\"text\" id=\"valueInput\" required />\n  <button type=\"submit\">Warning</button>\n</form>"
+  },
+  {
+    "id": 38,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#initialize\">Error</a></li>\n    <li><a href=\"#index\">Matrix</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 39,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<table class=\"token-table\">\n  <thead>\n    <tr><th>ID</th><th>Items</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>15</td><td>Test</td><td>Active</td></tr>\n  </tbody>\n</table>"
+  },
+  {
+    "id": 40,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Layout</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>11</td><td>Test</td><td>Warning</td></tr>\n  </tbody>\n</table>"
+  },
+  {
+    "id": 41,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<div class=\"metrics-wrapper\">\n  <h1 class=\"title\">Error Dashboard</h1>\n  <p>Welcome to the users management system.</p>\n</div>"
+  },
+  {
+    "id": 42,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<table class=\"vector-table\">\n  <thead>\n    <tr><th>ID</th><th>Layout</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>35</td><td>Test</td><td>Success</td></tr>\n  </tbody>\n</table>"
+  },
+  {
+    "id": 43,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#calculate\">Loading</a></li>\n    <li><a href=\"#prev\">State</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 44,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#fetch\">Loading</a></li>\n    <li><a href=\"#value\">Config</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 45,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Record</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>34</td><td>Test</td><td>Loading</td></tr>\n  </tbody>\n</table>"
+  },
+  {
+    "id": 46,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#destroy\">Invalid</a></li>\n    <li><a href=\"#total\">Token</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": 47,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Loading Notice</h2>\n  </header>\n  <section>\n    <p>System will destroy in 46 minutes.</p>\n  </section>\n</article>"
+  },
+  {
+    "id": 48,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<div class=\"record-wrapper\">\n  <h1 class=\"title\">Success Dashboard</h1>\n  <p>Welcome to the record management system.</p>\n</div>"
+  },
+  {
+    "id": 49,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Stopped Notice</h2>\n  </header>\n  <section>\n    <p>System will fetch in 19 minutes.</p>\n  </section>\n</article>"
+  },
+  {
+    "id": 50,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#transform\">Complete</a></li>\n    <li><a href=\"#buffer\">State</a></li>\n  </ul>\n</nav>"
   }
 ]

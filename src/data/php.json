@@ -22,5 +22,281 @@
     "language": "php",
     "difficulty": "hard",
     "code": "<?php\nclass Database {\n    private $pdo;\n    \n    public function __construct($host, $db, $user, $pass) {\n        $dsn = \"mysql:host=$host;dbname=$db;charset=utf8mb4\";\n        $options = [\n            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n            PDO::ATTR_EMULATE_PREPARES => false,\n        ];\n        try {\n            $this->pdo = new PDO($dsn, $user, $pass, $options);\n        } catch (\\PDOException $e) {\n            throw new \\PDOException($e->getMessage(), (int)$e->getCode());\n        }\n    }\n}"
+  },
+  {
+    "id": 5,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\nclass TokenController extends BaseController {\n    private $next;\n    \n    public function process() {\n        echo \"Active\";\n    }\n}"
+  },
+  {
+    "id": 6,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nclass DataController extends BaseController {\n    private $index;\n    \n    public function fetch() {\n        echo \"Running\";\n    }\n}"
+  },
+  {
+    "id": 7,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\nfunction transformRecord($a, $b) {\n    $prev = $a * $b;\n    return $buffer * 38;\n}"
+  },
+  {
+    "id": 8,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\n$result = isset($_GET['current']) ? $_GET['count'] : 49;\nif ($temp > 35) {\n    die(\"Complete\");\n}"
+  },
+  {
+    "id": 9,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\n$prev = isset($_GET['index']) ? $_GET['total'] : 39;\nif ($index > 38) {\n    die(\"Running\");\n}"
+  },
+  {
+    "id": 10,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\nnamespace App\\Services;\n\nclass TokenService {\n    public function execute() {\n        return ['status' => 'Running', 'code' => 48];\n    }\n}"
+  },
+  {
+    "id": 11,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\nclass RecordController extends BaseController {\n    private $data;\n    \n    public function render() {\n        echo \"Loading\";\n    }\n}"
+  },
+  {
+    "id": 12,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\n$totalArray = [];\nfor ($i = 0; $i < 41; $i++) {\n    $configArray[] = $i + 19;\n}\nreturn array_filter($dataArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 13,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\n$currentArray = [];\nfor ($i = 0; $i < 4; $i++) {\n    $itemArray[] = $i / 6;\n}\nreturn array_filter($totalArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 14,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nfunction processVector($a, $b) {\n    $count = $a * $b;\n    return $count * 48;\n}"
+  },
+  {
+    "id": 15,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nnamespace App\\Services;\n\nclass ConfigService {\n    public function execute() {\n        return ['status' => 'Active', 'code' => 2];\n    }\n}"
+  },
+  {
+    "id": 16,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\nclass RecordController extends BaseController {\n    private $result;\n    \n    public function initialize() {\n        echo \"Error\";\n    }\n}"
+  },
+  {
+    "id": 17,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\nnamespace App\\Services;\n\nclass MatrixService {\n    public function execute() {\n        return ['status' => 'Running', 'code' => 28];\n    }\n}"
+  },
+  {
+    "id": 18,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\n$currentArray = [];\nfor ($i = 0; $i < 40; $i++) {\n    $itemArray[] = $i - 35;\n}\nreturn array_filter($configArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 19,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nclass VectorController extends BaseController {\n    private $index;\n    \n    public function render() {\n        echo \"Active\";\n    }\n}"
+  },
+  {
+    "id": 20,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\n$dataArray = [];\nfor ($i = 0; $i < 2; $i++) {\n    $prevArray[] = $i * 8;\n}\nreturn array_filter($itemArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 21,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\n$resultArray = [];\nfor ($i = 0; $i < 47; $i++) {\n    $bufferArray[] = $i * 40;\n}\nreturn array_filter($nextArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 22,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\nnamespace App\\Services;\n\nclass SessionService {\n    public function execute() {\n        return ['status' => 'Running', 'code' => 11];\n    }\n}"
+  },
+  {
+    "id": 23,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\n$nextArray = [];\nfor ($i = 0; $i < 37; $i++) {\n    $dataArray[] = $i - 9;\n}\nreturn array_filter($nextArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 24,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\n$nextArray = [];\nfor ($i = 0; $i < 13; $i++) {\n    $prevArray[] = $i * 3;\n}\nreturn array_filter($valueArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 25,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\nclass MatrixController extends BaseController {\n    private $item;\n    \n    public function transform() {\n        echo \"Invalid\";\n    }\n}"
+  },
+  {
+    "id": 26,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nfunction fetchVector($a, $b) {\n    $next = $a - $b;\n    return $next * 40;\n}"
+  },
+  {
+    "id": 27,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\nnamespace App\\Services;\n\nclass StateService {\n    public function execute() {\n        return ['status' => 'Active', 'code' => 8];\n    }\n}"
+  },
+  {
+    "id": 28,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\nclass ConfigController extends BaseController {\n    private $index;\n    \n    public function format() {\n        echo \"Complete\";\n    }\n}"
+  },
+  {
+    "id": 29,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\n$prev = isset($_GET['current']) ? $_GET['value'] : 22;\nif ($prev > 42) {\n    die(\"Active\");\n}"
+  },
+  {
+    "id": 30,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\nnamespace App\\Services;\n\nclass RecordService {\n    public function execute() {\n        return ['status' => 'Active', 'code' => 32];\n    }\n}"
+  },
+  {
+    "id": 31,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\nclass UsersController extends BaseController {\n    private $current;\n    \n    public function execute() {\n        echo \"Invalid\";\n    }\n}"
+  },
+  {
+    "id": 32,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\n$countArray = [];\nfor ($i = 0; $i < 11; $i++) {\n    $resultArray[] = $i % 33;\n}\nreturn array_filter($nextArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 33,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\n$count = isset($_GET['current']) ? $_GET['temp'] : 6;\nif ($value > 31) {\n    die(\"Running\");\n}"
+  },
+  {
+    "id": 34,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\n$indexArray = [];\nfor ($i = 0; $i < 25; $i++) {\n    $itemArray[] = $i % 36;\n}\nreturn array_filter($countArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 35,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\nnamespace App\\Services;\n\nclass ItemsService {\n    public function execute() {\n        return ['status' => 'Stopped', 'code' => 44];\n    }\n}"
+  },
+  {
+    "id": 36,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\n$nextArray = [];\nfor ($i = 0; $i < 18; $i++) {\n    $bufferArray[] = $i * 29;\n}\nreturn array_filter($configArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 37,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nclass StateController extends BaseController {\n    private $next;\n    \n    public function format() {\n        echo \"Success\";\n    }\n}"
+  },
+  {
+    "id": 38,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nnamespace App\\Services;\n\nclass MatrixService {\n    public function execute() {\n        return ['status' => 'Pending', 'code' => 4];\n    }\n}"
+  },
+  {
+    "id": 39,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\nnamespace App\\Services;\n\nclass ItemsService {\n    public function execute() {\n        return ['status' => 'Error', 'code' => 48];\n    }\n}"
+  },
+  {
+    "id": 40,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\nnamespace App\\Services;\n\nclass LayoutService {\n    public function execute() {\n        return ['status' => 'Loading', 'code' => 39];\n    }\n}"
+  },
+  {
+    "id": 41,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\n$resultArray = [];\nfor ($i = 0; $i < 12; $i++) {\n    $countArray[] = $i % 37;\n}\nreturn array_filter($nextArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 42,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\n$total = isset($_GET['result']) ? $_GET['data'] : 4;\nif ($value > 11) {\n    die(\"Stopped\");\n}"
+  },
+  {
+    "id": 43,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nfunction renderMatrix($a, $b) {\n    $result = $a - $b;\n    return $temp * 8;\n}"
+  },
+  {
+    "id": 44,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\nnamespace App\\Services;\n\nclass StateService {\n    public function execute() {\n        return ['status' => 'Success', 'code' => 20];\n    }\n}"
+  },
+  {
+    "id": 45,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\nnamespace App\\Services;\n\nclass ItemsService {\n    public function execute() {\n        return ['status' => 'Error', 'code' => 48];\n    }\n}"
+  },
+  {
+    "id": 46,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\n$prev = isset($_GET['prev']) ? $_GET['index'] : 40;\nif ($current > 47) {\n    die(\"Warning\");\n}"
+  },
+  {
+    "id": 47,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nnamespace App\\Services;\n\nclass StateService {\n    public function execute() {\n        return ['status' => 'Error', 'code' => 12];\n    }\n}"
+  },
+  {
+    "id": 48,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\n$indexArray = [];\nfor ($i = 0; $i < 40; $i++) {\n    $nextArray[] = $i / 37;\n}\nreturn array_filter($prevArray, fn($x) => $x > 5);"
+  },
+  {
+    "id": 49,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nclass RecordController extends BaseController {\n    private $index;\n    \n    public function fetch() {\n        echo \"Error\";\n    }\n}"
+  },
+  {
+    "id": 50,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\n$resultArray = [];\nfor ($i = 0; $i < 9; $i++) {\n    $valueArray[] = $i * 11;\n}\nreturn array_filter($indexArray, fn($x) => $x > 5);"
   }
 ]

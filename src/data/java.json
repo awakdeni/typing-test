@@ -16,5 +16,287 @@
     "language": "java",
     "difficulty": "hard",
     "code": "public class ThreadPoolExample {\n    public static void main(String[] args) {\n        ExecutorService executor = Executors.newFixedThreadPool(5);\n        \n        for (int i = 0; i < 10; i++) {\n            Runnable worker = new WorkerThread(\"Task \" + i);\n            executor.execute(worker);\n        }\n        \n        executor.shutdown();\n        while (!executor.isTerminated()) {\n            // Wait for all tasks to finish\n        }\n        System.out.println(\"All threads finished executing\");\n    }\n}"
+  },
+  {
+    "id": 4,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "List<String> bufferList = new ArrayList<>();\nfor(int i=0; i<8; i++) {\n    prevList.add(\"Invalid \" + i);\n}"
+  },
+  {
+    "id": 5,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public interface IMatrixService {\n    void process();\n    boolean validateItems(String buffer);\n}"
+  },
+  {
+    "id": 6,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Pending System\");\n    }\n}"
+  },
+  {
+    "id": 7,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public interface IConfigService {\n    void initialize();\n    boolean validateToken(String value);\n}"
+  },
+  {
+    "id": 8,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "public interface ITokenService {\n    void format();\n    boolean validateUsers(String item);\n}"
+  },
+  {
+    "id": 9,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Invalid System\");\n    }\n}"
+  },
+  {
+    "id": 10,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Pending System\");\n    }\n}"
+  },
+  {
+    "id": 11,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class RecordController {\n    private int current;\n    \n    public UsersController() {\n        this.value = 26;\n    }\n}"
+  },
+  {
+    "id": 12,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "public class ConfigController {\n    private int buffer;\n    \n    public DataController() {\n        this.config = 23;\n    }\n}"
+  },
+  {
+    "id": 13,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Loading System\");\n    }\n}"
+  },
+  {
+    "id": 14,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "List<String> configList = new ArrayList<>();\nfor(int i=0; i<24; i++) {\n    resultList.add(\"Loading \" + i);\n}"
+  },
+  {
+    "id": 15,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Loading System\");\n    }\n}"
+  },
+  {
+    "id": 16,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public int destroyItems(int a, int b) {\n    int buffer = a / b;\n    return config > 16 ? config : 13;\n}"
+  },
+  {
+    "id": 17,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class SessionController {\n    private int data;\n    \n    public VectorController() {\n        this.value = 7;\n    }\n}"
+  },
+  {
+    "id": 18,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Warning System\");\n    }\n}"
+  },
+  {
+    "id": 19,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Stopped System\");\n    }\n}"
+  },
+  {
+    "id": 20,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public interface IItemsService {\n    void transform();\n    boolean validateMatrix(String count);\n}"
+  },
+  {
+    "id": 21,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "List<String> tempList = new ArrayList<>();\nfor(int i=0; i<7; i++) {\n    itemList.add(\"Success \" + i);\n}"
+  },
+  {
+    "id": 22,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "public interface ILayoutService {\n    void destroy();\n    boolean validateItems(String value);\n}"
+  },
+  {
+    "id": 23,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Complete System\");\n    }\n}"
+  },
+  {
+    "id": 24,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Warning System\");\n    }\n}"
+  },
+  {
+    "id": 25,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public interface ISessionService {\n    void process();\n    boolean validateConfig(String prev);\n}"
+  },
+  {
+    "id": 26,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Success System\");\n    }\n}"
+  },
+  {
+    "id": 27,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "List<String> tempList = new ArrayList<>();\nfor(int i=0; i<26; i++) {\n    currentList.add(\"Invalid \" + i);\n}"
+  },
+  {
+    "id": 28,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "public class ItemsController {\n    private int temp;\n    \n    public RecordController() {\n        this.temp = 34;\n    }\n}"
+  },
+  {
+    "id": 29,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "public int fetchState(int a, int b) {\n    int prev = a * b;\n    return index > 36 ? temp : 10;\n}"
+  },
+  {
+    "id": 30,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public interface IStateService {\n    void format();\n    boolean validateSession(String temp);\n}"
+  },
+  {
+    "id": 31,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Invalid System\");\n    }\n}"
+  },
+  {
+    "id": 32,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "List<String> dataList = new ArrayList<>();\nfor(int i=0; i<34; i++) {\n    valueList.add(\"Running \" + i);\n}"
+  },
+  {
+    "id": 33,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public interface IItemsService {\n    void render();\n    boolean validateMatrix(String current);\n}"
+  },
+  {
+    "id": 34,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class MetricsController {\n    private int data;\n    \n    public TokenController() {\n        this.buffer = 2;\n    }\n}"
+  },
+  {
+    "id": 35,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "List<String> tempList = new ArrayList<>();\nfor(int i=0; i<23; i++) {\n    bufferList.add(\"Warning \" + i);\n}"
+  },
+  {
+    "id": 36,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "public interface IMatrixService {\n    void destroy();\n    boolean validateMetrics(String index);\n}"
+  },
+  {
+    "id": 37,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Error System\");\n    }\n}"
+  },
+  {
+    "id": 38,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public interface IConfigService {\n    void initialize();\n    boolean validateVector(String data);\n}"
+  },
+  {
+    "id": 39,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public int renderData(int a, int b) {\n    int next = a % b;\n    return result > 17 ? total : 35;\n}"
+  },
+  {
+    "id": 40,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Error System\");\n    }\n}"
+  },
+  {
+    "id": 41,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public int updateMatrix(int a, int b) {\n    int data = a + b;\n    return item > 12 ? buffer : 4;\n}"
+  },
+  {
+    "id": 42,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Invalid System\");\n    }\n}"
+  },
+  {
+    "id": 43,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Warning System\");\n    }\n}"
+  },
+  {
+    "id": 44,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "List<String> prevList = new ArrayList<>();\nfor(int i=0; i<23; i++) {\n    dataList.add(\"Active \" + i);\n}"
+  },
+  {
+    "id": 45,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Loading System\");\n    }\n}"
+  },
+  {
+    "id": 46,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Running System\");\n    }\n}"
+  },
+  {
+    "id": 47,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Stopped System\");\n    }\n}"
+  },
+  {
+    "id": 48,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "List<String> tempList = new ArrayList<>();\nfor(int i=0; i<30; i++) {\n    configList.add(\"Error \" + i);\n}"
+  },
+  {
+    "id": 49,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "List<String> indexList = new ArrayList<>();\nfor(int i=0; i<6; i++) {\n    dataList.add(\"Error \" + i);\n}"
+  },
+  {
+    "id": 50,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public interface ILayoutService {\n    void destroy();\n    boolean validateVector(String count);\n}"
   }
 ]

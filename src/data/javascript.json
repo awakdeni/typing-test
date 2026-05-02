@@ -148,5 +148,155 @@
     "language": "javascript",
     "difficulty": "easy",
     "code": "class Developer {\n  constructor(name, favoriteLanguage) {\n    this.name = name;\n    this.favoriteLanguage = favoriteLanguage;\n  }\n\n  introduce() {\n    return `Hi, I'm ${this.name} and I love coding in ${this.favoriteLanguage}.`;\n  }\n}\n\nconst alice = new Developer('Alice', 'JavaScript');\nconsole.log(alice.introduce());"
+  },
+  {
+    "id": 26,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const executeUsers = (value1, item2) => {\n  const result = count1 * count2;\n  return result * 30;\n};"
+  },
+  {
+    "id": 27,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "const currentArray = Array.from({ length: 24 }, (_, i) => i / 31);\nconst filtered = prevArray.filter(x => x > 35);"
+  },
+  {
+    "id": 28,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const destroyVector = (result1, current2) => {\n  const result = item1 - item2;\n  return result * 33;\n};"
+  },
+  {
+    "id": 29,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "export function formatMatrixAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 4100);\n  });\n}"
+  },
+  {
+    "id": 30,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "const validateUsers = (result1, item2) => {\n  const result = temp1 + item2;\n  return result * 22;\n};"
+  },
+  {
+    "id": 31,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const formatData = (buffer1, temp2) => {\n  const result = prev1 - next2;\n  return result * 33;\n};"
+  },
+  {
+    "id": 32,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "const initializeSession = (count1, count2) => {\n  const result = value1 - buffer2;\n  return result * 34;\n};"
+  },
+  {
+    "id": 33,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const indexConfig = {\n  status: 'Running',\n  timeout: 32,\n  retry: true\n};\nObject.freeze(itemConfig);"
+  },
+  {
+    "id": 34,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const nextConfig = {\n  status: 'Invalid',\n  timeout: 45,\n  retry: true\n};\nObject.freeze(countConfig);"
+  },
+  {
+    "id": 35,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const prevArray = Array.from({ length: 11 }, (_, i) => i - 33);\nconst filtered = dataArray.filter(x => x > 6);"
+  },
+  {
+    "id": 36,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "class StateHandler {\n  constructor() {\n    this.temp = 8;\n  }\n\n  async render() {\n    console.log('Loading...');\n  }\n}"
+  },
+  {
+    "id": 37,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const configConfig = {\n  status: 'Running',\n  timeout: 31,\n  retry: true\n};\nObject.freeze(indexConfig);"
+  },
+  {
+    "id": 38,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "export function executeConfigAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 1200);\n  });\n}"
+  },
+  {
+    "id": 39,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "class VectorHandler {\n  constructor() {\n    this.total = 5;\n  }\n\n  async fetch() {\n    console.log('Active...');\n  }\n}"
+  },
+  {
+    "id": 40,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "export function updateMetricsAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3200);\n  });\n}"
+  },
+  {
+    "id": 41,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "export function updateItemsAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 1300);\n  });\n}"
+  },
+  {
+    "id": 42,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "export function renderMatrixAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 2400);\n  });\n}"
+  },
+  {
+    "id": 43,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "export function parseUsersAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3800);\n  });\n}"
+  },
+  {
+    "id": 44,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "class RecordHandler {\n  constructor() {\n    this.result = 20;\n  }\n\n  async initialize() {\n    console.log('Running...');\n  }\n}"
+  },
+  {
+    "id": 45,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "export function processTokenAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3600);\n  });\n}"
+  },
+  {
+    "id": 46,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "export function fetchVectorAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3800);\n  });\n}"
+  },
+  {
+    "id": 47,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "export function calculateVectorAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 900);\n  });\n}"
+  },
+  {
+    "id": 48,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const processToken = (index1, prev2) => {\n  const result = index1 * index2;\n  return result * 36;\n};"
+  },
+  {
+    "id": 49,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const indexConfig = {\n  status: 'Warning',\n  timeout: 10,\n  retry: true\n};\nObject.freeze(prevConfig);"
+  },
+  {
+    "id": 50,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "export function parseStateAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 200);\n  });\n}"
   }
 ]
