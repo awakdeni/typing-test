@@ -3,31 +3,31 @@
     "id": 1,
     "language": "javascript",
     "difficulty": "medium",
-    "code": "function calculateTotal(items) {\n  return items.reduce((acc, item) => {\n    const tax = item.price * 0.11;\n    return acc + item.price + tax;\n  }, 0);\n}"
+    "code": "function calculateInventory(products) {\n  const results = products.map(p => {\n    const taxRate = p.category === 'luxury' ? 0.25 : 0.11;\n    const discountedPrice = p.price * (1 - p.discount);\n    const finalPrice = discountedPrice * (1 + taxRate);\n    \n    return {\n      name: p.name,\n      stockValue: p.stock * finalPrice,\n      isLowStock: p.stock < 10\n    };\n  });\n\n  return results.filter(r => r.stockValue > 1000);\n}"
   },
   {
     "id": 2,
     "language": "python",
     "difficulty": "medium",
-    "code": "def find_binary(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1"
+    "code": "def process_data(users):\n    processed = []\n    for user in users:\n        if user['active']:\n            name = user['name'].strip().title()\n            score = sum(user['scores']) / len(user['scores'])\n            \n            entry = {\n                'id': user['id'],\n                'display_name': name,\n                'average_score': round(score, 2),\n                'status': 'honor_roll' if score > 90 else 'passed'\n            }\n            processed.append(entry)\n            \n    return sorted(processed, key=lambda x: x['average_score'], reverse=True)"
   },
   {
     "id": 3,
     "language": "html",
     "difficulty": "easy",
-    "code": "<div class=\"container\">\n  <header className=\"header\">\n    <h1>Welcome to CodeSpeed</h1>\n    <nav>\n      <ul>\n        <li>Home</li>\n        <li>About</li>\n      </ul>\n    </nav>\n  </header>\n</div>"
+    "code": "<section class=\"hero-section\">\n  <div class=\"container mx-auto px-6 py-12\">\n    <div class=\"flex flex-col items-center text-center\">\n      <h1 class=\"text-5xl font-bold text-white mb-4\">\n        Build Better Software Faster\n      </h1>\n      <p class=\"text-xl text-gray-400 max-w-2xl mb-8\">\n        Join thousands of developers using our platform to ship\n        high-quality applications with confidence and speed.\n      </p>\n      <div class=\"flex gap-4\">\n        <button class=\"btn-primary\">Get Started</button>\n        <button class=\"btn-secondary\">Learn More</button>\n      </div>\n    </div>\n  </div>\n</section>"
   },
   {
     "id": 4,
     "language": "javascript",
     "difficulty": "hard",
-    "code": "async function fetchData(url) {\n  try {\n    const response = await fetch(url);\n    if (!response.ok) throw new Error('Failed');\n    const data = await response.json();\n    return data.map(item => ({\n      id: item.id,\n      name: item.full_name.toUpperCase()\n    }));\n  } catch (err) {\n    console.error(err);\n  }\n}"
+    "code": "async function fetchData(url, retries = 3) {\n  for (let i = 0; i < retries; i++) {\n    try {\n      const response = await fetch(url);\n      if (!response.ok) throw new Error(`HTTP ${response.status}`);\n      const data = await response.json();\n      return data.map(item => ({\n        id: item.id,\n        name: item.full_name.toUpperCase(),\n        timestamp: new Date().toISOString(),\n        isValid: !!item.full_name\n      }));\n    } catch (err) {\n      if (i === retries - 1) console.error('Final attempt failed:', err);\n      await new Promise(resolve => setTimeout(resolve, 1000));\n    }\n  }\n}"
   },
   {
     "id": 5,
     "language": "python",
     "difficulty": "hard",
-    "code": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.next = None\n\ndef reverse_list(head):\n    prev = None\n    current = head\n    while current:\n        next_node = current.next\n        current.next = prev\n        prev = current\n        current = next_node\n    return prev"
+    "code": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.next = None\n\ndef reverse_list(head):\n    prev = None\n    current = head\n    while current:\n        next_node = current.next\n        current.next = prev\n        prev = current\n        current = next_node\n    return prev\n\ndef print_list(head):\n    curr = head\n    while curr:\n        print(f\"{curr.value} -> \", end=\"\")\n        curr = curr.next\n    print(\"None\")"
   },
   {
     "id": 6,
