@@ -40,6 +40,16 @@ export const TypingTest = () => {
   };
 
   useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        handleRestart();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [handleRestart]);
+
+  useEffect(() => {
     // Re-select snippet when filters change
     handleRestart();
   }, [selectedLanguage, selectedDifficulty]);
