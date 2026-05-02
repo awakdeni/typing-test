@@ -28,5 +28,17 @@
     "language": "python",
     "difficulty": "hard",
     "code": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.next = None\n\ndef reverse_list(head):\n    prev = None\n    current = head\n    while current:\n        next_node = current.next\n        current.next = prev\n        prev = current\n        current = next_node\n    return prev"
+  },
+  {
+    "id": 6,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const GREETING = 'Hello World';\nconsole.log(GREETING);\n\nconst add = (a, b) => a + b;\nconsole.log(add(5, 10));"
+  },
+  {
+    "id": 7,
+    "language": "python",
+    "difficulty": "easy",
+    "code": "name = \"CodeSpeed\"\nprint(f\"Welcome to {name}!\")\n\nnumbers = [1, 2, 3, 4, 5]\nfor n in numbers:\n    print(n * 2)"
   }
 ]
