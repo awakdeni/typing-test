@@ -206,7 +206,7 @@ export const TypingTest = () => {
           "text-center text-gray-500 text-sm transition-all duration-700",
           isActive && "blur-md opacity-10 pointer-events-none"
         )}>
-          <p>Tips: Gunakan <kbd className="bg-white/10 px-1.5 py-0.5 rounded border border-white/20">Escape</kbd> atau <kbd className="bg-white/10 px-1.5 py-0.5 rounded border border-white/20">Tab</kbd> + <kbd className="bg-white/10 px-1.5 py-0.5 rounded border border-white/20">Enter</kbd> untuk mengulang cepat.</p>
+          <p>Tips: Gunakan <kbd className="bg-white/10 px-1.5 py-0.5 rounded border border-white/20">Escape</kbd> untuk mengulang cepat.</p>
         </div>
       </div>
     </div>
