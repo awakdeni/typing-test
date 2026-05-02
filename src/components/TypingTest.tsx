@@ -151,6 +151,15 @@ export const TypingTest = () => {
                 ))}
               </div>
             </div>
+
+            {/* Refresh Button */}
+            <button
+              onClick={handleRestart}
+              className="p-1.5 hover:bg-white/5 rounded-lg transition-colors text-gray-500 hover:text-white pointer-events-auto"
+              title="Reset Test"
+            >
+              <RefreshCw className="w-4 h-4" />
+            </button>
           </div>
 
           {/* Stats & Timer - Always Sharp */}
@@ -176,13 +185,6 @@ export const TypingTest = () => {
                 <Timer className={cn("w-4 h-4", isActive && "animate-pulse")} />
                 <span className="font-mono font-medium">{timeLeft}s</span>
               </div>
-              <button
-                onClick={handleRestart}
-                className="p-1.5 hover:bg-white/5 rounded-lg transition-colors text-gray-500 hover:text-white"
-                title="Reset Test"
-              >
-                <RefreshCw className="w-4 h-4" />
-              </button>
             </div>
           </div>
         </div>
