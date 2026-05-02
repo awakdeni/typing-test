@@ -67,11 +67,10 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
     return colors;
   }, [code]);
 
-  const getCharColor = (char: string, index: number, state: string) => {
-    if (state === 'incorrect') return 'text-rose-500 bg-rose-500/10 rounded-sm';
+  const getCharColor = (char: string, index: number, state: 'correct' | 'incorrect' | 'active' | 'neutral') => {
+    if (state === 'correct') return 'text-green-400';
+    if (state === 'incorrect') return 'text-red-500 bg-red-500/10';
     if (state === 'active') return 'text-white';
-    if (state === 'correct') return 'text-[#ffffff]';
-    
     return syntaxColors[index];
   };
 
