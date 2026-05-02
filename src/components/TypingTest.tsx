@@ -1,6 +1,12 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 import { CodeDisplay } from './CodeDisplay';
 import { ResultModal } from './ResultModal';
 import { useTypingTest } from '@/hooks/useTypingTest';
@@ -54,7 +60,6 @@ export const TypingTest = () => {
     handleRestart();
   }, [selectedLanguage, selectedDifficulty]);
 
-  return (
   return (
     <div className="w-full">
       {/* Main App Header - Blurs on type */}
