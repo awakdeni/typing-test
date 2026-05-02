@@ -58,7 +58,8 @@ export const useTypingTest = (targetCode: string, duration: number = 60) => {
   const handleInput = (e: React.ChangeEvent<HTMLTextAreaElement> | string) => {
     if (isFinished) return;
     
-    const value = typeof e === 'string' ? e : e.target.value;
+    const rawValue = typeof e === 'string' ? e : e.target.value;
+    const value = rawValue.replace(/\r\n/g, '\n');
     
     // Timer only starts when the user types the first character
     if (!isActive && value.length > 0) {
