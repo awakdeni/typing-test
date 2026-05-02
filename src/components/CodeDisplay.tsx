@@ -100,7 +100,7 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
 
       <div 
         ref={containerRef}
-        className="relative font-mono text-2xl leading-[1.6] bg-[#0d0d0d] pt-8 pb-12 px-12 rounded-b-2xl border-x border-b border-white/5 shadow-2xl overflow-y-auto h-[350px] scrollbar-hide"
+        className="relative font-mono text-2xl leading-[1.6] bg-[#0d0d0d] pt-8 pb-12 px-12 rounded-b-2xl border-x border-b border-white/5 shadow-2xl overflow-y-hidden h-[350px] scrollbar-hide"
       >
         <div className="whitespace-pre-wrap break-words">
           {code.split('').map((char, index) => {

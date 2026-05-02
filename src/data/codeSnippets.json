@@ -70,5 +70,41 @@
     "language": "cpp",
     "difficulty": "medium",
     "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 5, b = 10;\n    int sum = a + b;\n    cout << \"Sum is: \" << sum << endl;\n    return 0;\n}"
+  },
+  {
+    "id": 13,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "class EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n\n  on(name, listener) {\n    if (!this.events[name]) this.events[name] = [];\n    this.events[name].push(listener);\n  }\n\n  emit(name, ...args) {\n    if (!this.events[name]) return;\n    this.events[name].forEach(listener => listener(...args));\n  }\n\n  remove(name, listenerToRemove) {\n    if (!this.events[name]) return;\n    this.events[name] = this.events[name].filter(\n      listener => listener !== listenerToRemove\n    );\n  }\n}"
+  },
+  {
+    "id": 14,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const validateForm = (data) => {\n  const errors = {};\n  const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n\n  if (!data.username || data.username.length < 3) {\n    errors.username = 'Username too short';\n  }\n\n  if (!emailRegex.test(data.email)) {\n    errors.email = 'Invalid email format';\n  }\n\n  if (data.password !== data.confirmPassword) {\n    errors.password = 'Passwords do not match';\n  }\n\n  return {\n    isValid: Object.keys(errors).length === 0,\n    errors\n  };\n};"
+  },
+  {
+    "id": 15,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "function debounce(func, wait) {\n  let timeout;\n  return function executedFunction(...args) {\n    const later = () => {\n      clearTimeout(timeout);\n      func(...args);\n    };\n    clearTimeout(timeout);\n    timeout = setTimeout(later, wait);\n  };\n}\n\nconst handleSearch = debounce((query) => {\n  console.log('Searching for:', query);\n  // API call logic here\n}, 500);"
+  },
+  {
+    "id": 16,
+    "language": "python",
+    "difficulty": "hard",
+    "code": "import asyncio\nimport aiohttp\n\nasync def fetch_all(urls):\n    async with aiohttp.ClientSession() as session:\n        tasks = []\n        for url in urls:\n            tasks.append(fetch_one(session, url))\n        return await asyncio.gather(*tasks)\n\nasync def fetch_one(session, url):\n    try:\n        async with session.get(url, timeout=10) as response:\n            return await response.json()\n    except Exception as e:\n        return {\"error\": str(e), \"url\": url}"
+  },
+  {
+    "id": 17,
+    "language": "python",
+    "difficulty": "medium",
+    "code": "class BankAccount:\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self.balance = balance\n\n    def deposit(self, amount):\n        if amount > 0:\n            self.balance += amount\n            print(f\"Added {amount} to the balance\")\n        return self.balance\n\n    def withdraw(self, amount):\n        if 0 < amount <= self.balance:\n            self.balance -= amount\n            print(f\"Withdrew {amount}\")\n        else:\n            print(\"Insufficient funds!\")\n        return self.balance"
+  },
+  {
+    "id": 18,
+    "language": "python",
+    "difficulty": "hard",
+    "code": "def quick_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quick_sort(left) + middle + quick_sort(right)\n\ndata = [3, 6, 8, 10, 1, 2, 1]\nprint(f\"Original: {data}\")\nprint(f\"Sorted: {quick_sort(data)}\")"
   }
 ]
