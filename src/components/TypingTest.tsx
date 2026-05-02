@@ -114,8 +114,8 @@ export const TypingTest = () => {
                 <span>{selectedLanguage}</span>
                 <ChevronDown className="w-3 h-3" />
               </button>
-              <div className="absolute top-full left-0 mt-2 py-2 w-32 bg-[#1a1a1a] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover/select:opacity-100 group-hover/select:visible transition-all z-50">
-                {['javascript', 'python', 'html'].map((lang) => (
+              <div className="absolute top-full left-0 mt-2 py-2 w-40 bg-[#1a1a1a] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover/select:opacity-100 group-hover/select:visible transition-all z-50">
+                {['javascript', 'typescript', 'python', 'php', 'html', 'css', 'java', 'cpp'].map((lang) => (
                   <button
                     key={lang}
                     onClick={() => setSelectedLanguage(lang)}

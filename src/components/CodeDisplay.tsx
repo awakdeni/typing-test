@@ -38,7 +38,7 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
     const colors = new Array(code.length).fill('text-gray-500');
     
     // Simple regex to find keywords, strings, and numbers
-    const keywordRegex = /\b(function|def|if|else|return|class|const|let|var|while|for|async|await|try|catch|import|export|from|this|interface|type|public|private|protected)\b/g;
+    const keywordRegex = /\b(function|def|if|else|return|class|const|let|var|while|for|async|await|try|catch|import|export|from|this|interface|type|public|private|protected|extends|implements|namespace|using|include|String|System|cout|endl|Arrays|asList|echo|print|array|List)\b/g;
     const stringRegex = /(['"`])(.*?)\1/g;
     const numberRegex = /\b\d+(\.\d+)?\b/g;
     const commentRegex = /\/\/.*/g;
@@ -84,7 +84,16 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
           <div className="w-3 h-3 rounded-full bg-[#27c93f] shadow-[0_0_10px_rgba(39,201,63,0.2)]" />
         </div>
         <div className="text-[10px] text-gray-500 font-mono tracking-wider opacity-50 uppercase">
-          {language}_session_{language === 'javascript' ? 'js' : language === 'python' ? 'py' : 'html'}
+          {language}_session_{
+            language === 'javascript' ? 'js' : 
+            language === 'typescript' ? 'ts' : 
+            language === 'python' ? 'py' : 
+            language === 'php' ? 'php' : 
+            language === 'html' ? 'html' : 
+            language === 'css' ? 'css' : 
+            language === 'java' ? 'java' : 
+            'cpp'
+          }
         </div>
         <div className="w-12" />
       </div>
