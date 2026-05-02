@@ -1,48 +1,48 @@
 [
   {
-    "id": 12,
+    "id": 1,
     "language": "cpp",
     "difficulty": "medium",
     "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 5, b = 10;\n    int sum = a + b;\n    cout << \"Sum is: \" << sum << endl;\n    return 0;\n}"
   },
   {
-    "id": 35,
+    "id": 2,
     "language": "cpp",
     "difficulty": "easy",
     "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> numbers = {10, 20, 30, 40, 50};\n    int sum = 0;\n    \n    for (int num : numbers) {\n        sum += num;\n    }\n    \n    std::cout << \"Total sum: \" << sum << std::endl;\n    std::cout << \"Average: \" << (float)sum / numbers.size() << std::endl;\n    return 0;\n}"
   },
   {
-    "id": 36,
+    "id": 3,
     "language": "cpp",
     "difficulty": "hard",
     "code": "#include <iostream>\n#include <memory>\n\nclass Node {\npublic:\n    int data;\n    std::shared_ptr<Node> next;\n    \n    Node(int val) : data(val), next(nullptr) {\n        std::cout << \"Node created with value: \" << data << std::endl;\n    }\n    ~Node() {\n        std::cout << \"Node destroyed with value: \" << data << std::endl;\n    }\n};\n\nint main() {\n    auto head = std::make_shared<Node>(1);\n    head->next = std::make_shared<Node>(2);\n    return 0;\n}"
   },
   {
-    "id": 50,
+    "id": 4,
     "language": "cpp",
     "difficulty": "medium",
     "code": "#include <iostream>\n#include <string>\n\nclass Animal {\nprotected:\n    std::string name;\npublic:\n    Animal(std::string n) : name(n) {}\n    virtual void makeSound() = 0;\n};\n\nclass Dog : public Animal {\npublic:\n    Dog(std::string n) : Animal(n) {}\n    void makeSound() override {\n        std::cout << name << \" says: Woof!\" << std::endl;\n    }\n};"
   },
   {
-    "id": 51,
+    "id": 5,
     "language": "cpp",
     "difficulty": "hard",
     "code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> data = {5, 2, 8, 1, 9, 3};\n    \n    std::sort(data.begin(), data.end(), [](int a, int b) {\n        return a > b;\n    });\n    \n    for(auto it = data.begin(); it != data.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    std::cout << std::endl;\n    return 0;\n}"
   },
   {
-    "id": 52,
+    "id": 6,
     "language": "cpp",
     "difficulty": "easy",
     "code": "#include <iostream>\nusing namespace std;\n\nbool isEven(int number) {\n    return number % 2 == 0;\n}\n\nint main() {\n    for (int i = 1; i <= 10; i++) {\n        if (isEven(i)) {\n            cout << i << \" is even\\n\";\n        } else {\n            cout << i << \" is odd\\n\";\n        }\n    }\n    return 0;\n}"
   },
   {
-    "id": 53,
+    "id": 7,
     "language": "cpp",
     "difficulty": "medium",
     "code": "#include <iostream>\n#include <map>\n\nint main() {\n    std::map<std::string, int> ages;\n    ages[\"Alice\"] = 25;\n    ages[\"Bob\"] = 30;\n    ages[\"Charlie\"] = 22;\n\n    for (const auto& pair : ages) {\n        std::cout << pair.first << \" is \" \n                  << pair.second << \" years old.\\n\";\n    }\n    return 0;\n}"
   },
   {
-    "id": 54,
+    "id": 8,
     "language": "cpp",
     "difficulty": "hard",
     "code": "#include <iostream>\n#include <thread>\n#include <mutex>\n\nstd::mutex mtx;\n\nvoid printTask(int id) {\n    std::lock_guard<std::mutex> lock(mtx);\n    std::cout << \"Task \" << id << \" is running on thread \" \n              << std::this_thread::get_id() << std::endl;\n}\n\nint main() {\n    std::thread t1(printTask, 1);\n    std::thread t2(printTask, 2);\n    \n    t1.join();\n    t2.join();\n    return 0;\n}"

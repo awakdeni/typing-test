@@ -1,24 +1,24 @@
 [
   {
-    "id": 8,
+    "id": 56,
     "language": "typescript",
     "difficulty": "medium",
     "code": "interface User {\n  id: number;\n  name: string;\n  role: 'admin' | 'user';\n}\n\nfunction getUserInfo(user: User): string {\n  return `ID: ${user.id}, Role: ${user.role}`;\n}"
   },
   {
-    "id": 24,
+    "id": 57,
     "language": "typescript",
     "difficulty": "hard",
     "code": "type DeepReadonly<T> = {\n    readonly [P in keyof T]: T[P] extends object ? DeepReadonly<T[P]> : T[P];\n};\n\ninterface Config {\n    server: {\n        port: number;\n        host: string;\n    };\n    debug: boolean;\n}\n\nconst config: DeepReadonly<Config> = {\n    server: {\n        port: 8080,\n        host: 'localhost'\n    },\n    debug: false\n};\n\n// config.server.port = 9000; // Error: Cannot assign to 'port' because it is a read-only property."
   },
   {
-    "id": 29,
+    "id": 58,
     "language": "typescript",
     "difficulty": "easy",
     "code": "function calculateArea(shape: 'circle' | 'square', dimension: number): number {\n  if (shape === 'circle') {\n    return Math.PI * dimension * dimension;\n  }\n  return dimension * dimension;\n}\n\nconst circleArea: number = calculateArea('circle', 5);\nconsole.log(`Area: ${circleArea.toFixed(2)}`);"
   },
   {
-    "id": 30,
+    "id": 59,
     "language": "typescript",
     "difficulty": "medium",
     "code": "class CacheManager<T> {\n  private cache: Map<string, { value: T; expiry: number }> = new Map();\n\n  set(key: string, value: T, ttlSeconds: number): void {\n    const expiry = Date.now() + ttlSeconds * 1000;\n    this.cache.set(key, { value, expiry });\n  }\n\n  get(key: string): T | null {\n    const item = this.cache.get(key);\n    if (!item) return null;\n    if (Date.now() > item.expiry) {\n      this.cache.delete(key);\n      return null;\n    }\n    return item.value;\n  }\n}"
