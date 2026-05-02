@@ -1,0 +1,20 @@
+[
+  {
+    "id": 11,
+    "language": "java",
+    "difficulty": "medium",
+    "code": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n        List<String> items = Arrays.asList(\"A\", \"B\");\n        items.forEach(System.out::println);\n    }\n}"
+  },
+  {
+    "id": 33,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "import java.util.Scanner;\n\npublic class UserInput {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n        System.out.print(\"Enter your age: \");\n        int age = scanner.nextInt();\n        \n        if (age >= 18) {\n            System.out.println(\"You are eligible to vote.\");\n        } else {\n            System.out.println(\"You are too young to vote.\");\n        }\n        scanner.close();\n    }\n}"
+  },
+  {
+    "id": 34,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "public class ThreadPoolExample {\n    public static void main(String[] args) {\n        ExecutorService executor = Executors.newFixedThreadPool(5);\n        \n        for (int i = 0; i < 10; i++) {\n            Runnable worker = new WorkerThread(\"Task \" + i);\n            executor.execute(worker);\n        }\n        \n        executor.shutdown();\n        while (!executor.isTerminated()) {\n            // Wait for all tasks to finish\n        }\n        System.out.println(\"All threads finished executing\");\n    }\n}"
+  }
+]

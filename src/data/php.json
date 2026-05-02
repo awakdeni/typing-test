@@ -1,0 +1,26 @@
+[
+  {
+    "id": 9,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\npublic function save() {\n  $sql = \"INSERT INTO users (name, email) VALUES (?, ?)\";\n  $stmt = $this->db->prepare($sql);\n  return $stmt->execute([$this->name, $this->email]);\n}"
+  },
+  {
+    "id": 23,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\n$greetings = [\"Hello\", \"Bonjour\", \"Hola\", \"Ciao\"];\n$name = \"Developer\";\n\nforeach ($greetings as $greeting) {\n    echo \"$greeting, $name!\\n\";\n}\n\n$is_admin = true;\nif ($is_admin) {\n    echo \"Welcome to the admin dashboard.\";\n}"
+  },
+  {
+    "id": 31,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nabstract class Vehicle {\n    protected $brand;\n    \n    public function __init__($brand) {\n        $this->brand = $brand;\n    }\n    \n    abstract public function startEngine();\n}\n\nclass Car extends Vehicle {\n    public function startEngine() {\n        return \"{$this->brand} engine is starting with a roar!\";\n    }\n}\n\n$myCar = new Car(\"Toyota\");\necho $myCar->startEngine();"
+  },
+  {
+    "id": 32,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\nclass Database {\n    private $pdo;\n    \n    public function __construct($host, $db, $user, $pass) {\n        $dsn = \"mysql:host=$host;dbname=$db;charset=utf8mb4\";\n        $options = [\n            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n            PDO::ATTR_EMULATE_PREPARES => false,\n        ];\n        try {\n            $this->pdo = new PDO($dsn, $user, $pass, $options);\n        } catch (\\PDOException $e) {\n            throw new \\PDOException($e->getMessage(), (int)$e->getCode());\n        }\n    }\n}"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "function calculateInventory(products) {\n  const results = products.map(p => {\n    const taxRate = p.category === 'luxury' ? 0.25 : 0.11;\n    const discountedPrice = p.price * (1 - p.discount);\n    const finalPrice = discountedPrice * (1 + taxRate);\n    \n    return {\n      name: p.name,\n      stockValue: p.stock * finalPrice,\n      isLowStock: p.stock < 10\n    };\n  });\n\n  return results.filter(r => r.stockValue > 1000);\n}"
+  },
+  {
+    "id": 4,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "async function fetchData(url, retries = 3) {\n  for (let i = 0; i < retries; i++) {\n    try {\n      const response = await fetch(url);\n      if (!response.ok) throw new Error(`HTTP ${response.status}`);\n      const data = await response.json();\n      return data.map(item => ({\n        id: item.id,\n        name: item.full_name.toUpperCase(),\n        timestamp: new Date().toISOString(),\n        isValid: !!item.full_name\n      }));\n    } catch (err) {\n      if (i === retries - 1) console.error('Final attempt failed:', err);\n      await new Promise(resolve => setTimeout(resolve, 1000));\n    }\n  }\n}"
+  },
+  {
+    "id": 6,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const GREETING = 'Hello World';\nconsole.log(GREETING);\n\nconst add = (a, b) => a + b;\nconsole.log(add(5, 10));"
+  },
+  {
+    "id": 13,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "class EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n\n  on(name, listener) {\n    if (!this.events[name]) this.events[name] = [];\n    this.events[name].push(listener);\n  }\n\n  emit(name, ...args) {\n    if (!this.events[name]) return;\n    this.events[name].forEach(listener => listener(...args));\n  }\n\n  remove(name, listenerToRemove) {\n    if (!this.events[name]) return;\n    this.events[name] = this.events[name].filter(\n      listener => listener !== listenerToRemove\n    );\n  }\n}"
+  },
+  {
+    "id": 14,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const validateForm = (data) => {\n  const errors = {};\n  const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n\n  if (!data.username || data.username.length < 3) {\n    errors.username = 'Username too short';\n  }\n\n  if (!emailRegex.test(data.email)) {\n    errors.email = 'Invalid email format';\n  }\n\n  if (data.password !== data.confirmPassword) {\n    errors.password = 'Passwords do not match';\n  }\n\n  return {\n    isValid: Object.keys(errors).length === 0,\n    errors\n  };\n};"
+  },
+  {
+    "id": 15,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "function debounce(func, wait) {\n  let timeout;\n  return function executedFunction(...args) {\n    const later = () => {\n      clearTimeout(timeout);\n      func(...args);\n    };\n    clearTimeout(timeout);\n    timeout = setTimeout(later, wait);\n  };\n}\n\nconst handleSearch = debounce((query) => {\n  console.log('Searching for:', query);\n  // API call logic here\n}, 500);"
+  },
+  {
+    "id": 19,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const fruits = ['apple', 'banana', 'cherry'];\n\nfruits.forEach(fruit => {\n  console.log(`I like ${fruit}`);\n});\n\nconst upperFruits = fruits.map(f => f.toUpperCase());\nconsole.log(upperFruits);"
+  },
+  {
+    "id": 25,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const processOrders = (orders) => {\n  return orders\n    .filter(order => order.status === 'completed')\n    .map(order => ({\n      orderId: order.id,\n      total: order.items.reduce((sum, item) => sum + item.price * item.quantity, 0),\n      date: new Date(order.timestamp).toLocaleDateString()\n    }))\n    .sort((a, b) => b.total - a.total);\n};"
+  },
+  {
+    "id": 26,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "async function fetchDashboardData(userId) {\n  try {\n    const [user, posts, stats] = await Promise.all([\n      fetch(`/api/users/${userId}`).then(r => r.json()),\n      fetch(`/api/users/${userId}/posts`).then(r => r.json()),\n      fetch(`/api/users/${userId}/stats`).then(r => r.json())\n    ]);\n    \n    return {\n      profile: user,\n      recentPosts: posts.slice(0, 5),\n      engagement: stats.engagementRate\n    };\n  } catch (error) {\n    console.error('Failed to load dashboard:', error);\n    throw new Error('Dashboard Initialization Failed');\n  }\n}"
+  },
+  {
+    "id": 40,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const calculateBMI = (weightKg, heightM) => {\n  const bmi = weightKg / (heightM * heightM);\n  let category = '';\n\n  if (bmi < 18.5) category = 'Underweight';\n  else if (bmi < 24.9) category = 'Normal weight';\n  else if (bmi < 29.9) category = 'Overweight';\n  else category = 'Obesity';\n\n  return { bmi: bmi.toFixed(2), category };\n};\n\nconsole.log(calculateBMI(70, 1.75));"
+  },
+  {
+    "id": 41,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "function isPalindrome(str) {\n  const cleanStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();\n  const reversedStr = cleanStr.split('').reverse().join('');\n  \n  return cleanStr === reversedStr;\n}\n\nconsole.log(isPalindrome(\"A man, a plan, a canal: Panama\"));\nconsole.log(isPalindrome(\"race a car\"));"
+  },
+  {
+    "id": 42,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const deepClone = (obj) => {\n  if (obj === null || typeof obj !== 'object') {\n    return obj;\n  }\n\n  if (obj instanceof Date) return new Date(obj.getTime());\n  if (obj instanceof Array) return obj.map(item => deepClone(item));\n\n  const clonedObj = {};\n  for (let key in obj) {\n    if (obj.hasOwnProperty(key)) {\n      clonedObj[key] = deepClone(obj[key]);\n    }\n  }\n  return clonedObj;\n};"
+  },
+  {
+    "id": 43,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "class ShoppingCart {\n  constructor() {\n    this.items = new Map();\n  }\n\n  addItem(product, quantity = 1) {\n    const currentQty = this.items.get(product.id) || 0;\n    this.items.set(product.id, currentQty + quantity);\n  }\n\n  removeItem(productId) {\n    this.items.delete(productId);\n  }\n\n  getTotal() {\n    let total = 0;\n    for (let [id, qty] of this.items) {\n      total += getProductPrice(id) * qty;\n    }\n    return total;\n  }\n}"
+  },
+  {
+    "id": 44,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "const memoize = (fn) => {\n  const cache = new Map();\n  return (...args) => {\n    const key = JSON.stringify(args);\n    if (cache.has(key)) {\n      console.log('Fetching from cache');\n      return cache.get(key);\n    }\n    const result = fn(...args);\n    cache.set(key, result);\n    return result;\n  };\n};\n\nconst fibonacci = memoize((n) => {\n  if (n <= 1) return n;\n  return fibonacci(n - 1) + fibonacci(n - 2);\n});"
+  },
+  {
+    "id": 45,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "class VirtualDOM {\n  static createElement(type, props, ...children) {\n    return {\n      type,\n      props: {\n        ...props,\n        children: children.map(child =>\n          typeof child === \"object\" ? child : this.createTextElement(child)\n        )\n      }\n    };\n  }\n\n  static createTextElement(text) {\n    return {\n      type: \"TEXT_ELEMENT\",\n      props: { nodeValue: text, children: [] }\n    };\n  }\n\n  static render(element, container) {\n    const dom = element.type == \"TEXT_ELEMENT\"\n      ? document.createTextNode(\"\")\n      : document.createElement(element.type);\n\n    const isProperty = key => key !== \"children\";\n    Object.keys(element.props).filter(isProperty).forEach(name => {\n      dom[name] = element.props[name];\n    });\n\n    element.props.children.forEach(child => VirtualDOM.render(child, dom));\n    container.appendChild(dom);\n  }\n}"
+  },
+  {
+    "id": 46,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const groupBy = (array, keyFn) => {\n  return array.reduce((result, currentItem) => {\n    const key = keyFn(currentItem);\n    if (!result[key]) {\n      result[key] = [];\n    }\n    result[key].push(currentItem);\n    return result;\n  }, {});\n};\n\nconst users = [\n  { name: 'Alice', role: 'admin' },\n  { name: 'Bob', role: 'user' },\n  { name: 'Charlie', role: 'admin' }\n];\nconst groupedUsers = groupBy(users, u => u.role);\nconsole.log(groupedUsers);"
+  },
+  {
+    "id": 47,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const getRandomHexColor = () => {\n  const letters = '0123456789ABCDEF';\n  let color = '#';\n  for (let i = 0; i < 6; i++) {\n    color += letters[Math.floor(Math.random() * 16)];\n  }\n  return color;\n};\n\ndocument.body.style.backgroundColor = getRandomHexColor();\nconsole.log(`Background changed to: ${document.body.style.backgroundColor}`);"
+  },
+  {
+    "id": 48,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "function curry(func) {\n  return function curried(...args) {\n    if (args.length >= func.length) {\n      return func.apply(this, args);\n    } else {\n      return function(...args2) {\n        return curried.apply(this, args.concat(args2));\n      }\n    }\n  };\n}\n\nfunction multiply(a, b, c) {\n  return a * b * c;\n}\n\nlet curriedMultiply = curry(multiply);\nconsole.log(curriedMultiply(2)(3)(4)); // 24"
+  },
+  {
+    "id": 49,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const flattenArray = (arr) => {\n  return arr.reduce((acc, val) => \n    Array.isArray(val) ? acc.concat(flattenArray(val)) : acc.concat(val)\n  , []);\n};\n\nconst nested = [1, [2, [3, [4, 5]], 6], 7];\nconst flat = flattenArray(nested);\n\nconsole.log('Original:', JSON.stringify(nested));\nconsole.log('Flattened:', JSON.stringify(flat));"
+  }
+]

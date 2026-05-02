@@ -10,8 +10,26 @@ function cn(...inputs: ClassValue[]) {
 import { CodeDisplay } from './CodeDisplay';
 import { ResultModal } from './ResultModal';
 import { useTypingTest } from '@/hooks/useTypingTest';
-import codeSnippets from '@/data/codeSnippets.json';
+import javascriptSnippets from '@/data/javascript.json';
+import pythonSnippets from '@/data/python.json';
+import htmlSnippets from '@/data/html.json';
+import cssSnippets from '@/data/css.json';
+import typescriptSnippets from '@/data/typescript.json';
+import phpSnippets from '@/data/php.json';
+import javaSnippets from '@/data/java.json';
+import cppSnippets from '@/data/cpp.json';
 import { Timer, RefreshCw, ChevronDown, Keyboard, CodeXml, Trophy, Settings, Users, UserCircle } from 'lucide-react';
+
+const codeSnippets = [
+  ...javascriptSnippets,
+  ...pythonSnippets,
+  ...htmlSnippets,
+  ...cssSnippets,
+  ...typescriptSnippets,
+  ...phpSnippets,
+  ...javaSnippets,
+  ...cppSnippets
+];
 
 export const TypingTest = () => {
   const [selectedLanguage, setSelectedLanguage] = useState('javascript');
