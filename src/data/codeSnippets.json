@@ -142,5 +142,95 @@
     "language": "typescript",
     "difficulty": "hard",
     "code": "type DeepReadonly<T> = {\n    readonly [P in keyof T]: T[P] extends object ? DeepReadonly<T[P]> : T[P];\n};\n\ninterface Config {\n    server: {\n        port: number;\n        host: string;\n    };\n    debug: boolean;\n}\n\nconst config: DeepReadonly<Config> = {\n    server: {\n        port: 8080,\n        host: 'localhost'\n    },\n    debug: false\n};\n\n// config.server.port = 9000; // Error: Cannot assign to 'port' because it is a read-only property."
+  },
+  {
+    "id": 25,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "const processOrders = (orders) => {\n  return orders\n    .filter(order => order.status === 'completed')\n    .map(order => ({\n      orderId: order.id,\n      total: order.items.reduce((sum, item) => sum + item.price * item.quantity, 0),\n      date: new Date(order.timestamp).toLocaleDateString()\n    }))\n    .sort((a, b) => b.total - a.total);\n};"
+  },
+  {
+    "id": 26,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "async function fetchDashboardData(userId) {\n  try {\n    const [user, posts, stats] = await Promise.all([\n      fetch(`/api/users/${userId}`).then(r => r.json()),\n      fetch(`/api/users/${userId}/posts`).then(r => r.json()),\n      fetch(`/api/users/${userId}/stats`).then(r => r.json())\n    ]);\n    \n    return {\n      profile: user,\n      recentPosts: posts.slice(0, 5),\n      engagement: stats.engagementRate\n    };\n  } catch (error) {\n    console.error('Failed to load dashboard:', error);\n    throw new Error('Dashboard Initialization Failed');\n  }\n}"
+  },
+  {
+    "id": 27,
+    "language": "python",
+    "difficulty": "medium",
+    "code": "def process_temperatures(celsius_data):\n    # Convert a list of Celsius temperatures to Fahrenheit using dictionary comprehension\n    fahrenheit_dict = {f\"Day_{i+1}\": (temp * 9/5) + 32 for i, temp in enumerate(celsius_data)}\n    \n    hottest_day = max(fahrenheit_dict, key=fahrenheit_dict.get)\n    average_temp = sum(fahrenheit_dict.values()) / len(fahrenheit_dict)\n    \n    return {\n        \"data\": fahrenheit_dict,\n        \"hottest\": hottest_day,\n        \"average\": round(average_temp, 2)\n    }"
+  },
+  {
+    "id": 28,
+    "language": "python",
+    "difficulty": "hard",
+    "code": "import time\nfrom functools import wraps\n\ndef retry_with_backoff(retries=3, backoff_in_seconds=1):\n    def decorator(func):\n        @wraps(func)\n        def wrapper(*args, **kwargs):\n            x = 0\n            while True:\n                try:\n                    return func(*args, **kwargs)\n                except Exception as e:\n                    if x == retries:\n                        raise e\n                    sleep = (backoff_in_seconds * 2 ** x)\n                    time.sleep(sleep)\n                    x += 1\n        return wrapper\n    return decorator"
+  },
+  {
+    "id": 29,
+    "language": "typescript",
+    "difficulty": "easy",
+    "code": "function calculateArea(shape: 'circle' | 'square', dimension: number): number {\n  if (shape === 'circle') {\n    return Math.PI * dimension * dimension;\n  }\n  return dimension * dimension;\n}\n\nconst circleArea: number = calculateArea('circle', 5);\nconsole.log(`Area: ${circleArea.toFixed(2)}`);"
+  },
+  {
+    "id": 30,
+    "language": "typescript",
+    "difficulty": "medium",
+    "code": "class CacheManager<T> {\n  private cache: Map<string, { value: T; expiry: number }> = new Map();\n\n  set(key: string, value: T, ttlSeconds: number): void {\n    const expiry = Date.now() + ttlSeconds * 1000;\n    this.cache.set(key, { value, expiry });\n  }\n\n  get(key: string): T | null {\n    const item = this.cache.get(key);\n    if (!item) return null;\n    if (Date.now() > item.expiry) {\n      this.cache.delete(key);\n      return null;\n    }\n    return item.value;\n  }\n}"
+  },
+  {
+    "id": 31,
+    "language": "php",
+    "difficulty": "medium",
+    "code": "<?php\nabstract class Vehicle {\n    protected $brand;\n    \n    public function __init__($brand) {\n        $this->brand = $brand;\n    }\n    \n    abstract public function startEngine();\n}\n\nclass Car extends Vehicle {\n    public function startEngine() {\n        return \"{$this->brand} engine is starting with a roar!\";\n    }\n}\n\n$myCar = new Car(\"Toyota\");\necho $myCar->startEngine();"
+  },
+  {
+    "id": 32,
+    "language": "php",
+    "difficulty": "hard",
+    "code": "<?php\nclass Database {\n    private $pdo;\n    \n    public function __construct($host, $db, $user, $pass) {\n        $dsn = \"mysql:host=$host;dbname=$db;charset=utf8mb4\";\n        $options = [\n            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,\n            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n            PDO::ATTR_EMULATE_PREPARES => false,\n        ];\n        try {\n            $this->pdo = new PDO($dsn, $user, $pass, $options);\n        } catch (\\PDOException $e) {\n            throw new \\PDOException($e->getMessage(), (int)$e->getCode());\n        }\n    }\n}"
+  },
+  {
+    "id": 33,
+    "language": "java",
+    "difficulty": "easy",
+    "code": "import java.util.Scanner;\n\npublic class UserInput {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n        System.out.print(\"Enter your age: \");\n        int age = scanner.nextInt();\n        \n        if (age >= 18) {\n            System.out.println(\"You are eligible to vote.\");\n        } else {\n            System.out.println(\"You are too young to vote.\");\n        }\n        scanner.close();\n    }\n}"
+  },
+  {
+    "id": 34,
+    "language": "java",
+    "difficulty": "hard",
+    "code": "public class ThreadPoolExample {\n    public static void main(String[] args) {\n        ExecutorService executor = Executors.newFixedThreadPool(5);\n        \n        for (int i = 0; i < 10; i++) {\n            Runnable worker = new WorkerThread(\"Task \" + i);\n            executor.execute(worker);\n        }\n        \n        executor.shutdown();\n        while (!executor.isTerminated()) {\n            // Wait for all tasks to finish\n        }\n        System.out.println(\"All threads finished executing\");\n    }\n}"
+  },
+  {
+    "id": 35,
+    "language": "cpp",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> numbers = {10, 20, 30, 40, 50};\n    int sum = 0;\n    \n    for (int num : numbers) {\n        sum += num;\n    }\n    \n    std::cout << \"Total sum: \" << sum << std::endl;\n    std::cout << \"Average: \" << (float)sum / numbers.size() << std::endl;\n    return 0;\n}"
+  },
+  {
+    "id": 36,
+    "language": "cpp",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#include <memory>\n\nclass Node {\npublic:\n    int data;\n    std::shared_ptr<Node> next;\n    \n    Node(int val) : data(val), next(nullptr) {\n        std::cout << \"Node created with value: \" << data << std::endl;\n    }\n    ~Node() {\n        std::cout << \"Node destroyed with value: \" << data << std::endl;\n    }\n};\n\nint main() {\n    auto head = std::make_shared<Node>(1);\n    head->next = std::make_shared<Node>(2);\n    return 0;\n}"
+  },
+  {
+    "id": 37,
+    "language": "html",
+    "difficulty": "hard",
+    "code": "<form id=\"registrationForm\" action=\"/submit\" method=\"POST\" class=\"needs-validation\" novalidate>\n  <fieldset>\n    <legend>Personal Information</legend>\n    \n    <div class=\"form-group\">\n      <label for=\"email\">Email address</label>\n      <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" required pattern=\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$\">\n      <div class=\"invalid-feedback\">\n        Please provide a valid email.\n      </div>\n    </div>\n    \n    <div class=\"form-group\">\n      <label for=\"password\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"password\" name=\"password\" required minlength=\"8\">\n    </div>\n    \n    <button type=\"submit\" class=\"btn btn-primary\">Register</button>\n  </fieldset>\n</form>"
+  },
+  {
+    "id": 38,
+    "language": "css",
+    "difficulty": "medium",
+    "code": ".dashboard-layout {\n  display: flex;\n  min-height: 100vh;\n}\n\n.sidebar {\n  width: 250px;\n  background-color: #1a1a1a;\n  color: white;\n  flex-shrink: 0;\n  padding: 2rem;\n}\n\n.main-content {\n  flex-grow: 1;\n  padding: 2rem;\n  background-color: #f4f4f9;\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n}"
+  },
+  {
+    "id": 39,
+    "language": "css",
+    "difficulty": "hard",
+    "code": "@keyframes pulse-ring {\n  0% {\n    transform: scale(0.8);\n    box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);\n  }\n  70% {\n    transform: scale(1);\n    box-shadow: 0 0 0 15px rgba(52, 172, 224, 0);\n  }\n  100% {\n    transform: scale(0.8);\n    box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);\n  }\n}\n\n.notification-badge {\n  position: relative;\n  width: 20px;\n  height: 20px;\n  border-radius: 50%;\n  background: #34ace0;\n  animation: pulse-ring 2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);\n}"
   }
 ]
