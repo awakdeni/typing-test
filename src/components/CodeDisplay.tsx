@@ -35,7 +35,7 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
   }, [userInput]);
 
   const syntaxColors = useMemo(() => {
-    const colors = new Array(code.length).fill('text-[#333333]');
+    const colors = new Array(code.length).fill('text-gray-700');
     
     // Simple regex to find keywords, strings, and numbers
     const keywordRegex = /\b(function|def|if|else|return|class|const|let|var|while|for|async|await|try|catch|import|export|from|this|interface|type|public|private|protected)\b/g;
@@ -46,22 +46,22 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
     let match;
     while ((match = keywordRegex.exec(code)) !== null) {
       for (let i = match.index; i < match.index + match[0].length; i++) {
-        colors[i] = 'text-blue-400 opacity-60';
+        colors[i] = 'text-blue-400 opacity-80';
       }
     }
     while ((match = stringRegex.exec(code)) !== null) {
       for (let i = match.index; i < match.index + match[0].length; i++) {
-        colors[i] = 'text-amber-300 opacity-60';
+        colors[i] = 'text-amber-300 opacity-80';
       }
     }
     while ((match = numberRegex.exec(code)) !== null) {
       for (let i = match.index; i < match.index + match[0].length; i++) {
-        colors[i] = 'text-purple-400 opacity-60';
+        colors[i] = 'text-purple-400 opacity-80';
       }
     }
     while ((match = commentRegex.exec(code)) !== null) {
       for (let i = match.index; i < match.index + match[0].length; i++) {
-        colors[i] = 'text-gray-600 opacity-60';
+        colors[i] = 'text-gray-500 opacity-80';
       }
     }
     return colors;
