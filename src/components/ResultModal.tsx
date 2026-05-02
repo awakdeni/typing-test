@@ -68,13 +68,26 @@ export const ResultModal: React.FC<ResultModalProps> = ({ isOpen, stats, onReset
               </div>
             </div>
  
-            <button
-              onClick={onReset}
-              className="group flex items-center justify-center gap-2 w-full py-4 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 border border-blue-500/20 font-medium rounded-2xl transition-all active:scale-95"
-            >
-              <RotateCcw className="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" />
-              Coba Lagi
-            </button>
+            <div className="flex flex-col gap-3 w-full">
+              <button
+                onClick={() => {
+                  const text = `🚀 CodeSpeed Test Results:\n📈 WPM: ${stats.wpm}\n🎯 Accuracy: ${stats.accuracy}%\n⌨️ CPM: ${stats.cpm}\n✅ Correct: ${stats.correctChars}\n\nUji kecepatan kodemu di CodeSpeed!`;
+                  navigator.clipboard.writeText(text);
+                  alert('Hasil berhasil disalin!');
+                }}
+                className="group flex items-center justify-center gap-2 w-full py-3 bg-white/5 hover:bg-white/10 text-gray-400 border border-white/10 font-medium rounded-2xl transition-all active:scale-95"
+              >
+                Salin Hasil
+              </button>
+
+              <button
+                onClick={onReset}
+                className="group flex items-center justify-center gap-2 w-full py-4 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 border border-blue-500/20 font-medium rounded-2xl transition-all active:scale-95"
+              >
+                <RotateCcw className="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" />
+                Coba Lagi
+              </button>
+            </div>
           </div>
         </motion.div>
       </motion.div>
