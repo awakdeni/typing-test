@@ -106,5 +106,41 @@
     "language": "python",
     "difficulty": "hard",
     "code": "def quick_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quick_sort(left) + middle + quick_sort(right)\n\ndata = [3, 6, 8, 10, 1, 2, 1]\nprint(f\"Original: {data}\")\nprint(f\"Sorted: {quick_sort(data)}\")"
+  },
+  {
+    "id": 19,
+    "language": "javascript",
+    "difficulty": "easy",
+    "code": "const fruits = ['apple', 'banana', 'cherry'];\n\nfruits.forEach(fruit => {\n  console.log(`I like ${fruit}`);\n});\n\nconst upperFruits = fruits.map(f => f.toUpperCase());\nconsole.log(upperFruits);"
+  },
+  {
+    "id": 20,
+    "language": "python",
+    "difficulty": "easy",
+    "code": "def greet(name):\n    return f\"Hello, {name}! Welcome to CodeSpeed.\"\n\nuser_name = input(\"Enter your name: \")\nmessage = greet(user_name)\nprint(message)\n\nfor i in range(3):\n    print(f\"Countdown: {3-i}\")"
+  },
+  {
+    "id": 21,
+    "language": "html",
+    "difficulty": "medium",
+    "code": "<article class=\"blog-post\">\n  <header>\n    <h2>Understanding Web Accessibility</h2>\n    <p class=\"meta\">Published on <time datetime=\"2023-10-12\">Oct 12</time> by Jane Doe</p>\n  </header>\n  \n  <section class=\"content\">\n    <p>Accessibility ensures that web applications are usable by everyone...</p>\n    <img src=\"/images/a11y.png\" alt=\"Accessibility diagram\" loading=\"lazy\" />\n  </section>\n  \n  <footer>\n    <a href=\"#top\" class=\"back-to-top\">Back to top</a>\n  </footer>\n</article>"
+  },
+  {
+    "id": 22,
+    "language": "css",
+    "difficulty": "hard",
+    "code": ".grid-container {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n  gap: 2rem;\n}\n\n.grid-item {\n  position: relative;\n  overflow: hidden;\n}\n\n.grid-item::after {\n  content: '';\n  position: absolute;\n  top: 0; left: 0; right: 0; bottom: 0;\n  background: linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);\n  opacity: 0;\n  transition: opacity 0.3s ease;\n}\n\n.grid-item:hover::after {\n  opacity: 1;\n}"
+  },
+  {
+    "id": 23,
+    "language": "php",
+    "difficulty": "easy",
+    "code": "<?php\n$greetings = [\"Hello\", \"Bonjour\", \"Hola\", \"Ciao\"];\n$name = \"Developer\";\n\nforeach ($greetings as $greeting) {\n    echo \"$greeting, $name!\\n\";\n}\n\n$is_admin = true;\nif ($is_admin) {\n    echo \"Welcome to the admin dashboard.\";\n}"
+  },
+  {
+    "id": 24,
+    "language": "typescript",
+    "difficulty": "hard",
+    "code": "type DeepReadonly<T> = {\n    readonly [P in keyof T]: T[P] extends object ? DeepReadonly<T[P]> : T[P];\n};\n\ninterface Config {\n    server: {\n        port: number;\n        host: string;\n    };\n    debug: boolean;\n}\n\nconst config: DeepReadonly<Config> = {\n    server: {\n        port: 8080,\n        host: 'localhost'\n    },\n    debug: false\n};\n\n// config.server.port = 9000; // Error: Cannot assign to 'port' because it is a read-only property."
   }
 ]

@@ -31,9 +31,15 @@ export const TypingTest = () => {
   } = useTypingTest(currentSnippet.code);
 
   const getRandomSnippet = () => {
-    const filtered = codeSnippets.filter(
+    let filtered = codeSnippets.filter(
       s => s.language === selectedLanguage && s.difficulty === selectedDifficulty
     );
+    
+    // Cegah kemunculan snippet yang sama dua kali berturut-turut jika ada opsi lain
+    if (filtered.length > 1 && currentSnippet) {
+      filtered = filtered.filter(s => s.id !== currentSnippet.id);
+    }
+    
     const randomIndex = Math.floor(Math.random() * filtered.length);
     return filtered[randomIndex] || codeSnippets[0];
   };
