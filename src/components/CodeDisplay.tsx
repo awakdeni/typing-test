@@ -76,22 +76,9 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
 
   return (
     <div className="w-full max-w-5xl mx-auto">
-      {/* Window Frame */}
-      <div className="bg-[#1a1a1a] border border-white/5 rounded-t-2xl px-4 py-3 flex items-center justify-between">
-        <div className="flex gap-2">
-          <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
-          <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
-          <div className="w-3 h-3 rounded-full bg-[#27c93f]" />
-        </div>
-        <div className="text-[10px] text-gray-500 font-mono italic">
-          {language}/snippets/{language}-test.{language === 'javascript' ? 'js' : language === 'python' ? 'py' : 'html'}
-        </div>
-        <div className="w-12" /> {/* Spacer */}
-      </div>
-
       <div 
         ref={containerRef}
-        className="relative font-mono text-2xl leading-[1.6] bg-[#0d0d0d] pt-6 pb-10 px-10 rounded-b-2xl border-x border-b border-white/5 shadow-2xl overflow-y-hidden h-[170px] scrollbar-hide"
+        className="relative font-mono text-2xl leading-[1.6] bg-transparent pt-6 pb-10 px-0 overflow-y-hidden h-[170px] scrollbar-hide"
       >
         <div className="whitespace-pre-wrap break-words">
           {code.split('').map((char, index) => {
