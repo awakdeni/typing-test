@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "language": "javascript",
+    "difficulty": "medium",
+    "code": "function calculateTotal(items) {\n  return items.reduce((acc, item) => {\n    const tax = item.price * 0.11;\n    return acc + item.price + tax;\n  }, 0);\n}"
+  },
+  {
+    "id": 2,
+    "language": "python",
+    "difficulty": "medium",
+    "code": "def find_binary(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1"
+  },
+  {
+    "id": 3,
+    "language": "html",
+    "difficulty": "easy",
+    "code": "<div class=\"container\">\n  <header className=\"header\">\n    <h1>Welcome to CodeSpeed</h1>\n    <nav>\n      <ul>\n        <li>Home</li>\n        <li>About</li>\n      </ul>\n    </nav>\n  </header>\n</div>"
+  },
+  {
+    "id": 4,
+    "language": "javascript",
+    "difficulty": "hard",
+    "code": "async function fetchData(url) {\n  try {\n    const response = await fetch(url);\n    if (!response.ok) throw new Error('Failed');\n    const data = await response.json();\n    return data.map(item => ({\n      id: item.id,\n      name: item.full_name.toUpperCase()\n    }));\n  } catch (err) {\n    console.error(err);\n  }\n}"
+  },
+  {
+    "id": 5,
+    "language": "python",
+    "difficulty": "hard",
+    "code": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.next = None\n\ndef reverse_list(head):\n    prev = None\n    current = head\n    while current:\n        next_node = current.next\n        current.next = prev\n        prev = current\n        current = next_node\n    return prev"
+  }
+]
