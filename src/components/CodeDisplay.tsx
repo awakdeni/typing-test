@@ -95,7 +95,7 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
       >
         <div className="whitespace-pre-wrap break-words">
           {code.split('').map((char, index) => {
-            let state = 'neutral';
+            let state: 'correct' | 'incorrect' | 'active' | 'neutral' = 'neutral';
             if (index < userInput.length) {
               state = userInput[index] === char ? 'correct' : 'incorrect';
             } else if (index === userInput.length) {
