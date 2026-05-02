@@ -75,7 +75,7 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto animate-in fade-in zoom-in duration-500">
+    <div className="w-full max-w-6xl mx-auto animate-in fade-in zoom-in duration-500">
       {/* Window Frame Header */}
       <div className="bg-[#1a1a1a] border border-white/5 rounded-t-2xl px-6 py-4 flex items-center justify-between">
         <div className="flex gap-2">
@@ -91,7 +91,7 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
 
       <div 
         ref={containerRef}
-        className="relative font-mono text-2xl leading-[1.6] bg-[#0d0d0d] pt-8 pb-12 px-12 rounded-b-2xl border-x border-b border-white/5 shadow-2xl overflow-y-hidden h-[190px] scrollbar-hide"
+        className="relative font-mono text-2xl leading-[1.6] bg-[#0d0d0d] pt-8 pb-12 px-12 rounded-b-2xl border-x border-b border-white/5 shadow-2xl overflow-y-hidden h-[210px] scrollbar-hide"
       >
         <div className="whitespace-pre-wrap break-words">
           {code.split('').map((char, index) => {
