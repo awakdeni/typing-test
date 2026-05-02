@@ -155,7 +155,7 @@ export const TypingTest = () => {
       />
 
       <div className="text-center text-gray-500 text-sm">
-        <p>Tips: Gunakan <kbd className="bg-white/10 px-1.5 py-0.5 rounded border border-white/20">Tab</kbd> + <kbd className="bg-white/10 px-1.5 py-0.5 rounded border border-white/20">Enter</kbd> untuk mengulang cepat.</p>
+        <p>Tips: Gunakan <kbd className="bg-white/10 px-1.5 py-0.5 rounded border border-white/20">Escape</kbd> atau <kbd className="bg-white/10 px-1.5 py-0.5 rounded border border-white/20">Tab</kbd> + <kbd className="bg-white/10 px-1.5 py-0.5 rounded border border-white/20">Enter</kbd> untuk mengulang cepat.</p>
       </div>
     </div>
   );
