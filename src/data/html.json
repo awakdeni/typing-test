@@ -1,18 +1,18 @@
 [
   {
-    "id": 18,
+    "id": 1,
     "language": "html",
     "difficulty": "easy",
     "code": "<section class=\"hero-section\">\n  <div class=\"container mx-auto px-6 py-12\">\n    <div class=\"flex flex-col items-center text-center\">\n      <h1 class=\"text-5xl font-bold text-white mb-4\">\n        Build Better Software Faster\n      </h1>\n      <p class=\"text-xl text-gray-400 max-w-2xl mb-8\">\n        Join thousands of developers using our platform to ship\n        high-quality applications with confidence and speed.\n      </p>\n      <div class=\"flex gap-4\">\n        <button class=\"btn-primary\">Get Started</button>\n        <button class=\"btn-secondary\">Learn More</button>\n      </div>\n    </div>\n  </div>\n</section>"
   },
   {
-    "id": 19,
+    "id": 2,
     "language": "html",
     "difficulty": "medium",
     "code": "<article class=\"blog-post\">\n  <header>\n    <h2>Understanding Web Accessibility</h2>\n    <p class=\"meta\">Published on <time datetime=\"2023-10-12\">Oct 12</time> by Jane Doe</p>\n  </header>\n  \n  <section class=\"content\">\n    <p>Accessibility ensures that web applications are usable by everyone...</p>\n    <img src=\"/images/a11y.png\" alt=\"Accessibility diagram\" loading=\"lazy\" />\n  </section>\n  \n  <footer>\n    <a href=\"#top\" class=\"back-to-top\">Back to top</a>\n  </footer>\n</article>"
   },
   {
-    "id": 20,
+    "id": 3,
     "language": "html",
     "difficulty": "hard",
     "code": "<form id=\"registrationForm\" action=\"/submit\" method=\"POST\" class=\"needs-validation\" novalidate>\n  <fieldset>\n    <legend>Personal Information</legend>\n    \n    <div class=\"form-group\">\n      <label for=\"email\">Email address</label>\n      <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" required pattern=\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$\">\n      <div class=\"invalid-feedback\">\n        Please provide a valid email.\n      </div>\n    </div>\n    \n    <div class=\"form-group\">\n      <label for=\"password\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"password\" name=\"password\" required minlength=\"8\">\n    </div>\n    \n    <button type=\"submit\" class=\"btn btn-primary\">Register</button>\n  </fieldset>\n</form>"
