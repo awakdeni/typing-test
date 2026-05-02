@@ -95,12 +95,13 @@ export const TypingTest = () => {
       </header>
 
       <div className="max-w-6xl mx-auto w-full space-y-8 mt-8">
-        {/* Config Bar - Blurs on type */}
-        <div className={cn(
-          "flex flex-wrap items-center justify-between gap-4 py-2 transition-all duration-700",
-          isActive ? "blur-md opacity-10 pointer-events-none" : "opacity-50 hover:opacity-100"
-        )}>
-          <div className="flex items-center gap-8 text-[12px] font-medium tracking-widest uppercase">
+        {/* Config Bar & Stats */}
+        <div className="flex flex-wrap items-center justify-between gap-4 py-2 min-h-[40px]">
+          {/* Selectors - Blurs on type */}
+          <div className={cn(
+            "flex items-center gap-8 text-[12px] font-medium tracking-widest uppercase transition-all duration-700",
+            isActive && "blur-md opacity-10 pointer-events-none"
+          )}>
             {/* Language Selector */}
             <div className="relative group/select">
               <button className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors uppercase">
@@ -138,8 +139,10 @@ export const TypingTest = () => {
                 ))}
               </div>
             </div>
+          </div>
 
-            {/* Stats in Header */}
+          {/* Stats & Timer - Always Sharp */}
+          <div className="flex items-center gap-8">
             {isActive && (
               <div className="flex items-center gap-8 border-l border-white/10 pl-8 ml-2 animate-in fade-in zoom-in duration-500">
                  <div className="flex flex-col items-start leading-none">
@@ -152,20 +155,23 @@ export const TypingTest = () => {
                  </div>
               </div>
             )}
-          </div>
-
-          <div className="flex items-center gap-4">
-            <div className={ `flex items-center gap-2 px-3 py-1 rounded-lg transition-all ${isActive ? 'text-blue-400' : 'text-gray-500'}` }>
-              <Timer className={ `w-4 h-4 ${isActive && 'animate-pulse'}` } />
-              <span className="font-mono font-medium">{timeLeft}s</span>
+            
+            <div className="flex items-center gap-4">
+              <div className={cn(
+                "flex items-center gap-2 px-3 py-1 rounded-lg transition-all",
+                isActive ? "text-blue-400 scale-110" : "text-gray-500"
+              )}>
+                <Timer className={cn("w-4 h-4", isActive && "animate-pulse")} />
+                <span className="font-mono font-medium">{timeLeft}s</span>
+              </div>
+              <button
+                onClick={handleRestart}
+                className="p-1.5 hover:bg-white/5 rounded-lg transition-colors text-gray-500 hover:text-white"
+                title="Reset Test"
+              >
+                <RefreshCw className="w-4 h-4" />
+              </button>
             </div>
-            <button
-              onClick={handleRestart}
-              className="p-1.5 hover:bg-white/5 rounded-lg transition-colors text-gray-500 hover:text-white"
-              title="Reset Test"
-            >
-              <RefreshCw className="w-4 h-4" />
-            </button>
           </div>
         </div>
 
