@@ -39,8 +39,8 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Main Component - Centered vertically more */}
-        <div className="my-auto">
+        {/* Main Component - Fixed to top */}
+        <div className="mt-8">
           <TypingTest />
         </div>
 
