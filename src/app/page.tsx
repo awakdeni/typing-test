@@ -9,9 +9,9 @@ export default function Home() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-[40%] bg-blue-600/5 blur-[120px] rounded-full" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-6 flex flex-col min-h-screen">
+      <div className="relative z-10 container mx-auto px-4 pt-12 pb-20 flex flex-col min-h-screen">
         {/* Navigation Header */}
-        <header className="flex items-center justify-between mb-24 max-w-5xl mx-auto w-full">
+        <header className="flex items-center justify-between mb-12 max-w-5xl mx-auto w-full">
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-2 group cursor-pointer">
               <div className="bg-[#1a1a1a] p-1.5 rounded-lg border border-white/10 group-hover:border-blue-500/50 transition-colors">
