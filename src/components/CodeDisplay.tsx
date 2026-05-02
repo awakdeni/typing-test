@@ -75,10 +75,23 @@ export const CodeDisplay: React.FC<CodeDisplayProps> = ({
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto">
+    <div className="w-full max-w-5xl mx-auto animate-in fade-in zoom-in duration-500">
+      {/* Window Frame Header */}
+      <div className="bg-[#1a1a1a] border border-white/5 rounded-t-2xl px-6 py-4 flex items-center justify-between">
+        <div className="flex gap-2">
+          <div className="w-3 h-3 rounded-full bg-[#ff5f56] shadow-[0_0_10px_rgba(255,95,86,0.2)]" />
+          <div className="w-3 h-3 rounded-full bg-[#ffbd2e] shadow-[0_0_10px_rgba(255,189,46,0.2)]" />
+          <div className="w-3 h-3 rounded-full bg-[#27c93f] shadow-[0_0_10px_rgba(39,201,63,0.2)]" />
+        </div>
+        <div className="text-[10px] text-gray-500 font-mono tracking-wider opacity-50 uppercase">
+          {language}_session_{language === 'javascript' ? 'js' : language === 'python' ? 'py' : 'html'}
+        </div>
+        <div className="w-12" />
+      </div>
+
       <div 
         ref={containerRef}
-        className="relative font-mono text-2xl leading-[1.6] bg-transparent pt-6 pb-10 px-0 overflow-y-hidden h-[170px] scrollbar-hide"
+        className="relative font-mono text-2xl leading-[1.6] bg-[#0d0d0d] pt-8 pb-12 px-12 rounded-b-2xl border-x border-b border-white/5 shadow-2xl overflow-y-hidden h-[190px] scrollbar-hide"
       >
         <div className="whitespace-pre-wrap break-words">
           {code.split('').map((char, index) => {
