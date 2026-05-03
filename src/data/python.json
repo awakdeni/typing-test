@@ -260,8 +260,8 @@
     "language": "python",
     "difficulty": "medium",
     "code": "prev_list = [x * 3 for x in range(12)]\nfiltered = list(filter(lambda x: x > 10, count_list))",
-    "version": 2,
-    "last_audited": "2026-05-03T06:18:57.926Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:33:55.192Z"
   },
   {
     "id": 34,
