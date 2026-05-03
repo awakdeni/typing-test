@@ -185,7 +185,8 @@
     "id": 27,
     "language": "html",
     "difficulty": "easy",
-    "code": "<article class=\"card\">\n  <header>\n    <h2>Complete Notice</h2>\n  </header>\n  <section>\n    <p>System will destroy in 28 minutes.</p>\n  </section>\n</article>"
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Complete Notice</h2>\n  </header>\n  <section>\n    <p>System will destroy in 28 minutes.</p>\n  </section>\n</article>",
+    "verified": true
   },
   {
     "id": 28,
