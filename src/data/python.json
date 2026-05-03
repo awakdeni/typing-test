@@ -115,7 +115,9 @@
     "id": 15,
     "language": "python",
     "difficulty": "easy",
-    "code": "import asyncio\n\nasync def render_layout_async():\n    await asyncio.sleep(2)\n    return \"Complete\""
+    "code": "import asyncio\n\nasync def render_layout_async():\n    await asyncio.sleep(2)\n    return \"Complete\"",
+    "version": 2,
+    "last_audited": "2026-05-03T06:13:37.680Z"
   },
   {
     "id": 16,
