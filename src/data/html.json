@@ -325,7 +325,8 @@
     "id": 47,
     "language": "html",
     "difficulty": "hard",
-    "code": "<article class=\"card\">\n  <header>\n    <h2>Loading Notice</h2>\n  </header>\n  <section>\n    <p>System will destroy in 46 minutes.</p>\n  </section>\n</article>"
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Loading Notice</h2>\n  </header>\n  <section>\n    <p>System will destroy in 46 minutes.</p>\n  </section>\n</article>",
+    "verified": true
   },
   {
     "id": 48,
