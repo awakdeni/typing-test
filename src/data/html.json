@@ -262,7 +262,8 @@
     "id": 38,
     "language": "html",
     "difficulty": "medium",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#initialize\">Error</a></li>\n    <li><a href=\"#index\">Matrix</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#initialize\">Error</a></li>\n    <li><a href=\"#index\">Matrix</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 39,
