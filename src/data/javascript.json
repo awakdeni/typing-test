@@ -297,7 +297,8 @@
     "id": 43,
     "language": "javascript",
     "difficulty": "easy",
-    "code": "export function parseUsersAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3800);\n  });\n}"
+    "code": "export function parseUsersAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3800);\n  });\n}",
+    "verified": true
   },
   {
     "id": 44,
