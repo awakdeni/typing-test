@@ -11,7 +11,9 @@
     "id": 2,
     "language": "python",
     "difficulty": "hard",
-    "code": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.next = None\n\ndef reverse_list(head):\n    prev = None\n    current = head\n    while current:\n        next_node = current.next\n        current.next = prev\n        prev = current\n        current = next_node\n    return prev\n\ndef print_list(head):\n    curr = head\n    while curr:\n        print(f\"{curr.value} -> \", end=\"\")\n        curr = curr.next\n    print(\"None\")"
+    "code": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.next = None\n\ndef reverse_list(head):\n    prev = None\n    current = head\n    while current:\n        next_node = current.next\n        current.next = prev\n        prev = current\n        current = next_node\n    return prev\n\ndef print_list(head):\n    curr = head\n    while curr:\n        print(f\"{curr.value} -> \", end=\"\")\n        curr = curr.next\n    print(\"None\")",
+    "version": 2,
+    "last_audited": "2026-05-03T06:09:42.466Z"
   },
   {
     "id": 3,
