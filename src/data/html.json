@@ -3,7 +3,8 @@
     "id": 1,
     "language": "html",
     "difficulty": "easy",
-    "code": "<section class=\"hero-section\">\n  <div class=\"container mx-auto px-6 py-12\">\n    <div class=\"flex flex-col items-center text-center\">\n      <h1 class=\"text-5xl font-bold text-white mb-4\">\n        Build Better Software Faster\n      </h1>\n      <p class=\"text-xl text-gray-400 max-w-2xl mb-8\">\n        Join thousands of developers using our platform to ship\n        high-quality applications with confidence and speed.\n      </p>\n      <div class=\"flex gap-4\">\n        <button class=\"btn-primary\">Get Started</button>\n        <button class=\"btn-secondary\">Learn More</button>\n      </div>\n    </div>\n  </div>\n</section>"
+    "code": "<section class=\"hero-section\">\n  <div class=\"container mx-auto px-6 py-12\">\n    <div class=\"flex flex-col items-center text-center\">\n      <h1 class=\"text-5xl font-bold text-white mb-4\">\n        Build Better Software Faster\n      </h1>\n      <p class=\"text-xl text-gray-400 max-w-2xl mb-8\">\n        Join thousands of developers using our platform to ship\n        high-quality applications with confidence and speed.\n      </p>\n      <div class=\"flex gap-4\">\n        <button class=\"btn-primary\">Get Started</button>\n        <button class=\"btn-secondary\">Learn More</button>\n      </div>\n    </div>\n  </div>\n</section>",
+    "verified": true
   },
   {
     "id": 2,
