@@ -269,7 +269,8 @@
     "id": 39,
     "language": "html",
     "difficulty": "easy",
-    "code": "<table class=\"token-table\">\n  <thead>\n    <tr><th>ID</th><th>Items</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>15</td><td>Test</td><td>Active</td></tr>\n  </tbody>\n</table>"
+    "code": "<table class=\"token-table\">\n  <thead>\n    <tr><th>ID</th><th>Items</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>15</td><td>Test</td><td>Active</td></tr>\n  </tbody>\n</table>",
+    "verified": true
   },
   {
     "id": 40,
