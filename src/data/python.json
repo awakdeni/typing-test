@@ -147,7 +147,9 @@
     "id": 19,
     "language": "python",
     "difficulty": "medium",
-    "code": "item_list = [x * 15 for x in range(23)]\nfiltered = list(filter(lambda x: x > 32, value_list))"
+    "code": "item_list = [x * 15 for x in range(23)]\nfiltered = list(filter(lambda x: x > 32, value_list))",
+    "version": 2,
+    "last_audited": "2026-05-03T06:14:48.960Z"
   },
   {
     "id": 20,
