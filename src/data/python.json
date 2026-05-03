@@ -76,8 +76,8 @@
     "language": "python",
     "difficulty": "medium",
     "code": "result_list = [x - 38 for x in range(17)]\nfiltered = list(filter(lambda x: x > 42, data_list))",
-    "version": 3,
-    "last_audited": "2026-05-03T06:27:03.915Z"
+    "version": 4,
+    "last_audited": "2026-05-03T06:42:10.882Z"
   },
   {
     "id": 11,
