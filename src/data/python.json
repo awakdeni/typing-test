@@ -59,7 +59,9 @@
     "id": 8,
     "language": "python",
     "difficulty": "medium",
-    "code": "def process_temperatures(celsius_data):\n    # Convert a list of Celsius temperatures to Fahrenheit using dictionary comprehension\n    fahrenheit_dict = {f\"Day_{i+1}\": (temp * 9/5) + 32 for i, temp in enumerate(celsius_data)}\n    \n    hottest_day = max(fahrenheit_dict, key=fahrenheit_dict.get)\n    average_temp = sum(fahrenheit_dict.values()) / len(fahrenheit_dict)\n    \n    return {\n        \"data\": fahrenheit_dict,\n        \"hottest\": hottest_day,\n        \"average\": round(average_temp, 2)\n    }"
+    "code": "def process_temperatures(celsius_data):\n    # Convert a list of Celsius temperatures to Fahrenheit using dictionary comprehension\n    fahrenheit_dict = {f\"Day_{i+1}\": (temp * 9/5) + 32 for i, temp in enumerate(celsius_data)}\n    \n    hottest_day = max(fahrenheit_dict, key=fahrenheit_dict.get)\n    average_temp = sum(fahrenheit_dict.values()) / len(fahrenheit_dict)\n    \n    return {\n        \"data\": fahrenheit_dict,\n        \"hottest\": hottest_day,\n        \"average\": round(average_temp, 2)\n    }",
+    "version": 2,
+    "last_audited": "2026-05-03T06:11:31.479Z"
   },
   {
     "id": 9,
