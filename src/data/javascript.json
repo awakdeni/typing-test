@@ -150,7 +150,8 @@
     "id": 22,
     "language": "javascript",
     "difficulty": "hard",
-    "code": "function* fibonacciGenerator() {\n  let current = 0;\n  let next = 1;\n  while (true) {\n    yield current;\n    [current, next] = [next, current + next];\n  }\n}\n\nconst sequence = fibonacciGenerator();\nconst firstTen = Array.from({ length: 10 }, () => sequence.next().value);\nconsole.log('First 10 Fibonacci numbers:', firstTen.join(', '));"
+    "code": "function* fibonacciGenerator() {\n  let current = 0;\n  let next = 1;\n  while (true) {\n    yield current;\n    [current, next] = [next, current + next];\n  }\n}\n\nconst sequence = fibonacciGenerator();\nconst firstTen = Array.from({ length: 10 }, () => sequence.next().value);\nconsole.log('First 10 Fibonacci numbers:', firstTen.join(', '));",
+    "verified": true
   },
   {
     "id": 23,
