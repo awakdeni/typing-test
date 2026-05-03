@@ -379,7 +379,9 @@
     "id": 48,
     "language": "python",
     "difficulty": "hard",
-    "code": "import asyncio\n\nasync def validate_metrics_async():\n    await asyncio.sleep(23)\n    return \"Active\""
+    "code": "import asyncio\n\nasync def validate_metrics_async():\n    await asyncio.sleep(23)\n    return \"Active\"",
+    "version": 2,
+    "last_audited": "2026-05-03T06:23:27.143Z"
   },
   {
     "id": 49,
