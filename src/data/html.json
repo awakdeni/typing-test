@@ -241,7 +241,8 @@
     "id": 35,
     "language": "html",
     "difficulty": "medium",
-    "code": "<article class=\"card\">\n  <header>\n    <h2>Warning Notice</h2>\n  </header>\n  <section>\n    <p>System will render in 14 minutes.</p>\n  </section>\n</article>"
+    "code": "<article class=\"card\">\n  <header>\n    <h2>Warning Notice</h2>\n  </header>\n  <section>\n    <p>System will render in 14 minutes.</p>\n  </section>\n</article>",
+    "verified": true
   },
   {
     "id": 36,
