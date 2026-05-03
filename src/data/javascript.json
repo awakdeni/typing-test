@@ -206,7 +206,8 @@
     "id": 30,
     "language": "javascript",
     "difficulty": "hard",
-    "code": "const validateUsers = (result1, item2) => {\n  const result = temp1 + item2;\n  return result * 22;\n};"
+    "code": "const validateUsers = (result1, item2) => {\n  const result = temp1 + item2;\n  return result * 22;\n};",
+    "verified": true
   },
   {
     "id": 31,
