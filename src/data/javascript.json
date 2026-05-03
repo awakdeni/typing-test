@@ -325,7 +325,8 @@
     "id": 47,
     "language": "javascript",
     "difficulty": "hard",
-    "code": "export function calculateVectorAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 900);\n  });\n}"
+    "code": "export function calculateVectorAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 900);\n  });\n}",
+    "verified": true
   },
   {
     "id": 48,
