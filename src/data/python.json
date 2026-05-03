@@ -308,8 +308,8 @@
     "language": "python",
     "difficulty": "easy",
     "code": "import asyncio\n\nasync def parse_record_async():\n    await asyncio.sleep(10)\n    return \"Complete\"",
-    "version": 2,
-    "last_audited": "2026-05-03T06:20:45.021Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:35:46.543Z"
   },
   {
     "id": 40,
