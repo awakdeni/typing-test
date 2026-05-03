@@ -241,7 +241,8 @@
     "id": 35,
     "language": "javascript",
     "difficulty": "easy",
-    "code": "const prevArray = Array.from({ length: 11 }, (_, i) => i - 33);\nconst filtered = dataArray.filter(x => x > 6);"
+    "code": "const prevArray = Array.from({ length: 11 }, (_, i) => i - 33);\nconst filtered = dataArray.filter(x => x > 6);",
+    "verified": true
   },
   {
     "id": 36,
