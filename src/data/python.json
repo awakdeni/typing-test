@@ -108,8 +108,8 @@
     "language": "python",
     "difficulty": "medium",
     "code": "class StateManager:\n    def __init__(self):\n        self.data = 41\n\n    def format(self):\n        print(f\"Active: {self.buffer}\")",
-    "version": 2,
-    "last_audited": "2026-05-03T06:13:18.776Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:28:14.943Z"
   },
   {
     "id": 15,
