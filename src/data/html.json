@@ -255,7 +255,8 @@
     "id": 37,
     "language": "html",
     "difficulty": "hard",
-    "code": "<form id=\"formatUsersForm\">\n  <label for=\"dataInput\">Layout Name:</label>\n  <input type=\"text\" id=\"valueInput\" required />\n  <button type=\"submit\">Warning</button>\n</form>"
+    "code": "<form id=\"formatUsersForm\">\n  <label for=\"dataInput\">Layout Name:</label>\n  <input type=\"text\" id=\"valueInput\" required />\n  <button type=\"submit\">Warning</button>\n</form>",
+    "verified": true
   },
   {
     "id": 38,
