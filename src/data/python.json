@@ -380,8 +380,8 @@
     "language": "python",
     "difficulty": "hard",
     "code": "import asyncio\n\nasync def validate_metrics_async():\n    await asyncio.sleep(23)\n    return \"Active\"",
-    "version": 2,
-    "last_audited": "2026-05-03T06:23:27.143Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:38:25.985Z"
   },
   {
     "id": 49,
