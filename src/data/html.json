@@ -80,7 +80,8 @@
     "id": 12,
     "language": "html",
     "difficulty": "easy",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#execute\">Stopped</a></li>\n    <li><a href=\"#config\">Metrics</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#execute\">Stopped</a></li>\n    <li><a href=\"#config\">Metrics</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 13,
