@@ -318,7 +318,8 @@
     "id": 46,
     "language": "html",
     "difficulty": "medium",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#destroy\">Invalid</a></li>\n    <li><a href=\"#total\">Token</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#destroy\">Invalid</a></li>\n    <li><a href=\"#total\">Token</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 47,
