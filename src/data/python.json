@@ -35,7 +35,9 @@
     "id": 5,
     "language": "python",
     "difficulty": "medium",
-    "code": "class BankAccount:\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self.balance = balance\n\n    def deposit(self, amount):\n        if amount > 0:\n            self.balance += amount\n            print(f\"Added {amount} to the balance\")\n        return self.balance\n\n    def withdraw(self, amount):\n        if 0 < amount <= self.balance:\n            self.balance -= amount\n            print(f\"Withdrew {amount}\")\n        else:\n            print(\"Insufficient funds!\")\n        return self.balance"
+    "code": "class BankAccount:\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self.balance = balance\n\n    def deposit(self, amount):\n        if amount > 0:\n            self.balance += amount\n            print(f\"Added {amount} to the balance\")\n        return self.balance\n\n    def withdraw(self, amount):\n        if 0 < amount <= self.balance:\n            self.balance -= amount\n            print(f\"Withdrew {amount}\")\n        else:\n            print(\"Insufficient funds!\")\n        return self.balance",
+    "version": 2,
+    "last_audited": "2026-05-03T06:10:36.637Z"
   },
   {
     "id": 6,
