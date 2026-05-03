@@ -17,7 +17,8 @@
     "id": 3,
     "language": "javascript",
     "difficulty": "easy",
-    "code": "const GREETING = 'Hello World';\nconsole.log(GREETING);\n\nconst add = (a, b) => a + b;\nconsole.log(add(5, 10));"
+    "code": "const GREETING = 'Hello World';\nconsole.log(GREETING);\n\nconst add = (a, b) => a + b;\nconsole.log(add(5, 10));",
+    "verified": true
   },
   {
     "id": 4,
