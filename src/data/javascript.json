@@ -304,7 +304,8 @@
     "id": 44,
     "language": "javascript",
     "difficulty": "easy",
-    "code": "class RecordHandler {\n  constructor() {\n    this.result = 20;\n  }\n\n  async initialize() {\n    console.log('Running...');\n  }\n}"
+    "code": "class RecordHandler {\n  constructor() {\n    this.result = 20;\n  }\n\n  async initialize() {\n    console.log('Running...');\n  }\n}",
+    "verified": true
   },
   {
     "id": 45,
