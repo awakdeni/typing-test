@@ -276,7 +276,8 @@
     "id": 40,
     "language": "html",
     "difficulty": "hard",
-    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Layout</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>11</td><td>Test</td><td>Warning</td></tr>\n  </tbody>\n</table>"
+    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Layout</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>11</td><td>Test</td><td>Warning</td></tr>\n  </tbody>\n</table>",
+    "verified": true
   },
   {
     "id": 41,
