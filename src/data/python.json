@@ -251,7 +251,9 @@
     "id": 32,
     "language": "python",
     "difficulty": "hard",
-    "code": "result_list = [x % 25 for x in range(8)]\nfiltered = list(filter(lambda x: x > 24, next_list))"
+    "code": "result_list = [x % 25 for x in range(8)]\nfiltered = list(filter(lambda x: x > 24, next_list))",
+    "version": 2,
+    "last_audited": "2026-05-03T06:18:40.302Z"
   },
   {
     "id": 33,
