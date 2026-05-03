@@ -20,8 +20,8 @@
     "language": "python",
     "difficulty": "easy",
     "code": "name = \"CodeSpeed\"\nprint(f\"Welcome to {name}!\")\n\nnumbers = [1, 2, 3, 4, 5]\nfor n in numbers:\n    print(n * 2)",
-    "version": 3,
-    "last_audited": "2026-05-03T06:24:57.291Z"
+    "version": 4,
+    "last_audited": "2026-05-03T06:40:00.160Z"
   },
   {
     "id": 4,
