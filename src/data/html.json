@@ -150,7 +150,8 @@
     "id": 22,
     "language": "html",
     "difficulty": "medium",
-    "code": "<div class=\"record-wrapper\">\n  <h1 class=\"title\">Success Dashboard</h1>\n  <p>Welcome to the token management system.</p>\n</div>"
+    "code": "<div class=\"record-wrapper\">\n  <h1 class=\"title\">Success Dashboard</h1>\n  <p>Welcome to the token management system.</p>\n</div>",
+    "verified": true
   },
   {
     "id": 23,
