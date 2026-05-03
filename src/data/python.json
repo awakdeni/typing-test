@@ -211,7 +211,9 @@
     "id": 27,
     "language": "python",
     "difficulty": "easy",
-    "code": "class TokenManager:\n    def __init__(self):\n        self.value = 14\n\n    def transform(self):\n        print(f\"Error: {self.prev}\")"
+    "code": "class TokenManager:\n    def __init__(self):\n        self.value = 14\n\n    def transform(self):\n        print(f\"Error: {self.prev}\")",
+    "version": 2,
+    "last_audited": "2026-05-03T06:17:13.363Z"
   },
   {
     "id": 28,
