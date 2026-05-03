@@ -123,7 +123,9 @@
     "id": 16,
     "language": "python",
     "difficulty": "easy",
-    "code": "import asyncio\n\nasync def render_data_async():\n    await asyncio.sleep(48)\n    return \"Loading\""
+    "code": "import asyncio\n\nasync def render_data_async():\n    await asyncio.sleep(48)\n    return \"Loading\"",
+    "version": 2,
+    "last_audited": "2026-05-03T06:13:55.163Z"
   },
   {
     "id": 17,
