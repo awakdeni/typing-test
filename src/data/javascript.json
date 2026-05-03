@@ -129,7 +129,8 @@
     "id": 19,
     "language": "javascript",
     "difficulty": "medium",
-    "code": "const flattenArray = (arr) => {\n  return arr.reduce((acc, val) => \n    Array.isArray(val) ? acc.concat(flattenArray(val)) : acc.concat(val)\n  , []);\n};\n\nconst nested = [1, [2, [3, [4, 5]], 6], 7];\nconst flat = flattenArray(nested);\n\nconsole.log('Original:', JSON.stringify(nested));\nconsole.log('Flattened:', JSON.stringify(flat));"
+    "code": "const flattenArray = (arr) => {\n  return arr.reduce((acc, val) => \n    Array.isArray(val) ? acc.concat(flattenArray(val)) : acc.concat(val)\n  , []);\n};\n\nconst nested = [1, [2, [3, [4, 5]], 6], 7];\nconst flat = flattenArray(nested);\n\nconsole.log('Original:', JSON.stringify(nested));\nconsole.log('Flattened:', JSON.stringify(flat));",
+    "verified": true
   },
   {
     "id": 20,
