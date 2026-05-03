@@ -124,8 +124,8 @@
     "language": "python",
     "difficulty": "easy",
     "code": "import asyncio\n\nasync def render_data_async():\n    await asyncio.sleep(48)\n    return \"Loading\"",
-    "version": 2,
-    "last_audited": "2026-05-03T06:13:55.163Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:28:49.814Z"
   },
   {
     "id": 17,
