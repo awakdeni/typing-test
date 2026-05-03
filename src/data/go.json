@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "language": "go",
+    "difficulty": "easy",
+    "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tfmt.Println(\"Welcome to CodeSpeed Go Typing Test\")\n}"
+  },
+  {
+    "id": 2,
+    "language": "go",
+    "difficulty": "easy",
+    "code": "package main\n\nimport \"fmt\"\n\nfunc add(x int, y int) int {\n\treturn x + y\n}\n\nfunc main() {\n\tfmt.Println(add(42, 13))\n}"
+  },
+  {
+    "id": 3,
+    "language": "go",
+    "difficulty": "medium",
+    "code": "package main\n\nimport \"fmt\"\n\nfunc fibonacci(n int) int {\n\tif n <= 1 {\n\t\treturn n\n\t}\n\treturn fibonacci(n-1) + fibonacci(n-2)\n}\n\nfunc main() {\n\tfor i := 0; i < 10; i++ {\n\t\tfmt.Println(fibonacci(i))\n\t}\n}"
+  },
+  {
+    "id": 4,
+    "language": "go",
+    "difficulty": "medium",
+    "code": "package main\n\nimport \"fmt\"\n\ntype Person struct {\n\tName string\n\tAge  int\n}\n\nfunc main() {\n\tp := Person{Name: \"Alice\", Age: 30}\n\tfmt.Printf(\"%s is %d years old\\n\", p.Name, p.Age)\n}"
+  },
+  {
+    "id": 5,
+    "language": "go",
+    "difficulty": "hard",
+    "code": "package main\n\nimport (\n\t\"fmt\"\n\t\"sync\"\n)\n\nfunc worker(id int, jobs <-chan int, results chan<- int) {\n\tfor j := range jobs {\n\t\tfmt.Println(\"worker\", id, \"started  job\", j)\n\t\tresults <- j * 2\n\t}\n}\n\nfunc main() {\n\tconst numJobs = 5\n\tjobs := make(chan int, numJobs)\n\tresults := make(chan int, numJobs)\n\n\tvar wg sync.WaitGroup\n\tfor w := 1; w <= 3; w++ {\n\t\twg.Add(1)\n\t\tgo func(w int) {\n\t\t\tworker(w, jobs, results)\n\t\t\twg.Done()\n\t\t}(w)\n\t}\n\n\tfor j := 1; j <= numJobs; j++ {\n\t\tjobs <- j\n\t}\n\tclose(jobs)\n\twg.Wait()\n\tclose(results)\n}"
+  }
+]
