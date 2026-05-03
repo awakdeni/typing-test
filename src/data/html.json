@@ -192,7 +192,8 @@
     "id": 28,
     "language": "html",
     "difficulty": "easy",
-    "code": "<table class=\"session-table\">\n  <thead>\n    <tr><th>ID</th><th>Matrix</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>38</td><td>Test</td><td>Stopped</td></tr>\n  </tbody>\n</table>"
+    "code": "<table class=\"session-table\">\n  <thead>\n    <tr><th>ID</th><th>Matrix</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>38</td><td>Test</td><td>Stopped</td></tr>\n  </tbody>\n</table>",
+    "verified": true
   },
   {
     "id": 29,
