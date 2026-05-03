@@ -269,7 +269,8 @@
     "id": 39,
     "language": "javascript",
     "difficulty": "easy",
-    "code": "class VectorHandler {\n  constructor() {\n    this.total = 5;\n  }\n\n  async fetch() {\n    console.log('Active...');\n  }\n}"
+    "code": "class VectorHandler {\n  constructor() {\n    this.total = 5;\n  }\n\n  async fetch() {\n    console.log('Active...');\n  }\n}",
+    "verified": true
   },
   {
     "id": 40,
