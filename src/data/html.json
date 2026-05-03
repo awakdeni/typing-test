@@ -52,7 +52,8 @@
     "id": 8,
     "language": "html",
     "difficulty": "easy",
-    "code": "<form id=\"executeSessionForm\">\n  <label for=\"prevInput\">State Name:</label>\n  <input type=\"text\" id=\"prevInput\" required />\n  <button type=\"submit\">Error</button>\n</form>"
+    "code": "<form id=\"executeSessionForm\">\n  <label for=\"prevInput\">State Name:</label>\n  <input type=\"text\" id=\"prevInput\" required />\n  <button type=\"submit\">Error</button>\n</form>",
+    "verified": true
   },
   {
     "id": 9,
