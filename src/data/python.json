@@ -356,8 +356,8 @@
     "language": "python",
     "difficulty": "easy",
     "code": "def validate_layout(**kwargs):\n    for key, val in kwargs.items():\n        if not val:\n            raise ValueError(\"Loading Error\")",
-    "version": 2,
-    "last_audited": "2026-05-03T06:22:32.666Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:37:33.039Z"
   },
   {
     "id": 46,
