@@ -316,8 +316,8 @@
     "language": "python",
     "difficulty": "medium",
     "code": "import asyncio\n\nasync def validate_layout_async():\n    await asyncio.sleep(22)\n    return \"Invalid\"",
-    "version": 2,
-    "last_audited": "2026-05-03T06:21:02.496Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:36:03.809Z"
   },
   {
     "id": 41,
