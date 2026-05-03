@@ -3,7 +3,9 @@
     "id": 1,
     "language": "css",
     "difficulty": "easy",
-    "code": ".card {\n  display: flex;\n  padding: 1.5rem;\n  border-radius: 12px;\n  background: rgba(255, 255, 255, 0.05);\n  backdrop-filter: blur(10px);\n  transition: transform 0.3s ease;\n}"
+    "code": ".card {\n  display: flex;\n  padding: 1.5rem;\n  border-radius: 12px;\n  background: rgba(255, 255, 255, 0.05);\n  backdrop-filter: blur(10px);\n  transition: transform 0.3s ease;\n}",
+    "version": 2,
+    "last_verified": "2026-05-03T06:46:40.676Z"
   },
   {
     "id": 2,
