@@ -234,7 +234,8 @@
     "id": 34,
     "language": "html",
     "difficulty": "hard",
-    "code": "<form id=\"parseLayoutForm\">\n  <label for=\"nextInput\">Data Name:</label>\n  <input type=\"text\" id=\"configInput\" required />\n  <button type=\"submit\">Success</button>\n</form>"
+    "code": "<form id=\"parseLayoutForm\">\n  <label for=\"nextInput\">Data Name:</label>\n  <input type=\"text\" id=\"configInput\" required />\n  <button type=\"submit\">Success</button>\n</form>",
+    "verified": true
   },
   {
     "id": 35,
