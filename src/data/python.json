@@ -139,7 +139,9 @@
     "id": 18,
     "language": "python",
     "difficulty": "hard",
-    "code": "data_list = [x * 12 for x in range(19)]\nfiltered = list(filter(lambda x: x > 40, temp_list))"
+    "code": "data_list = [x * 12 for x in range(19)]\nfiltered = list(filter(lambda x: x > 40, temp_list))",
+    "version": 2,
+    "last_audited": "2026-05-03T06:14:31.040Z"
   },
   {
     "id": 19,
