@@ -136,7 +136,8 @@
     "id": 20,
     "language": "html",
     "difficulty": "medium",
-    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Token</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>24</td><td>Test</td><td>Stopped</td></tr>\n  </tbody>\n</table>"
+    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Token</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>24</td><td>Test</td><td>Stopped</td></tr>\n  </tbody>\n</table>",
+    "verified": true
   },
   {
     "id": 21,
