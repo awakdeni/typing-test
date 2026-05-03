@@ -171,7 +171,8 @@
     "id": 25,
     "language": "html",
     "difficulty": "medium",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#update\">Running</a></li>\n    <li><a href=\"#current\">Items</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#update\">Running</a></li>\n    <li><a href=\"#current\">Items</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 26,
