@@ -38,7 +38,8 @@
     "id": 6,
     "language": "javascript",
     "difficulty": "hard",
-    "code": "function debounce(func, wait) {\n  let timeout;\n  return function executedFunction(...args) {\n    const later = () => {\n      clearTimeout(timeout);\n      func(...args);\n    };\n    clearTimeout(timeout);\n    timeout = setTimeout(later, wait);\n  };\n}\n\nconst handleSearch = debounce((query) => {\n  console.log('Searching for:', query);\n  // API call logic here\n}, 500);"
+    "code": "function debounce(func, wait) {\n  let timeout;\n  return function executedFunction(...args) {\n    const later = () => {\n      clearTimeout(timeout);\n      func(...args);\n    };\n    clearTimeout(timeout);\n    timeout = setTimeout(later, wait);\n  };\n}\n\nconst handleSearch = debounce((query) => {\n  console.log('Searching for:', query);\n  // API call logic here\n}, 500);",
+    "verified": true
   },
   {
     "id": 7,
