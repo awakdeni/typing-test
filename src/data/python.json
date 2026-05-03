@@ -180,8 +180,8 @@
     "language": "python",
     "difficulty": "medium",
     "code": "import asyncio\n\nasync def format_items_async():\n    await asyncio.sleep(35)\n    return \"Loading\"",
-    "version": 2,
-    "last_audited": "2026-05-03T06:15:59.381Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:30:54.040Z"
   },
   {
     "id": 24,
