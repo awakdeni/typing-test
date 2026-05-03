@@ -276,7 +276,8 @@
     "id": 40,
     "language": "javascript",
     "difficulty": "easy",
-    "code": "export function updateMetricsAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3200);\n  });\n}"
+    "code": "export function updateMetricsAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3200);\n  });\n}",
+    "verified": true
   },
   {
     "id": 41,
