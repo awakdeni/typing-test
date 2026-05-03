@@ -195,7 +195,9 @@
     "id": 25,
     "language": "python",
     "difficulty": "hard",
-    "code": "class MatrixManager:\n    def __init__(self):\n        self.index = 25\n\n    def validate(self):\n        print(f\"Invalid: {self.index}\")"
+    "code": "class MatrixManager:\n    def __init__(self):\n        self.index = 25\n\n    def validate(self):\n        print(f\"Invalid: {self.index}\")",
+    "version": 2,
+    "last_audited": "2026-05-03T06:16:37.597Z"
   },
   {
     "id": 26,
