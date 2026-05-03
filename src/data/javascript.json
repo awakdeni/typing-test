@@ -199,7 +199,8 @@
     "id": 29,
     "language": "javascript",
     "difficulty": "medium",
-    "code": "export function formatMatrixAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 4100);\n  });\n}"
+    "code": "export function formatMatrixAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 4100);\n  });\n}",
+    "verified": true
   },
   {
     "id": 30,
