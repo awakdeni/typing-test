@@ -164,7 +164,8 @@
     "id": 24,
     "language": "html",
     "difficulty": "easy",
-    "code": "<form id=\"calculateMetricsForm\">\n  <label for=\"resultInput\">Record Name:</label>\n  <input type=\"text\" id=\"valueInput\" required />\n  <button type=\"submit\">Pending</button>\n</form>"
+    "code": "<form id=\"calculateMetricsForm\">\n  <label for=\"resultInput\">Record Name:</label>\n  <input type=\"text\" id=\"valueInput\" required />\n  <button type=\"submit\">Pending</button>\n</form>",
+    "verified": true
   },
   {
     "id": 25,
