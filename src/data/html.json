@@ -38,7 +38,8 @@
     "id": 6,
     "language": "html",
     "difficulty": "easy",
-    "code": "<div class=\"state-wrapper\">\n  <h1 class=\"title\">Running Dashboard</h1>\n  <p>Welcome to the token management system.</p>\n</div>"
+    "code": "<div class=\"state-wrapper\">\n  <h1 class=\"title\">Running Dashboard</h1>\n  <p>Welcome to the token management system.</p>\n</div>",
+    "verified": true
   },
   {
     "id": 7,
