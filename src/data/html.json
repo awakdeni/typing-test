@@ -311,7 +311,8 @@
     "id": 45,
     "language": "html",
     "difficulty": "hard",
-    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Record</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>34</td><td>Test</td><td>Loading</td></tr>\n  </tbody>\n</table>"
+    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Record</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>34</td><td>Test</td><td>Loading</td></tr>\n  </tbody>\n</table>",
+    "verified": true
   },
   {
     "id": 46,
