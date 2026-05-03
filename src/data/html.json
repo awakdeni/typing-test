@@ -227,7 +227,8 @@
     "id": 33,
     "language": "html",
     "difficulty": "easy",
-    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Matrix</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>38</td><td>Test</td><td>Invalid</td></tr>\n  </tbody>\n</table>"
+    "code": "<table class=\"users-table\">\n  <thead>\n    <tr><th>ID</th><th>Matrix</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>38</td><td>Test</td><td>Invalid</td></tr>\n  </tbody>\n</table>",
+    "verified": true
   },
   {
     "id": 34,
