@@ -227,7 +227,8 @@
     "id": 33,
     "language": "javascript",
     "difficulty": "easy",
-    "code": "const indexConfig = {\n  status: 'Running',\n  timeout: 32,\n  retry: true\n};\nObject.freeze(itemConfig);"
+    "code": "const indexConfig = {\n  status: 'Running',\n  timeout: 32,\n  retry: true\n};\nObject.freeze(itemConfig);",
+    "verified": true
   },
   {
     "id": 34,
