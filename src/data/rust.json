@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "language": "rust",
+    "difficulty": "easy",
+    "code": "fn main() {\n    println!(\"Welcome to CodeSpeed Rust Typing Test\");\n}"
+  },
+  {
+    "id": 2,
+    "language": "rust",
+    "difficulty": "easy",
+    "code": "fn add(a: i32, b: i32) -> i32 {\n    a + b\n}\n\nfn main() {\n    let result = add(5, 10);\n    println!(\"The result is {}\", result);\n}"
+  },
+  {
+    "id": 3,
+    "language": "rust",
+    "difficulty": "medium",
+    "code": "fn is_palindrome(s: &str) -> bool {\n    let chars: Vec<char> = s.chars().collect();\n    let len = chars.len();\n    for i in 0..len / 2 {\n        if chars[i] != chars[len - 1 - i] {\n            return false;\n        }\n    }\n    true\n}\n\nfn main() {\n    let word = \"racecar\";\n    println!(\"Is '{}' a palindrome? {}\", word, is_palindrome(word));\n}"
+  },
+  {
+    "id": 4,
+    "language": "rust",
+    "difficulty": "medium",
+    "code": "struct Rectangle {\n    width: u32,\n    height: u32,\n}\n\nimpl Rectangle {\n    fn area(&self) -> u32 {\n        self.width * self.height\n    }\n}\n\nfn main() {\n    let rect = Rectangle { width: 30, height: 50 };\n    println!(\"The area of the rectangle is {} square pixels.\", rect.area());\n}"
+  },
+  {
+    "id": 5,
+    "language": "rust",
+    "difficulty": "hard",
+    "code": "use std::sync::{Arc, Mutex};\nuse std::thread;\n\nfn main() {\n    let counter = Arc::new(Mutex::new(0));\n    let mut handles = vec![];\n\n    for _ in 0..10 {\n        let counter = Arc::clone(&counter);\n        let handle = thread::spawn(move || {\n            let mut num = counter.lock().unwrap();\n            *num += 1;\n        });\n        handles.push(handle);\n    }\n\n    for handle in handles {\n        handle.join().unwrap();\n    }\n\n    println!(\"Result: {}\", *counter.lock().unwrap());\n}"
+  }
+]
