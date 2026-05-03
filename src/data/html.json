@@ -157,7 +157,8 @@
     "id": 23,
     "language": "html",
     "difficulty": "hard",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#calculate\">Active</a></li>\n    <li><a href=\"#prev\">Token</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#calculate\">Active</a></li>\n    <li><a href=\"#prev\">Token</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 24,
