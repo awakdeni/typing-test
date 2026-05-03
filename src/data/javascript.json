@@ -101,7 +101,8 @@
     "id": 15,
     "language": "javascript",
     "difficulty": "hard",
-    "code": "class VirtualDOM {\n  static createElement(type, props, ...children) {\n    return {\n      type,\n      props: {\n        ...props,\n        children: children.map(child =>\n          typeof child === \"object\" ? child : this.createTextElement(child)\n        )\n      }\n    };\n  }\n\n  static createTextElement(text) {\n    return {\n      type: \"TEXT_ELEMENT\",\n      props: { nodeValue: text, children: [] }\n    };\n  }\n\n  static render(element, container) {\n    const dom = element.type == \"TEXT_ELEMENT\"\n      ? document.createTextNode(\"\")\n      : document.createElement(element.type);\n\n    const isProperty = key => key !== \"children\";\n    Object.keys(element.props).filter(isProperty).forEach(name => {\n      dom[name] = element.props[name];\n    });\n\n    element.props.children.forEach(child => VirtualDOM.render(child, dom));\n    container.appendChild(dom);\n  }\n}"
+    "code": "class VirtualDOM {\n  static createElement(type, props, ...children) {\n    return {\n      type,\n      props: {\n        ...props,\n        children: children.map(child =>\n          typeof child === \"object\" ? child : this.createTextElement(child)\n        )\n      }\n    };\n  }\n\n  static createTextElement(text) {\n    return {\n      type: \"TEXT_ELEMENT\",\n      props: { nodeValue: text, children: [] }\n    };\n  }\n\n  static render(element, container) {\n    const dom = element.type == \"TEXT_ELEMENT\"\n      ? document.createTextNode(\"\")\n      : document.createElement(element.type);\n\n    const isProperty = key => key !== \"children\";\n    Object.keys(element.props).filter(isProperty).forEach(name => {\n      dom[name] = element.props[name];\n    });\n\n    element.props.children.forEach(child => VirtualDOM.render(child, dom));\n    container.appendChild(dom);\n  }\n}",
+    "verified": true
   },
   {
     "id": 16,
