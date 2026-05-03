@@ -311,7 +311,8 @@
     "id": 45,
     "language": "javascript",
     "difficulty": "easy",
-    "code": "export function processTokenAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3600);\n  });\n}"
+    "code": "export function processTokenAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3600);\n  });\n}",
+    "verified": true
   },
   {
     "id": 46,
