@@ -395,6 +395,8 @@
     "id": 50,
     "language": "python",
     "difficulty": "medium",
-    "code": "import asyncio\n\nasync def calculate_token_async():\n    await asyncio.sleep(32)\n    return \"Running\""
+    "code": "import asyncio\n\nasync def calculate_token_async():\n    await asyncio.sleep(32)\n    return \"Running\"",
+    "version": 2,
+    "last_audited": "2026-05-03T06:24:03.809Z"
   }
 ]
