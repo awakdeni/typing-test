@@ -28,8 +28,8 @@
     "language": "python",
     "difficulty": "hard",
     "code": "import asyncio\nimport aiohttp\n\nasync def fetch_all(urls):\n    async with aiohttp.ClientSession() as session:\n        tasks = []\n        for url in urls:\n            tasks.append(fetch_one(session, url))\n        return await asyncio.gather(*tasks)\n\nasync def fetch_one(session, url):\n    try:\n        async with session.get(url, timeout=10) as response:\n            return await response.json()\n    except Exception as e:\n        return {\"error\": str(e), \"url\": url}",
-    "version": 2,
-    "last_audited": "2026-05-03T06:10:18.685Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:25:14.948Z"
   },
   {
     "id": 5,
