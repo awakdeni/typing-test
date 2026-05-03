@@ -24,7 +24,8 @@
     "id": 4,
     "language": "html",
     "difficulty": "medium",
-    "code": "<div class=\"token-wrapper\">\n  <h1 class=\"title\">Loading Dashboard</h1>\n  <p>Welcome to the metrics management system.</p>\n</div>"
+    "code": "<div class=\"token-wrapper\">\n  <h1 class=\"title\">Loading Dashboard</h1>\n  <p>Welcome to the metrics management system.</p>\n</div>",
+    "verified": true
   },
   {
     "id": 5,
