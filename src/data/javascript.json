@@ -73,7 +73,8 @@
     "id": 11,
     "language": "javascript",
     "difficulty": "easy",
-    "code": "function isPalindrome(str) {\n  const cleanStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();\n  const reversedStr = cleanStr.split('').reverse().join('');\n  \n  return cleanStr === reversedStr;\n}\n\nconsole.log(isPalindrome(\"A man, a plan, a canal: Panama\"));\nconsole.log(isPalindrome(\"race a car\"));"
+    "code": "function isPalindrome(str) {\n  const cleanStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();\n  const reversedStr = cleanStr.split('').reverse().join('');\n  \n  return cleanStr === reversedStr;\n}\n\nconsole.log(isPalindrome(\"A man, a plan, a canal: Panama\"));\nconsole.log(isPalindrome(\"race a car\"));",
+    "verified": true
   },
   {
     "id": 12,
