@@ -18,6 +18,8 @@ import typescriptSnippets from '@/data/typescript.json';
 import phpSnippets from '@/data/php.json';
 import javaSnippets from '@/data/java.json';
 import cppSnippets from '@/data/cpp.json';
+import goSnippets from '@/data/go.json';
+import rustSnippets from '@/data/rust.json';
 import { Timer, RefreshCw, ChevronDown, Keyboard, CodeXml, Trophy, Settings, Users, UserCircle } from 'lucide-react';
 
 const codeSnippets = [
@@ -28,7 +30,9 @@ const codeSnippets = [
   ...typescriptSnippets,
   ...phpSnippets,
   ...javaSnippets,
-  ...cppSnippets
+  ...cppSnippets,
+  ...goSnippets,
+  ...rustSnippets
 ];
 
 export const TypingTest = () => {
@@ -139,7 +143,7 @@ export const TypingTest = () => {
                 <ChevronDown className="w-3 h-3" />
               </button>
               <div className="absolute top-full left-0 mt-2 py-2 w-40 bg-[#1a1a1a] border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover/select:opacity-100 group-hover/select:visible transition-all z-50">
-                {['javascript', 'typescript', 'python', 'php', 'html', 'css', 'java', 'cpp'].map((lang) => (
+                {['javascript', 'typescript', 'python', 'php', 'html', 'css', 'java', 'cpp', 'go', 'rust'].map((lang) => (
                   <button
                     key={lang}
                     onClick={() => setSelectedLanguage(lang)}
