@@ -87,7 +87,8 @@
     "id": 13,
     "language": "html",
     "difficulty": "easy",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#calculate\">Running</a></li>\n    <li><a href=\"#value\">Token</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#calculate\">Running</a></li>\n    <li><a href=\"#value\">Token</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 14,
