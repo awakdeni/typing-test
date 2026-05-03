@@ -243,7 +243,9 @@
     "id": 31,
     "language": "python",
     "difficulty": "easy",
-    "code": "current_list = [x * 27 for x in range(28)]\nfiltered = list(filter(lambda x: x > 33, value_list))"
+    "code": "current_list = [x * 27 for x in range(28)]\nfiltered = list(filter(lambda x: x > 33, value_list))",
+    "version": 2,
+    "last_audited": "2026-05-03T06:18:22.869Z"
   },
   {
     "id": 32,
