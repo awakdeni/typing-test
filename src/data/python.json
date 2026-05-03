@@ -140,8 +140,8 @@
     "language": "python",
     "difficulty": "hard",
     "code": "data_list = [x * 12 for x in range(19)]\nfiltered = list(filter(lambda x: x > 40, temp_list))",
-    "version": 3,
-    "last_audited": "2026-05-03T06:29:25.682Z"
+    "version": 4,
+    "last_audited": "2026-05-03T06:44:36.539Z"
   },
   {
     "id": 19,
