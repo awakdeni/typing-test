@@ -10,7 +10,8 @@
     "id": 2,
     "language": "html",
     "difficulty": "medium",
-    "code": "<article class=\"blog-post\">\n  <header>\n    <h2>Understanding Web Accessibility</h2>\n    <p class=\"meta\">Published on <time datetime=\"2023-10-12\">Oct 12</time> by Jane Doe</p>\n  </header>\n  \n  <section class=\"content\">\n    <p>Accessibility ensures that web applications are usable by everyone...</p>\n    <img src=\"/images/a11y.png\" alt=\"Accessibility diagram\" loading=\"lazy\" />\n  </section>\n  \n  <footer>\n    <a href=\"#top\" class=\"back-to-top\">Back to top</a>\n  </footer>\n</article>"
+    "code": "<article class=\"blog-post\">\n  <header>\n    <h2>Understanding Web Accessibility</h2>\n    <p class=\"meta\">Published on <time datetime=\"2023-10-12\">Oct 12</time> by Jane Doe</p>\n  </header>\n  \n  <section class=\"content\">\n    <p>Accessibility ensures that web applications are usable by everyone...</p>\n    <img src=\"/images/a11y.png\" alt=\"Accessibility diagram\" loading=\"lazy\" />\n  </section>\n  \n  <footer>\n    <a href=\"#top\" class=\"back-to-top\">Back to top</a>\n  </footer>\n</article>",
+    "verified": true
   },
   {
     "id": 3,
