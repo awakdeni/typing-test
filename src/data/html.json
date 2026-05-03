@@ -31,7 +31,8 @@
     "id": 5,
     "language": "html",
     "difficulty": "hard",
-    "code": "<table class=\"items-table\">\n  <thead>\n    <tr><th>ID</th><th>Config</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>48</td><td>Test</td><td>Invalid</td></tr>\n  </tbody>\n</table>"
+    "code": "<table class=\"items-table\">\n  <thead>\n    <tr><th>ID</th><th>Config</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>48</td><td>Test</td><td>Invalid</td></tr>\n  </tbody>\n</table>",
+    "verified": true
   },
   {
     "id": 6,
