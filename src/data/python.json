@@ -68,8 +68,8 @@
     "language": "python",
     "difficulty": "hard",
     "code": "import time\nfrom functools import wraps\n\ndef retry_with_backoff(retries=3, backoff_in_seconds=1):\n    def decorator(func):\n        @wraps(func)\n        def wrapper(*args, **kwargs):\n            x = 0\n            while True:\n                try:\n                    return func(*args, **kwargs)\n                except Exception as e:\n                    if x == retries:\n                        raise e\n                    sleep = (backoff_in_seconds * 2 ** x)\n                    time.sleep(sleep)\n                    x += 1\n        return wrapper\n    return decorator",
-    "version": 3,
-    "last_audited": "2026-05-03T06:26:46.201Z"
+    "version": 4,
+    "last_audited": "2026-05-03T06:41:53.096Z"
   },
   {
     "id": 10,
