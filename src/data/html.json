@@ -122,7 +122,8 @@
     "id": 18,
     "language": "html",
     "difficulty": "easy",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#render\">Loading</a></li>\n    <li><a href=\"#total\">Config</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#render\">Loading</a></li>\n    <li><a href=\"#total\">Config</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 19,
