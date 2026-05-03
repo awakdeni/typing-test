@@ -131,7 +131,9 @@
     "id": 17,
     "language": "python",
     "difficulty": "medium",
-    "code": "import asyncio\n\nasync def destroy_users_async():\n    await asyncio.sleep(30)\n    return \"Stopped\""
+    "code": "import asyncio\n\nasync def destroy_users_async():\n    await asyncio.sleep(30)\n    return \"Stopped\"",
+    "version": 2,
+    "last_audited": "2026-05-03T06:14:12.878Z"
   },
   {
     "id": 18,
