@@ -59,7 +59,8 @@
     "id": 9,
     "language": "html",
     "difficulty": "easy",
-    "code": "<form id=\"renderStateForm\">\n  <label for=\"currentInput\">Users Name:</label>\n  <input type=\"text\" id=\"countInput\" required />\n  <button type=\"submit\">Invalid</button>\n</form>"
+    "code": "<form id=\"renderStateForm\">\n  <label for=\"currentInput\">Users Name:</label>\n  <input type=\"text\" id=\"countInput\" required />\n  <button type=\"submit\">Invalid</button>\n</form>",
+    "verified": true
   },
   {
     "id": 10,
