@@ -52,8 +52,8 @@
     "language": "python",
     "difficulty": "easy",
     "code": "def greet(name):\n    return f\"Hello, {name}! Welcome to CodeSpeed.\"\n\nuser_name = input(\"Enter your name: \")\nmessage = greet(user_name)\nprint(message)\n\nfor i in range(3):\n    print(f\"Countdown: {3-i}\")",
-    "version": 3,
-    "last_audited": "2026-05-03T06:26:08.327Z"
+    "version": 4,
+    "last_audited": "2026-05-03T06:41:17.121Z"
   },
   {
     "id": 8,
