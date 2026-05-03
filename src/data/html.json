@@ -283,7 +283,8 @@
     "id": 41,
     "language": "html",
     "difficulty": "easy",
-    "code": "<div class=\"metrics-wrapper\">\n  <h1 class=\"title\">Error Dashboard</h1>\n  <p>Welcome to the users management system.</p>\n</div>"
+    "code": "<div class=\"metrics-wrapper\">\n  <h1 class=\"title\">Error Dashboard</h1>\n  <p>Welcome to the users management system.</p>\n</div>",
+    "verified": true
   },
   {
     "id": 42,
