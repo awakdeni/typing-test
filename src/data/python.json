@@ -331,7 +331,9 @@
     "id": 42,
     "language": "python",
     "difficulty": "medium",
-    "code": "class TokenManager:\n    def __init__(self):\n        self.index = 26\n\n    def fetch(self):\n        print(f\"Pending: {self.value}\")"
+    "code": "class TokenManager:\n    def __init__(self):\n        self.index = 26\n\n    def fetch(self):\n        print(f\"Pending: {self.value}\")",
+    "version": 2,
+    "last_audited": "2026-05-03T06:21:39.284Z"
   },
   {
     "id": 43,
