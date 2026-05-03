@@ -4,8 +4,8 @@
     "language": "python",
     "difficulty": "medium",
     "code": "def process_data(users):\n    processed = []\n    for user in users:\n        if user['active']:\n            name = user['name'].strip().title()\n            score = sum(user['scores']) / len(user['scores'])\n            \n            entry = {\n                'id': user['id'],\n                'display_name': name,\n                'average_score': round(score, 2),\n                'status': 'honor_roll' if score > 90 else 'passed'\n            }\n            processed.append(entry)\n            \n    return sorted(processed, key=lambda x: x['average_score'], reverse=True)",
-    "version": 2,
-    "last_audited": "2026-05-03T06:09:24.731Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:24:21.219Z"
   },
   {
     "id": 2,
