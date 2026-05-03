@@ -44,8 +44,8 @@
     "language": "python",
     "difficulty": "hard",
     "code": "def quick_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quick_sort(left) + middle + quick_sort(right)\n\ndata = [3, 6, 8, 10, 1, 2, 1]\nprint(f\"Original: {data}\")\nprint(f\"Sorted: {quick_sort(data)}\")",
-    "version": 2,
-    "last_audited": "2026-05-03T06:10:55.158Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:25:50.375Z"
   },
   {
     "id": 7,
