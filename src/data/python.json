@@ -364,8 +364,8 @@
     "language": "python",
     "difficulty": "easy",
     "code": "buffer_list = [x * 38 for x in range(31)]\nfiltered = list(filter(lambda x: x > 45, current_list))",
-    "version": 2,
-    "last_audited": "2026-05-03T06:22:50.444Z"
+    "version": 3,
+    "last_audited": "2026-05-03T06:37:50.248Z"
   },
   {
     "id": 47,
