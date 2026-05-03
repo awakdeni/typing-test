@@ -115,7 +115,8 @@
     "id": 17,
     "language": "html",
     "difficulty": "medium",
-    "code": "<form id=\"formatRecordForm\">\n  <label for=\"prevInput\">Vector Name:</label>\n  <input type=\"text\" id=\"prevInput\" required />\n  <button type=\"submit\">Running</button>\n</form>"
+    "code": "<form id=\"formatRecordForm\">\n  <label for=\"prevInput\">Vector Name:</label>\n  <input type=\"text\" id=\"prevInput\" required />\n  <button type=\"submit\">Running</button>\n</form>",
+    "verified": true
   },
   {
     "id": 18,
