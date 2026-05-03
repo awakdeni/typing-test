@@ -17,7 +17,8 @@
     "id": 3,
     "language": "html",
     "difficulty": "hard",
-    "code": "<form id=\"registrationForm\" action=\"/submit\" method=\"POST\" class=\"needs-validation\" novalidate>\n  <fieldset>\n    <legend>Personal Information</legend>\n    \n    <div class=\"form-group\">\n      <label for=\"email\">Email address</label>\n      <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" required pattern=\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$\">\n      <div class=\"invalid-feedback\">\n        Please provide a valid email.\n      </div>\n    </div>\n    \n    <div class=\"form-group\">\n      <label for=\"password\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"password\" name=\"password\" required minlength=\"8\">\n    </div>\n    \n    <button type=\"submit\" class=\"btn btn-primary\">Register</button>\n  </fieldset>\n</form>"
+    "code": "<form id=\"registrationForm\" action=\"/submit\" method=\"POST\" class=\"needs-validation\" novalidate>\n  <fieldset>\n    <legend>Personal Information</legend>\n    \n    <div class=\"form-group\">\n      <label for=\"email\">Email address</label>\n      <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" required pattern=\"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$\">\n      <div class=\"invalid-feedback\">\n        Please provide a valid email.\n      </div>\n    </div>\n    \n    <div class=\"form-group\">\n      <label for=\"password\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"password\" name=\"password\" required minlength=\"8\">\n    </div>\n    \n    <button type=\"submit\" class=\"btn btn-primary\">Register</button>\n  </fieldset>\n</form>",
+    "verified": true
   },
   {
     "id": 4,
