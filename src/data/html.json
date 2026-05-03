@@ -304,7 +304,8 @@
     "id": 44,
     "language": "html",
     "difficulty": "medium",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#fetch\">Loading</a></li>\n    <li><a href=\"#value\">Config</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#fetch\">Loading</a></li>\n    <li><a href=\"#value\">Config</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 45,
