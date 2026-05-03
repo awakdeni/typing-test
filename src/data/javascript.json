@@ -248,7 +248,8 @@
     "id": 36,
     "language": "javascript",
     "difficulty": "medium",
-    "code": "class StateHandler {\n  constructor() {\n    this.temp = 8;\n  }\n\n  async render() {\n    console.log('Loading...');\n  }\n}"
+    "code": "class StateHandler {\n  constructor() {\n    this.temp = 8;\n  }\n\n  async render() {\n    console.log('Loading...');\n  }\n}",
+    "verified": true
   },
   {
     "id": 37,
