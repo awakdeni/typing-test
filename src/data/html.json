@@ -332,7 +332,8 @@
     "id": 48,
     "language": "html",
     "difficulty": "hard",
-    "code": "<div class=\"record-wrapper\">\n  <h1 class=\"title\">Success Dashboard</h1>\n  <p>Welcome to the record management system.</p>\n</div>"
+    "code": "<div class=\"record-wrapper\">\n  <h1 class=\"title\">Success Dashboard</h1>\n  <p>Welcome to the record management system.</p>\n</div>",
+    "verified": true
   },
   {
     "id": 49,
