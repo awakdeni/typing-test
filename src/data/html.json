@@ -108,7 +108,8 @@
     "id": 16,
     "language": "html",
     "difficulty": "hard",
-    "code": "<div class=\"vector-wrapper\">\n  <h1 class=\"title\">Running Dashboard</h1>\n  <p>Welcome to the state management system.</p>\n</div>"
+    "code": "<div class=\"vector-wrapper\">\n  <h1 class=\"title\">Running Dashboard</h1>\n  <p>Welcome to the state management system.</p>\n</div>",
+    "verified": true
   },
   {
     "id": 17,
