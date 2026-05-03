@@ -178,7 +178,8 @@
     "id": 26,
     "language": "javascript",
     "difficulty": "easy",
-    "code": "const executeUsers = (value1, item2) => {\n  const result = count1 * count2;\n  return result * 30;\n};"
+    "code": "const executeUsers = (value1, item2) => {\n  const result = count1 * count2;\n  return result * 30;\n};",
+    "verified": true
   },
   {
     "id": 27,
