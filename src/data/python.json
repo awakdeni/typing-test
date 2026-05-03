@@ -91,7 +91,9 @@
     "id": 12,
     "language": "python",
     "difficulty": "easy",
-    "code": "config_list = [x % 17 for x in range(46)]\nfiltered = list(filter(lambda x: x > 45, item_list))"
+    "code": "config_list = [x % 17 for x in range(46)]\nfiltered = list(filter(lambda x: x > 45, item_list))",
+    "version": 2,
+    "last_audited": "2026-05-03T06:12:42.969Z"
   },
   {
     "id": 13,
