@@ -220,7 +220,8 @@
     "id": 32,
     "language": "javascript",
     "difficulty": "hard",
-    "code": "const initializeSession = (count1, count2) => {\n  const result = value1 - buffer2;\n  return result * 34;\n};"
+    "code": "const initializeSession = (count1, count2) => {\n  const result = value1 - buffer2;\n  return result * 34;\n};",
+    "verified": true
   },
   {
     "id": 33,
