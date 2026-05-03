@@ -66,7 +66,8 @@
     "id": 10,
     "language": "html",
     "difficulty": "hard",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#transform\">Active</a></li>\n    <li><a href=\"#config\">Users</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#transform\">Active</a></li>\n    <li><a href=\"#config\">Users</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 11,
