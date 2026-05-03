@@ -318,7 +318,8 @@
     "id": 46,
     "language": "javascript",
     "difficulty": "hard",
-    "code": "export function fetchVectorAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3800);\n  });\n}"
+    "code": "export function fetchVectorAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3800);\n  });\n}",
+    "verified": true
   },
   {
     "id": 47,
