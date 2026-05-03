@@ -45,7 +45,8 @@
     "id": 7,
     "language": "html",
     "difficulty": "easy",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#initialize\">Complete</a></li>\n    <li><a href=\"#buffer\">Vector</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#initialize\">Complete</a></li>\n    <li><a href=\"#buffer\">Vector</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 8,
