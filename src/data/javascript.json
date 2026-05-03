@@ -157,7 +157,8 @@
     "id": 23,
     "language": "javascript",
     "difficulty": "hard",
-    "code": "const createReactiveObject = (target) => {\n  return new Proxy(target, {\n    get(obj, prop) {\n      console.log(`Reading property: ${prop}`);\n      return obj[prop];\n    },\n    set(obj, prop, value) {\n      console.log(`Updating property: ${prop} from ${obj[prop]} to ${value}`);\n      obj[prop] = value;\n      return true;\n    }\n  });\n};\n\nconst state = createReactiveObject({ count: 0 });\nstate.count = 1;\nconsole.log(state.count);"
+    "code": "const createReactiveObject = (target) => {\n  return new Proxy(target, {\n    get(obj, prop) {\n      console.log(`Reading property: ${prop}`);\n      return obj[prop];\n    },\n    set(obj, prop, value) {\n      console.log(`Updating property: ${prop} from ${obj[prop]} to ${value}`);\n      obj[prop] = value;\n      return true;\n    }\n  });\n};\n\nconst state = createReactiveObject({ count: 0 });\nstate.count = 1;\nconsole.log(state.count);",
+    "verified": true
   },
   {
     "id": 24,
