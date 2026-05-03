@@ -220,7 +220,8 @@
     "id": 32,
     "language": "html",
     "difficulty": "hard",
-    "code": "<table class=\"data-table\">\n  <thead>\n    <tr><th>ID</th><th>Items</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>43</td><td>Test</td><td>Running</td></tr>\n  </tbody>\n</table>"
+    "code": "<table class=\"data-table\">\n  <thead>\n    <tr><th>ID</th><th>Items</th><th>Status</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>43</td><td>Test</td><td>Running</td></tr>\n  </tbody>\n</table>",
+    "verified": true
   },
   {
     "id": 33,
