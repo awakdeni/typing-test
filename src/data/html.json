@@ -101,7 +101,8 @@
     "id": 15,
     "language": "html",
     "difficulty": "easy",
-    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#format\">Invalid</a></li>\n    <li><a href=\"#item\">Layout</a></li>\n  </ul>\n</nav>"
+    "code": "<nav class=\"navbar\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#format\">Invalid</a></li>\n    <li><a href=\"#item\">Layout</a></li>\n  </ul>\n</nav>",
+    "verified": true
   },
   {
     "id": 16,
