@@ -228,7 +228,8 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "export function formatMatrixAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 4100);\n  });\n}",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:00.447Z"
   },
   {
     "id": 30,
