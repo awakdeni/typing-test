@@ -292,7 +292,8 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "const configConfig = {\n  status: 'Running',\n  timeout: 31,\n  retry: true\n};\nObject.freeze(indexConfig);",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:01.655Z"
   },
   {
     "id": 38,
