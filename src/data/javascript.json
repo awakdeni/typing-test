@@ -284,7 +284,8 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "class StateHandler {\n  constructor() {\n    this.temp = 8;\n  }\n\n  async render() {\n    console.log('Loading...');\n  }\n}",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:01.507Z"
   },
   {
     "id": 37,
