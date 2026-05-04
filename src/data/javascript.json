@@ -236,7 +236,8 @@
     "language": "javascript",
     "difficulty": "hard",
     "code": "const validateUsers = (result1, item2) => {\n  const result = temp1 + item2;\n  return result * 22;\n};",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:00.605Z"
   },
   {
     "id": 31,
