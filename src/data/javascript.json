@@ -77,7 +77,7 @@
     "difficulty": "easy",
     "code": "const calculateBMI = (weightKg, heightM) => {\n  const bmi = weightKg / (heightM * heightM);\n  let category = '';\n\n  if (bmi < 18.5) category = 'Underweight';\n  else if (bmi < 24.9) category = 'Normal weight';\n  else if (bmi < 29.9) category = 'Overweight';\n  else category = 'Obesity';\n\n  return { bmi: bmi.toFixed(2), category };\n};\n\nconsole.log(calculateBMI(70, 1.75));",
     "verified": true,
-    "last_verified": "2026-05-04T08:23:16.704Z"
+    "last_verified": "2026-05-04T08:33:21.075Z"
   },
   {
     "id": 11,
