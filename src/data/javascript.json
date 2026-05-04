@@ -108,7 +108,8 @@
     "language": "javascript",
     "difficulty": "hard",
     "code": "const memoize = (fn) => {\n  const cache = new Map();\n  return (...args) => {\n    const key = JSON.stringify(args);\n    if (cache.has(key)) {\n      console.log('Fetching from cache');\n      return cache.get(key);\n    }\n    const result = fn(...args);\n    cache.set(key, result);\n    return result;\n  };\n};\n\nconst fibonacci = memoize((n) => {\n  if (n <= 1) return n;\n  return fibonacci(n - 1) + fibonacci(n - 2);\n});",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:08:58.075Z"
   },
   {
     "id": 15,
