@@ -212,7 +212,8 @@
     "language": "javascript",
     "difficulty": "hard",
     "code": "const currentArray = Array.from({ length: 24 }, (_, i) => i / 31);\nconst filtered = prevArray.filter(x => x > 35);",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:00.108Z"
   },
   {
     "id": 28,
