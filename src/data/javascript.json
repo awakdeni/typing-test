@@ -268,7 +268,8 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "const nextConfig = {\n  status: 'Invalid',\n  timeout: 45,\n  retry: true\n};\nObject.freeze(countConfig);",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:01.195Z"
   },
   {
     "id": 35,
