@@ -188,7 +188,8 @@
     "language": "javascript",
     "difficulty": "hard",
     "code": "async function fetchWithTimeout(url, timeoutMs) {\n  const controller = new AbortController();\n  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);\n\n  try {\n    const response = await fetch(url, { signal: controller.signal });\n    clearTimeout(timeoutId);\n    \n    if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);\n    return await response.json();\n  } catch (error) {\n    if (error.name === 'AbortError') {\n      throw new Error(`Request timed out after ${timeoutMs}ms`);\n    }\n    throw error;\n  }\n}",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:08:59.615Z"
   },
   {
     "id": 25,
