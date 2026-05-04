@@ -92,7 +92,8 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "const deepClone = (obj) => {\n  if (obj === null || typeof obj !== 'object') {\n    return obj;\n  }\n\n  if (obj instanceof Date) return new Date(obj.getTime());\n  if (obj instanceof Array) return obj.map(item => deepClone(item));\n\n  const clonedObj = {};\n  for (let key in obj) {\n    if (obj.hasOwnProperty(key)) {\n      clonedObj[key] = deepClone(obj[key]);\n    }\n  }\n  return clonedObj;\n};",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:08:57.790Z"
   },
   {
     "id": 13,
