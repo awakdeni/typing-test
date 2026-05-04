@@ -52,7 +52,8 @@
     "language": "javascript",
     "difficulty": "easy",
     "code": "const fruits = ['apple', 'banana', 'cherry'];\n\nfruits.forEach(fruit => {\n  console.log(`I like ${fruit}`);\n});\n\nconst upperFruits = fruits.map(f => f.toUpperCase());\nconsole.log(upperFruits);",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:08:57.050Z"
   },
   {
     "id": 8,
