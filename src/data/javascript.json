@@ -156,7 +156,8 @@
     "language": "javascript",
     "difficulty": "easy",
     "code": "document.getElementById('list-container').addEventListener('click', (e) => {\n  if (e.target && e.target.nodeName === 'LI') {\n    const itemText = e.target.innerText;\n    console.log(`List item clicked: ${itemText}`);\n    e.target.classList.toggle('completed');\n  }\n});\n\nconst addBtn = document.createElement('button');\naddBtn.textContent = 'Add Item';\ndocument.body.appendChild(addBtn);",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:08:58.958Z"
   },
   {
     "id": 21,
