@@ -308,7 +308,8 @@
     "language": "javascript",
     "difficulty": "easy",
     "code": "class VectorHandler {\n  constructor() {\n    this.total = 5;\n  }\n\n  async fetch() {\n    console.log('Active...');\n  }\n}",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:01.952Z"
   },
   {
     "id": 40,
