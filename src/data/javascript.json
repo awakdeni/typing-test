@@ -5,7 +5,7 @@
     "difficulty": "medium",
     "code": "function calculateInventory(products) {\n  const results = products.map(p => {\n    const taxRate = p.category === 'luxury' ? 0.25 : 0.11;\n    const discountedPrice = p.price * (1 - p.discount);\n    const finalPrice = discountedPrice * (1 + taxRate);\n    \n    return {\n      name: p.name,\n      stockValue: p.stock * finalPrice,\n      isLowStock: p.stock < 10\n    };\n  });\n\n  return results.filter(r => r.stockValue > 1000);\n}",
     "verified": true,
-    "last_verified": "2026-05-04T08:20:47.087Z"
+    "last_verified": "2026-05-04T08:30:01.213Z"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "difficulty": "hard",
     "code": "async function fetchData(url, retries = 3) {\n  for (let i = 0; i < retries; i++) {\n    try {\n      const response = await fetch(url);\n      if (!response.ok) throw new Error(`HTTP ${response.status}`);\n      const data = await response.json();\n      return data.map(item => ({\n        id: item.id,\n        name: item.full_name.toUpperCase(),\n        timestamp: new Date().toISOString(),\n        isValid: !!item.full_name\n      }));\n    } catch (err) {\n      if (i === retries - 1) console.error('Final attempt failed:', err);\n      await new Promise(resolve => setTimeout(resolve, 1000));\n    }\n  }\n}",
     "verified": true,
-    "last_verified": "2026-05-04T08:21:03.348Z"
+    "last_verified": "2026-05-04T08:30:23.973Z"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "difficulty": "easy",
     "code": "const GREETING = 'Hello World';\nconsole.log(GREETING);\n\nconst add = (a, b) => a + b;\nconsole.log(add(5, 10));",
     "verified": true,
-    "last_verified": "2026-05-04T08:21:20.170Z"
+    "last_verified": "2026-05-04T08:30:45.533Z"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "difficulty": "hard",
     "code": "class EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n\n  on(name, listener) {\n    if (!this.events[name]) this.events[name] = [];\n    this.events[name].push(listener);\n  }\n\n  emit(name, ...args) {\n    if (!this.events[name]) return;\n    this.events[name].forEach(listener => listener(...args));\n  }\n\n  remove(name, listenerToRemove) {\n    if (!this.events[name]) return;\n    this.events[name] = this.events[name].filter(\n      listener => listener !== listenerToRemove\n    );\n  }\n}",
     "verified": true,
-    "last_verified": "2026-05-04T08:21:36.280Z"
+    "last_verified": "2026-05-04T08:31:08.196Z"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "difficulty": "medium",
     "code": "const validateForm = (data) => {\n  const errors = {};\n  const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n\n  if (!data.username || data.username.length < 3) {\n    errors.username = 'Username too short';\n  }\n\n  if (!emailRegex.test(data.email)) {\n    errors.email = 'Invalid email format';\n  }\n\n  if (data.password !== data.confirmPassword) {\n    errors.password = 'Passwords do not match';\n  }\n\n  return {\n    isValid: Object.keys(errors).length === 0,\n    errors\n  };\n};",
     "verified": true,
-    "last_verified": "2026-05-04T08:21:53.128Z"
+    "last_verified": "2026-05-04T08:31:29.780Z"
   },
   {
     "id": 6,
