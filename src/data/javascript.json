@@ -276,7 +276,8 @@
     "language": "javascript",
     "difficulty": "easy",
     "code": "const prevArray = Array.from({ length: 11 }, (_, i) => i - 33);\nconst filtered = dataArray.filter(x => x > 6);",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:01.364Z"
   },
   {
     "id": 36,
