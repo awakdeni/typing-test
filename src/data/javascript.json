@@ -196,7 +196,8 @@
     "language": "javascript",
     "difficulty": "easy",
     "code": "class Developer {\n  constructor(name, favoriteLanguage) {\n    this.name = name;\n    this.favoriteLanguage = favoriteLanguage;\n  }\n\n  introduce() {\n    return `Hi, I'm ${this.name} and I love coding in ${this.favoriteLanguage}.`;\n  }\n}\n\nconst alice = new Developer('Alice', 'JavaScript');\nconsole.log(alice.introduce());",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:08:59.755Z"
   },
   {
     "id": 26,
