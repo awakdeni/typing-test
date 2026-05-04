@@ -29,7 +29,7 @@
     "difficulty": "hard",
     "code": "class EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n\n  on(name, listener) {\n    if (!this.events[name]) this.events[name] = [];\n    this.events[name].push(listener);\n  }\n\n  emit(name, ...args) {\n    if (!this.events[name]) return;\n    this.events[name].forEach(listener => listener(...args));\n  }\n\n  remove(name, listenerToRemove) {\n    if (!this.events[name]) return;\n    this.events[name] = this.events[name].filter(\n      listener => listener !== listenerToRemove\n    );\n  }\n}",
     "verified": true,
-    "last_verified": "2026-05-04T08:17:16.535Z"
+    "last_verified": "2026-05-04T08:21:36.280Z"
   },
   {
     "id": 5,
