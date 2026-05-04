@@ -4,7 +4,8 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "function calculateInventory(products) {\n  const results = products.map(p => {\n    const taxRate = p.category === 'luxury' ? 0.25 : 0.11;\n    const discountedPrice = p.price * (1 - p.discount);\n    const finalPrice = discountedPrice * (1 + taxRate);\n    \n    return {\n      name: p.name,\n      stockValue: p.stock * finalPrice,\n      isLowStock: p.stock < 10\n    };\n  });\n\n  return results.filter(r => r.stockValue > 1000);\n}",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:08:56.138Z"
   },
   {
     "id": 2,
