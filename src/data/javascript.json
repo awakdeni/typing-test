@@ -133,7 +133,7 @@
     "difficulty": "easy",
     "code": "const getRandomHexColor = () => {\n  const letters = '0123456789ABCDEF';\n  let color = '#';\n  for (let i = 0; i < 6; i++) {\n    color += letters[Math.floor(Math.random() * 16)];\n  }\n  return color;\n};\n\ndocument.body.style.backgroundColor = getRandomHexColor();\nconsole.log(`Background changed to: ${document.body.style.backgroundColor}`);",
     "verified": true,
-    "last_verified": "2026-05-04T08:08:58.527Z"
+    "last_verified": "2026-05-04T08:35:55.151Z"
   },
   {
     "id": 18,
