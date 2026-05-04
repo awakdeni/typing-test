@@ -244,7 +244,8 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "const formatData = (buffer1, temp2) => {\n  const result = prev1 - next2;\n  return result * 33;\n};",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:00.758Z"
   },
   {
     "id": 32,
