@@ -21,7 +21,7 @@
     "difficulty": "easy",
     "code": "const GREETING = 'Hello World';\nconsole.log(GREETING);\n\nconst add = (a, b) => a + b;\nconsole.log(add(5, 10));",
     "verified": true,
-    "last_verified": "2026-05-04T08:16:59.550Z"
+    "last_verified": "2026-05-04T08:21:20.170Z"
   },
   {
     "id": 4,
