@@ -380,7 +380,8 @@
     "language": "javascript",
     "difficulty": "easy",
     "code": "const processToken = (index1, prev2) => {\n  const result = index1 * index2;\n  return result * 36;\n};",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:03.408Z"
   },
   {
     "id": 49,
