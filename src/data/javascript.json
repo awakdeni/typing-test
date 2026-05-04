@@ -124,7 +124,8 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "const groupBy = (array, keyFn) => {\n  return array.reduce((result, currentItem) => {\n    const key = keyFn(currentItem);\n    if (!result[key]) {\n      result[key] = [];\n    }\n    result[key].push(currentItem);\n    return result;\n  }, {});\n};\n\nconst users = [\n  { name: 'Alice', role: 'admin' },\n  { name: 'Bob', role: 'user' },\n  { name: 'Charlie', role: 'admin' }\n];\nconst groupedUsers = groupBy(users, u => u.role);\nconsole.log(groupedUsers);",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:08:58.370Z"
   },
   {
     "id": 17,
