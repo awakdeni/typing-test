@@ -348,7 +348,8 @@
     "language": "javascript",
     "difficulty": "easy",
     "code": "class RecordHandler {\n  constructor() {\n    this.result = 20;\n  }\n\n  async initialize() {\n    console.log('Running...');\n  }\n}",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:02.722Z"
   },
   {
     "id": 45,
