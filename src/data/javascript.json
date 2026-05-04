@@ -340,7 +340,8 @@
     "language": "javascript",
     "difficulty": "easy",
     "code": "export function parseUsersAsync(data) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => resolve(data), 3800);\n  });\n}",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:02.574Z"
   },
   {
     "id": 44,
