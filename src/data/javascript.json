@@ -140,7 +140,8 @@
     "language": "javascript",
     "difficulty": "hard",
     "code": "function curry(func) {\n  return function curried(...args) {\n    if (args.length >= func.length) {\n      return func.apply(this, args);\n    } else {\n      return function(...args2) {\n        return curried.apply(this, args.concat(args2));\n      }\n    }\n  };\n}\n\nfunction multiply(a, b, c) {\n  return a * b * c;\n}\n\nlet curriedMultiply = curry(multiply);\nconsole.log(curriedMultiply(2)(3)(4)); // 24",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:08:58.678Z"
   },
   {
     "id": 19,
