@@ -164,7 +164,8 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "const statistics = (numbers) => {\n  if (numbers.length === 0) return null;\n  \n  return numbers.reduce((acc, curr, index, array) => {\n    acc.sum += curr;\n    acc.min = curr < acc.min ? curr : acc.min;\n    acc.max = curr > acc.max ? curr : acc.max;\n    \n    if (index === array.length - 1) {\n      acc.average = acc.sum / array.length;\n    }\n    return acc;\n  }, { sum: 0, min: Infinity, max: -Infinity, average: 0 });\n};",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:08:59.115Z"
   },
   {
     "id": 22,
