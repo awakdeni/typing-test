@@ -61,7 +61,7 @@
     "difficulty": "medium",
     "code": "const processOrders = (orders) => {\n  return orders\n    .filter(order => order.status === 'completed')\n    .map(order => ({\n      orderId: order.id,\n      total: order.items.reduce((sum, item) => sum + item.price * item.quantity, 0),\n      date: new Date(order.timestamp).toLocaleDateString()\n    }))\n    .sort((a, b) => b.total - a.total);\n};",
     "verified": true,
-    "last_verified": "2026-05-04T08:22:42.533Z"
+    "last_verified": "2026-05-04T08:32:36.515Z"
   },
   {
     "id": 9,
