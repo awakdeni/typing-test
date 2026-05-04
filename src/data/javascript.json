@@ -69,7 +69,7 @@
     "difficulty": "hard",
     "code": "async function fetchDashboardData(userId) {\n  try {\n    const [user, posts, stats] = await Promise.all([\n      fetch(`/api/users/${userId}`).then(r => r.json()),\n      fetch(`/api/users/${userId}/posts`).then(r => r.json()),\n      fetch(`/api/users/${userId}/stats`).then(r => r.json())\n    ]);\n    \n    return {\n      profile: user,\n      recentPosts: posts.slice(0, 5),\n      engagement: stats.engagementRate\n    };\n  } catch (error) {\n    console.error('Failed to load dashboard:', error);\n    throw new Error('Dashboard Initialization Failed');\n  }\n}",
     "verified": true,
-    "last_verified": "2026-05-04T08:18:41.285Z"
+    "last_verified": "2026-05-04T08:22:59.218Z"
   },
   {
     "id": 10,
