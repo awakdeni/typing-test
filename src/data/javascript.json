@@ -260,7 +260,8 @@
     "language": "javascript",
     "difficulty": "easy",
     "code": "const indexConfig = {\n  status: 'Running',\n  timeout: 32,\n  retry: true\n};\nObject.freeze(itemConfig);",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:01.043Z"
   },
   {
     "id": 34,
