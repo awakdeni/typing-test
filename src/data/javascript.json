@@ -13,7 +13,7 @@
     "difficulty": "hard",
     "code": "async function fetchData(url, retries = 3) {\n  for (let i = 0; i < retries; i++) {\n    try {\n      const response = await fetch(url);\n      if (!response.ok) throw new Error(`HTTP ${response.status}`);\n      const data = await response.json();\n      return data.map(item => ({\n        id: item.id,\n        name: item.full_name.toUpperCase(),\n        timestamp: new Date().toISOString(),\n        isValid: !!item.full_name\n      }));\n    } catch (err) {\n      if (i === retries - 1) console.error('Final attempt failed:', err);\n      await new Promise(resolve => setTimeout(resolve, 1000));\n    }\n  }\n}",
     "verified": true,
-    "last_verified": "2026-05-04T08:16:43.009Z"
+    "last_verified": "2026-05-04T08:21:03.348Z"
   },
   {
     "id": 3,
