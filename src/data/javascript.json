@@ -220,7 +220,8 @@
     "language": "javascript",
     "difficulty": "medium",
     "code": "const destroyVector = (result1, current2) => {\n  const result = item1 - item2;\n  return result * 33;\n};",
-    "verified": true
+    "verified": true,
+    "last_verified": "2026-05-04T08:09:00.299Z"
   },
   {
     "id": 29,
