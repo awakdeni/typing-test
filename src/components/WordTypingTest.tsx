@@ -63,7 +63,15 @@ export const WordTypingTest = () => {
     isFinished,
     stats,
     resetTest,
-  } = useTypingTest(currentText);
+  } = useTypingTest(currentText, 60, 'infinite');
+
+  // Append more words when reaching the end
+  useEffect(() => {
+    if (userInput.length > currentText.length - 50) {
+      const moreText = generateRandomText(selectedDifficulty);
+      setCurrentText(prev => prev + ' ' + moreText);
+    }
+  }, [userInput, currentText, selectedDifficulty]);
 
   const handleRestart = () => {
     const newText = generateRandomText(selectedDifficulty);

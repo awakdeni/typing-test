@@ -11,7 +11,7 @@ export interface TypingStats {
   totalChars: number;
 }
 
-export const useTypingTest = (targetCode: string, duration: number = 60) => {
+export const useTypingTest = (targetCode: string, duration: number = 60, mode: 'fixed' | 'infinite' = 'fixed') => {
   const [userInput, setUserInput] = useState('');
   const [timeLeft, setTimeLeft] = useState(duration);
   const [isActive, setIsActive] = useState(false);
@@ -66,23 +66,28 @@ export const useTypingTest = (targetCode: string, duration: number = 60) => {
       startTest();
     }
 
-    if (value.length <= targetCode.length) {
-      // Auto-indentation logic: trigger only on addition
-      if (value.length > userInput.length && value.endsWith('\n')) {
-        let autoIndent = '';
-        let nextIndex = value.length;
-        while (nextIndex < targetCode.length && targetCode[nextIndex] === ' ') {
-          autoIndent += ' ';
-          nextIndex++;
+    if (mode === 'fixed') {
+      if (value.length <= targetCode.length) {
+        // Auto-indentation logic: trigger only on addition
+        if (value.length > userInput.length && value.endsWith('\n')) {
+          let autoIndent = '';
+          let nextIndex = value.length;
+          while (nextIndex < targetCode.length && targetCode[nextIndex] === ' ') {
+            autoIndent += ' ';
+            nextIndex++;
+          }
+          setUserInput(value + autoIndent);
+        } else {
+          setUserInput(value);
         }
-        setUserInput(value + autoIndent);
-      } else {
-        setUserInput(value);
       }
-    }
 
-    if (value.length === targetCode.length) {
-      endTest();
+      if (value.length === targetCode.length) {
+        endTest();
+      }
+    } else {
+      // Infinite mode: just set input, no length restriction
+      setUserInput(value);
     }
   };
 
