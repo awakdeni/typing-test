@@ -9,6 +9,7 @@ function cn(...inputs: ClassValue[]) {
 }
 import { CodeDisplay } from './CodeDisplay';
 import { ResultModal } from './ResultModal';
+import { Navbar } from './Navbar';
 import { useTypingTest } from '@/hooks/useTypingTest';
 import javascriptSnippets from '@/data/javascript.json';
 import pythonSnippets from '@/data/python.json';
@@ -20,7 +21,7 @@ import javaSnippets from '@/data/java.json';
 import cppSnippets from '@/data/cpp.json';
 import goSnippets from '@/data/go.json';
 import rustSnippets from '@/data/rust.json';
-import { Timer, RefreshCw, ChevronDown, Keyboard, CodeXml, Trophy, Settings, Users, UserCircle } from 'lucide-react';
+import { Timer, RefreshCw, ChevronDown } from 'lucide-react';
 
 const codeSnippets = [
   ...javascriptSnippets,
@@ -90,43 +91,7 @@ export const TypingTest = () => {
 
   return (
     <div className="w-full">
-      {/* Main App Header */}
-      <header className="flex items-center justify-between mb-4 max-w-6xl mx-auto w-full">
-        <div className="flex items-center gap-8">
-          {/* Logo - Always Sharp */}
-          <div className="flex items-center gap-2 group cursor-pointer transition-all duration-300" onClick={handleRestart}>
-            <div className="bg-[#1a1a1a] p-1.5 rounded-lg border border-white/10 group-hover:border-blue-500/50 transition-colors">
-              <Keyboard className="w-5 h-5 text-gray-400 group-hover:text-blue-400" />
-            </div>
-            <span className="text-lg font-medium tracking-tight text-[#f2f2f2]">CodeSpeed</span>
-          </div>
-
-          {/* Navigation - Blurs on type */}
-          <nav className={cn(
-            "flex items-center gap-5 transition-all duration-700",
-            isActive && "blur-md opacity-10 pointer-events-none"
-          )}>
-            <button className="text-gray-500 hover:text-white transition-colors"><CodeXml className="w-5 h-5" /></button>
-            <button className="text-gray-500 hover:text-white transition-colors"><Trophy className="w-5 h-5" /></button>
-            <button className="text-gray-500 hover:text-white transition-colors"><Settings className="w-5 h-5" /></button>
-            <div className="flex items-center gap-1.5 px-2.5 py-1 bg-white/5 border border-white/10 rounded-full text-[11px] font-medium text-gray-400">
-              <Users className="w-3 h-3" />
-              <span>87</span>
-            </div>
-          </nav>
-        </div>
-
-        {/* User Profile - Blurs on type */}
-        <div className={cn(
-          "flex items-center gap-3 group cursor-pointer transition-all duration-700",
-          isActive && "blur-md opacity-10 pointer-events-none"
-        )}>
-          <span className="text-sm font-medium text-gray-400 group-hover:text-white transition-colors">awakdeni</span>
-          <div className="p-1 bg-[#1a1a1a] rounded-full border border-white/10 group-hover:border-blue-500/50 transition-colors">
-            <UserCircle className="w-6 h-6 text-gray-400" />
-          </div>
-        </div>
-      </header>
+      <Navbar isActive={isActive} onRestart={handleRestart} />
 
       <div className="max-w-6xl mx-auto w-full space-y-8 mt-8">
         {/* Config Bar & Stats */}
