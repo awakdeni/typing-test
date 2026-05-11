@@ -84,7 +84,7 @@ export const WordDisplay: React.FC<WordDisplayProps> = ({
               
               if (index < userInput.length) {
                 const isCorrect = userInput[index] === char;
-                colorClass = isCorrect ? 'text-white' : 'text-red-400 border-b-2 border-red-500/50';
+                colorClass = isCorrect ? 'text-gray-200' : 'text-red-500 bg-red-500/10 border-b-2 border-red-500';
               }
 
               return (
